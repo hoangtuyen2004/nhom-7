@@ -1,0 +1,18 @@
+{
+    "name": "dell/nhom-7",
+    "autoload": {
+        "psr-4": {
+            "Dell\\Nhom7\\": "src/"
+        },
+        "files": [
+            "global.php"
+        ]
+    },
+    "authors": [
+        {
+            "name": "hoangtuyen2004",
+            "email": "ductuyen772@gmail.com"
+        }
+    ],
+    "require": {}
+}
