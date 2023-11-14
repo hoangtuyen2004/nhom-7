@@ -26,7 +26,7 @@ class Model
         }
     }
 
-    public function findOne($id)
+    public function findOne($id)    
     {
         $sql = "SELECT * FROM {$this->table} WHERE id = :id LIMIT 1";
 
