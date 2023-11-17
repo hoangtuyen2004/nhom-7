@@ -2,9 +2,9 @@
 
 namespace Ductong\BaseMvc;
 
-class Controller {//trong lớp Controller khởi tạo hai phương thức render và renderAdmin
+class Controller {
     // Render ra giao diện client
-    protected function render($view, $data = []) {//$view là đường dẫn đến tệp giao diện, $data là mảng chứa các biến dữ liệu được truyền vào 
+    protected function render($view, $data = []) {
         extract($data);
 
         include "Views/$view.php";

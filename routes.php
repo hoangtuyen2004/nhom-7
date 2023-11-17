@@ -8,9 +8,9 @@ use Ductong\BaseMvc\Router;
 
 $router = new Router();
 
-$router->addRoute('/', HomeController::class, 'index');//mở ra HomeController và thực hiện function index
+$router->addRoute('/', HomeController::class, 'index');
 
-$router->addRoute('/admin/dashboard', DashboardController::class, 'index');//Mở ra dashboardcontroller và chạy funtion index
+$router->addRoute('/admin/dashboard', DashboardController::class, 'index');
 
 $router->addRoute('/admin/users', UserController::class, 'index');
 $router->addRoute('/admin/users/create', UserController::class, 'create');
