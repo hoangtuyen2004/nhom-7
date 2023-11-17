@@ -1,13 +1,16 @@
 <?php
 
-use Dell\Nhom7\Controllers\Admin\UserController;
-use Dell\Nhom7\Controllers\Admin\CategoryController;
-use Dell\Nhom7\Controllers\Client\HomeController;
-use Dell\Nhom7\Router;
+use Ductong\BaseMvc\Controllers\Admin\UserController;
+use Ductong\BaseMvc\Controllers\Admin\CategoryController;
+use Ductong\BaseMvc\Controllers\Admin\DashboardController;
+use Ductong\BaseMvc\Controllers\Client\HomeController;
+use Ductong\BaseMvc\Router;
 
 $router = new Router();
 
 $router->addRoute('/', HomeController::class, 'index');
+
+$router->addRoute('/admin/dashboard', DashboardController::class, 'index');
 
 $router->addRoute('/admin/users', UserController::class, 'index');
 $router->addRoute('/admin/users/create', UserController::class, 'create');

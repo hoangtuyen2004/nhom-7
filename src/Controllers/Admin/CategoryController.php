@@ -1,9 +1,9 @@
 <?php 
 
-namespace Dell\Nhom7\Controllers\Admin;
+namespace Ductong\BaseMvc\Controllers\Admin;
 
-use Dell\Nhom7\Controller;
-use Dell\Nhom7\Models\Category;
+use Ductong\BaseMvc\Controller;
+use Ductong\BaseMvc\Models\Category;
 
 class CategoryController extends Controller {
 
@@ -11,7 +11,7 @@ class CategoryController extends Controller {
     public function index() {
         $categories = (new Category())->all();
 
-        $this->render("admin/categories/index", ["categories" => $categories]);
+        $this->renderAdmin("categories/index", ["categories" => $categories]);
     }
 
     /* Thêm mới */
@@ -26,7 +26,7 @@ class CategoryController extends Controller {
             header('Location: /admin/categories');
         }
 
-        $this->render("admin/categories/create");
+        $this->renderAdmin("categories/create");
     }
 
     /* Cập nhật */
@@ -46,7 +46,7 @@ class CategoryController extends Controller {
 
         $category = (new Category())->findOne($_GET["id"]);
 
-        $this->render("admin/categories/update", ["category" => $category]);
+        $this->renderAdmin("categories/update", ["category" => $category]);
     }
 
     /* Xóa */

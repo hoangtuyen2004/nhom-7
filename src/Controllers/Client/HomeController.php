@@ -1,8 +1,8 @@
 <?php
 
-namespace Dell\Nhom7\Controllers\Client;
+namespace Ductong\BaseMvc\Controllers\Client;
 
-use Dell\Nhom7\Controller;
+use Ductong\BaseMvc\Controller;
 
 class HomeController extends Controller
 {
@@ -10,6 +10,6 @@ class HomeController extends Controller
         Đây là hàm hiển thị danh sách user
     */
     public function index() {
-        $this->render('client/home');
+        $this->render('client/home');//Điều hướng tới home.php của clinet
     }
 }

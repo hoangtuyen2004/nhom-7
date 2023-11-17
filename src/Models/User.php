@@ -1,15 +1,18 @@
 <?php
 
-namespace Dell\Nhom7\Models;
+namespace Ductong\BaseMvc\Models;
 
-use Dell\Nhom7\Model;
+use Ductong\BaseMvc\Model;
 
 class User extends Model {
     protected $table = 'users';
     protected $columns = [
         'name',
-        'email',
-        'address',
+        'name_account',
         'password',
+        'birthday',
+        'img',
+        'email',
+        'id_role',
     ];
 }

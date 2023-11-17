@@ -1,8 +1,8 @@
 {
-    "name": "dell/nhom-7",
+    "name": "ductong/base-mvc",
     "autoload": {
         "psr-4": {
-            "Dell\\Nhom7\\": "src/"
+            "Ductong\\BaseMvc\\": "src/"
         },
         "files": [
             "global.php"
@@ -10,8 +10,8 @@
     },
     "authors": [
         {
-            "name": "hoangtuyen2004",
-            "email": "ductuyen772@gmail.com"
+            "name": "Tống Văn Đức",
+            "email": "tongduc315@gmail.com"
         }
     ],
     "require": {}

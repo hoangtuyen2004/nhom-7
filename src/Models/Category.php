@@ -1,8 +1,8 @@
 <?php
 
-namespace Dell\Nhom7\Models;
+namespace Ductong\BaseMvc\Models;
 
-use Dell\Nhom7\Model;
+use Ductong\BaseMvc\Model;
 
 class Category extends Model {
     protected $table = 'categories';
