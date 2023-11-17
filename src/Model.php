@@ -1,6 +1,6 @@
 <?php
 
-namespace Dell\Nhom7;
+namespace Ductong\BaseMvc;
 
 class Model
 {
@@ -26,7 +26,7 @@ class Model
         }
     }
 
-    public function findOne($id)    
+    public function findOne($id)
     {
         $sql = "SELECT * FROM {$this->table} WHERE id = :id LIMIT 1";
 
@@ -42,55 +42,55 @@ class Model
     }
 
     public function all($column = 'id')
-    {
-        $sql = "SELECT * FROM {$this->table} ORDER BY {$column} DESC";
+        {
+            $sql = "SELECT * FROM {$this->table} ORDER BY {$column} DESC";
 
-        $stmt = $this->conn->prepare($sql);
+            $stmt = $this->conn->prepare($sql);
 
-        $stmt->execute();
+            $stmt->execute();
 
-        $stmt->setFetchMode(\PDO::FETCH_ASSOC);
+            $stmt->setFetchMode(\PDO::FETCH_ASSOC);
 
-        return $stmt->fetchAll();
-    }
+            return $stmt->fetchAll();
+        }
 
     public function paginate($page = 1, $perPage = 10)
-    {
-        $sql = "SELECT * FROM {$this->table} LIMIT {$perPage} OFFSET (({$page} - 1) * {$perPage})";
+        {
+            $sql = "SELECT * FROM {$this->table} LIMIT {$perPage} OFFSET (({$page} - 1) * {$perPage})";
 
-        $stmt = $this->conn->prepare($sql);
+            $stmt = $this->conn->prepare($sql);
 
-        $stmt->execute();
+            $stmt->execute();
 
-        $stmt->setFetchMode(\PDO::FETCH_ASSOC);
+            $stmt->setFetchMode(\PDO::FETCH_ASSOC);
 
-        return $stmt->fetchAll();
-    }
+            return $stmt->fetchAll();
+        }
 
     public function insert($data)
-    {
-        $sql = "INSERT INTO {$this->table}";
+        {
+            $sql = "INSERT INTO {$this->table}";
 
-        $columns = implode(", ", $this->columns);
-        $sql .= "({$columns}) VALUES ";
+            $columns = implode(", ", $this->columns);
+            $sql .= "({$columns}) VALUES ";
 
-        $values = [];
-        foreach ($this->columns as $column) {
-            $values[] = ":{$column}";
-        }
-        $values = implode(", ", $values);
-        $sql .= "({$values})";
-
-        $stmt = $this->conn->prepare($sql);
-
-        foreach ($data as $key => &$value) {
-            if (in_array($key, $this->columns)) {
-                $stmt->bindParam(":{$key}", $value);
+            $values = [];
+            foreach ($this->columns as $column) {
+                $values[] = ":{$column}";
             }
-        }
+            $values = implode(", ", $values);
+            $sql .= "({$values})";
 
-        $stmt->execute();
-    }
+            $stmt = $this->conn->prepare($sql);
+
+            foreach ($data as $key => &$value) {
+                if (in_array($key, $this->columns)) {
+                    $stmt->bindParam(":{$key}", $value);
+                }
+            }
+
+            $stmt->execute();
+        }
 
     /* 
         $data = [
@@ -103,62 +103,62 @@ class Model
         ];
     */
     public function update($data, $conditions = [])
-    {
-        $sql = "UPDATE {$this->table} SET ";
+        {
+            $sql = "UPDATE {$this->table} SET ";
 
-        $sets = [];
-        foreach ($this->columns as $column) {
-            $sets[] = "{$column} = :{$column}";
-        }
-        $sets = implode(", ", $sets);
-        $sql .= "{$sets}";
-
-        $where = [];
-        foreach ($conditions as $condition) {
-            $link = $condition[3] ?? '';
-            $where[] = "{$condition[0]} {$condition[1]} :w{$condition[0]} {$link}";
-        }
-        $where = implode(" ", $where);
-        $sql .= " WHERE {$where}";
-
-        $stmt = $this->conn->prepare($sql);
-
-        foreach ($data as $key => &$value) {
-            if (in_array($key, $this->columns)) {
-                $stmt->bindParam(":{$key}", $value);
+            $sets = [];
+            foreach ($this->columns as $column) {
+                $sets[] = "{$column} = :{$column}";
             }
-        }
+            $sets = implode(", ", $sets);
+            $sql .= "{$sets}";
 
-        foreach ($conditions as &$condition) {
-            $stmt->bindParam(":w{$condition[0]}", $condition[2]);
-        }
+            $where = [];
+            foreach ($conditions as $condition) {
+                $link = $condition[3] ?? '';
+                $where[] = "{$condition[0]} {$condition[1]} :w{$condition[0]} {$link}";
+            }
+            $where = implode(" ", $where);
+            $sql .= " WHERE {$where}";
 
-        $stmt->execute();
-    }
+            $stmt = $this->conn->prepare($sql);
+
+            foreach ($data as $key => &$value) {
+                if (in_array($key, $this->columns)) {
+                    $stmt->bindParam(":{$key}", $value);
+                }
+            }
+
+            foreach ($conditions as &$condition) {
+                $stmt->bindParam(":w{$condition[0]}", $condition[2]);
+            }
+
+            $stmt->execute();
+        }
 
     public function delete($conditions = [])
-    {
-        $sql = "DELETE FROM {$this->table} WHERE ";
+        {
+            $sql = "DELETE FROM {$this->table} WHERE ";
 
-        $where = [];
-        foreach ($conditions as $condition) {
-            $link = $condition[3] ?? '';
-            $where[] = "{$condition[0]} {$condition[1]} :w{$condition[0]} {$link}";
+            $where = [];
+            foreach ($conditions as $condition) {
+                $link = $condition[3] ?? '';
+                $where[] = "{$condition[0]} {$condition[1]} :w{$condition[0]} {$link}";
+            }
+            $where = implode(" ", $where);
+            $sql .= "{$where}";
+
+            $stmt = $this->conn->prepare($sql);
+
+            foreach ($conditions as &$condition) {
+                $stmt->bindParam(":w{$condition[0]}", $condition[2]);
+            }
+
+            $stmt->execute();
         }
-        $where = implode(" ", $where);
-        $sql .= "{$where}";
-
-        $stmt = $this->conn->prepare($sql);
-
-        foreach ($conditions as &$condition) {
-            $stmt->bindParam(":w{$condition[0]}", $condition[2]);
-        }
-
-        $stmt->execute();
-    }
 
     public function __destruct()
-    {
-        $this->conn = null;
-    }
+        {
+            $this->conn = null;
+        }
 }

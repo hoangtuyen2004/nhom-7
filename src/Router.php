@@ -1,6 +1,6 @@
 <?php
 
-namespace Dell\Nhom7;
+namespace Ductong\BaseMvc;
 
 class Router {
     protected $routes = [];
