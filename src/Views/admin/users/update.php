@@ -1,3 +1,7 @@
+<?php 
+    use Ductong\BaseMvc\Models\Role;
+    $role = (new Role())->all();
+?>
 <div class="pcoded-content">
 
     <div class="page-header card">
@@ -35,18 +39,32 @@
                                     <h5>Cập nhật </h5>
                                 </div>
                                 <div class="card-block">
-                                    <form action="" method="post">
+                                    <form action="" method="post" enctype="multipart/form-data">
                                         <label for="name">Name</label>
                                         <input type="text" name="name" class="form-control" value="<?= $user['name'] ?>">
 
-                                        <label for="address" class="mt-3">Email</label>
-                                        <input type="email" name="email" class="form-control" value="<?= $user['email'] ?>">
+                                        <label for="name_account" class="mt-3">Name_account</label>
+                                        <input type="text" name="name_account" class="form-control" value="<?= $user['name_account'] ?>">
 
                                         <label for="password" class="mt-3">Password</label>
                                         <input type="password" name="password" class="form-control" value="<?= $user['password'] ?>">
 
-                                        <label for="address" class="mt-3">Address</label>
-                                        <input type="text" name="address" class="form-control" value="<?= $user['address'] ?>">
+                                        <label for="birthday" class="mt-3">Birthday</label>
+                                        <input type="date" name="birthday" class="form-control" value="<?= $user['birthday'] ?>">
+                                        
+                                        <label for="img" class="mt-3">Image</label>
+                                        <input type="file" name="img">
+                                        <input type="text" name="old-img" hidden class="form-control" value="<?= $user['img'] ?>"><br>
+
+                                        <label for="email" class="mt-3">Email</label>
+                                        <input type="email" name="email" class="form-control" value="<?= $user['email'] ?>">
+
+                                        <label for="id_role" class="mt-3">Mã chức vụ</label>
+                                        <select name="id_role" id="" class="form-control">
+                                            <?php foreach ($role as $key => $value) :?>
+                                                <option <?php if($user['id_role']==$value['id']){echo 'selected';}?> value="<?= $value['id']?>" > <?= $value['name']?> </option>
+                                            <?php endforeach?>       
+                                        </select>
 
                                         <button type="submit" name="btn-submit" class="btn btn-info mt-3">Submit</button>
                                         <a href="/admin/users" class="btn btn-primary mt-3">Quay lại d/s</a>

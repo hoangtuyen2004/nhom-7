@@ -35,13 +35,21 @@ class UserController extends Controller
 
     public function update() {
         if (isset($_POST['btn-submit'])) { 
+            $img = $_POST['old-img'];
+            $file = $_FILES['img'];
+            if ($file['name']!="") {
+                $img = $file['name'];
+                move_uploaded_file($file['tmp_name'], './img_file/'.$file['name']);
+            }
             $data = [
                 'name' => $_POST['name'],
-                'address' => $_POST['address'],
-                'email' => $_POST['email'],
+                'name_account' => $_POST['name_account'],
                 'password' => $_POST['password'],
+                'birthday' => $_POST['birthday'],
+                'img' => $img,
+                'email' => $_POST['email'],
+                'id_role' => $_POST['id_role']
             ];
-
             $conditions = [
                 ['id', '=', $_GET['id']]
             ];

@@ -61,7 +61,7 @@
                                                         <td><?= $user['name_account'] ?></td>
                                                         <td><?= $user['password'] ?></td>
                                                         <td><?= $user['birthday'] ?></td>
-                                                        <td><?= $user['img'] ?></td>
+                                                        <td style="width:10%;"><img style="width: 100%;" src="/img_file/<?=$user['img']?>" alt="ảnh"></td>
                                                         <td><?= $user['email'] ?></td>
                                                         <td><?php if($user['id_role']==1){echo 'user';}else{echo 'writer';}?></td>
                                                         <td>
