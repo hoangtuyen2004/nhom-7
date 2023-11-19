@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        box-sizing: border-box;
+    }
+    .background-footer{
+        background-color: black;
+        color: white;
+    }
+    .container{
+        max-width: 1400px;
+        margin: auto;
+    }
+    .footer{
+        display: grid;
+        grid-template-columns: 1.5fr 1fr 1.5fr;
+        padding: 40px 100px 40px 100px;
+        gap: 50px;
+    }
+    .footer h2{
+        margin-bottom: 40px;
+        padding: 6px 0 5px;
+    }
+    .footer p{
+        line-height: 30px;
+        font-size: 15px;
+
+    }
+    .right-footer a{
+        text-decoration: none;
+        color: white;
+    }
+    .right-footer a:hover{
+        color: blue;
+    }
+    .logo{
+        max-width: 150px;
+        max-height: 150px;
+        display: flex;
+        align-items: center;
+    }
+    hr{
+        border-color: white;
+    }
+</style>
+<body>
+    <div class="background-footer">
+        <footer class="container">
+            <div class="footer">
+                <div class="left-footer">
+                    <div class="logo" style="margin-bottom: 10%;padding: 20px;">
+                        <a href="#" style="display: block;background-color: beige;padding: 10px;border-radius: 50%;"><img class="logo" src="img/N.png" alt="Logo"></a>
+                    </div>
+                    <div class="text-left">
+                        <h2>Food news</h2>
+                        <p>Blog chuyên chia sẻ kiến thức về dinh dưỡng sức khỏe, ẩm thực đặc trưng các vùng miền trong nước và quốc tế, cập nhật thực đơn, cách chế biến món ngon mỗi ngày.</p>
+                        <br><br>
+                        <p>Sản phẩm là kết quả bài tập do nhóm 7-wd18342 thực hiện</p>
+                    </div>
+                </div>
+                <div class="center">
+                    <h2>Chuyên mục</h2>
+                    <p>Ẩm thực</p>
+                    <p>Món ăn dinh dưỡng</p>
+                    <p>Món ăn</p>
+                    <p>Công thức</p>
+                    <p>Món ăn gia đình</p>
+                </div>
+                <div class="right-footer">
+                    <h2>Bài Viết:</h2>
+                    <p><a href="#">Ăn gì tối nay</a></p>
+                    <hr><br>
+                    <p><a href="#">Bật mí cách nấu chè đậu xanh bột năng thơm ngon khó cưỡng</a></p>
+                    <hr><br>
+                    <p><a href="#">Chia sẻ cách nấu bò kho đơn giản bằng gói gia vị thơm ngon</a></p>
+                    <hr><br>
+                    <p><a href="#">Bật mí các cách nấu bò kho mau mềm giúp tiết kiệm thời gian</a></p>
+                    <hr><br>
+                </div>
+            </div>
+        </footer>
+        <hr>
+        <p class="container" style="padding: 20px 0px;">2023-Copyright: © nhom7-WD18342</p>
+    </div>
+</body>
+</html>
