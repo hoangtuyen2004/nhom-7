@@ -15,9 +15,9 @@
                 <li class>
                     <a href="/admin/users" class="waves-effect waves-dark">
                         <span class="pcoded-micon">
-                            <i class="feather icon-box"></i>
+                            <i class="feather icon-clipboard"></i>
                         </span>
-                        <span class="pcoded-mtext">Quản lý User</span>
+                        <span class="pcoded-mtext">Quản lý users</span>
                     </a>
                 </li>
 
