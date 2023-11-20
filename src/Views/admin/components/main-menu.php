@@ -29,8 +29,16 @@
                         <span class="pcoded-mtext">Quản lý Danh mục</span>
                     </a>
                 </li>
+                <li class>
+                    <a href="" class="waves-effect waves-dark">
+                        <span class="pcoded-micon">
+                            <i class="feather icon-menu"></i>
+                        </span>
+                        <span class="pcoded-mtext">Quản lý bài đăng</span>
+                    </a>
+                </li>
 
-                
+
 
             </ul>
         </div>

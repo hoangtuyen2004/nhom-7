@@ -86,7 +86,7 @@ class Model
             foreach ($data as $key => &$value) {
                 if (in_array($key, $this->columns)) {
                     $stmt->bindParam(":{$key}", $value);
-                }
+                }   
             }
 
             $stmt->execute();
@@ -133,6 +133,13 @@ class Model
                 $stmt->bindParam(":w{$condition[0]}", $condition[2]);
             }
 
+            $stmt->execute();
+        }
+    public function updateColumn($column,$value, $conditions)
+        {
+            
+            $sql = "UPDATE {$this->table} SET $column = $value  WHERE $conditions";
+            $stmt = $this->conn->prepare($sql);
             $stmt->execute();
         }
 
