@@ -10,7 +10,6 @@ class CategoryController extends Controller {
     /* Lấy danh sách */
     public function index() {
         $categories = (new Category())->all();
-
         $this->renderAdmin("categories/index", ["categories" => $categories]);
     }
 

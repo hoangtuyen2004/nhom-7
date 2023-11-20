@@ -16,6 +16,8 @@ $router->addRoute('/admin/users', UserController::class, 'index');
 $router->addRoute('/admin/users/create', UserController::class, 'create');
 $router->addRoute('/admin/users/update', UserController::class, 'update');
 $router->addRoute('/admin/users/delete', UserController::class, 'delete');
+$router->addRoute('/admin/users/blocked', UserController::class, 'blocked');
+$router->addRoute('/admin/users/Unblocked', UserController::class, 'unblocked');
 
 $router->addRoute('/admin/categories', CategoryController::class, 'index');
 $router->addRoute('/admin/categories/create', CategoryController::class, 'create');
