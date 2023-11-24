@@ -163,6 +163,15 @@ class Model
 
             $stmt->execute();
         }
+    
+    public function countColumn($column){
+        $sql = "SELECT $column, COUNT(*) AS so_luong FROM {$this->table} GROUP BY $column;";
+        $stmt = $this->conn->prepare($sql);
+        $stmt->execute();
+        $stmt->setFetchMode(\PDO::FETCH_ASSOC);
+
+        return $stmt->fetchAll();
+    }
 
     public function __destruct()
         {
