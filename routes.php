@@ -6,7 +6,6 @@ use Ductong\BaseMvc\Controllers\Admin\CommentController;
 use Ductong\BaseMvc\Controllers\Admin\DashboardController;
 use Ductong\BaseMvc\Controllers\Admin\NewsController;
 use Ductong\BaseMvc\Controllers\Client\HomeController;
-use Ductong\BaseMvc\Controllers\Admin\NewsController;
 use Ductong\BaseMvc\Router;
 
 $router = new Router();
