@@ -38,6 +38,14 @@
                     </a>
                 </li>
 
+                <li class>
+                <a href="" class="waves-effect waves-dark">
+                                            <span class="pcoded-micon">
+                                                <i class="feather icon-mail"></i>
+                                            </span>
+                                            <span class="pcoded-mtext">Email</span>
+                                        </a>
+                </li>
 
 
             </ul>

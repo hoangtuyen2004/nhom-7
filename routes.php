@@ -2,7 +2,9 @@
 
 use Ductong\BaseMvc\Controllers\Admin\UserController;
 use Ductong\BaseMvc\Controllers\Admin\CategoryController;
+use Ductong\BaseMvc\Controllers\Admin\CommentController;
 use Ductong\BaseMvc\Controllers\Admin\DashboardController;
+use Ductong\BaseMvc\Controllers\Admin\NewsController;
 use Ductong\BaseMvc\Controllers\Client\HomeController;
 use Ductong\BaseMvc\Router;
 
@@ -23,3 +25,13 @@ $router->addRoute('/admin/categories', CategoryController::class, 'index');
 $router->addRoute('/admin/categories/create', CategoryController::class, 'create');
 $router->addRoute('/admin/categories/update', CategoryController::class, 'update');
 $router->addRoute('/admin/categories/delete', CategoryController::class, 'delete');
+
+$router->addRoute('/admin/news', NewsController::class, 'index');
+$router->addRoute('/admin/news/create', NewsController::class, 'create');
+$router->addRoute('/admin/news/update', NewsController::class, 'update');
+$router->addRoute('/admin/news/delete', NewsController::class, 'delete');
+
+$router->addRoute('/admin/comments', CommentController::class, 'index');
+$router->addRoute('/admin/comments/create', CommentController::class, 'create');
+$router->addRoute('/admin/comments/update', CommentController::class, 'update');
+$router->addRoute('/admin/comments/delete', CommentController::class, 'delete');
