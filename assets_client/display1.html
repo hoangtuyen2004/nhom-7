@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+    .container{
+        max-width: 1400px;
+        margin: auto;
+    }
+    section{
+        width: 66.666%;
+        float: left;
+        position: relative;
+    }
+    #category{
+        text-decoration: none;
+        color: white;
+        background-color: black;
+        padding: 0px 10px ;
+        font-size: 12px;
+        margin: 20px 0px;
+    }
+    .title{
+        margin-top: 20px;
+        margin-bottom: 7px;
+        word-wrap: break-word;
+        font-size: 41px;
+        line-height: 50px;
+        font-weight: initial;
+    }
+    .subtitle{
+        font-size: 27px;
+        line-height: 38px;
+        margin-top: 30px;
+        margin-bottom: 20px;
+        color: #bc2f3f;
+    }
+    p{
+        font-family: Verdana, Geneva, sans-serif;
+    }
+    .box-img-3{
+        display: flex;
+        gap: 10px;
+        justify-content: space-evenly;
+        position: relative;
+    }
+    .product-img{
+        width: 30%;
+        max-height: 410px;
+        object-fit: cover;
+        vertical-align: middle;
+        border-radius: 4px;
+        border: 0.5px solid #90909089;
+    }
+    .background-image{
+        position: absolute;
+        width: 100%;
+        height: 22%;
+        background-color: aquamarine;
+        margin-top: 30%;
+        border-radius: 10px;
+    }
+</style>
+<body>
+    <!-- Body content -->
+    <main class="container">
+        <div class="main">
+            <section>
+                <a id="category" href="">Thực phẩm Việt Nam</a>
+                <div class="news">
+                    <h1 class="title">Cách làm cơm rang kim chi trứng, cơm rang kim chi thịt bò Hàn Quốc</h1>
+                    <div class="news-content">
+                        <h2 class="subtitle">I. Cách làm cơm rang kim chi trứng thịt bò</h2>
+                        <p class="content"><span class="text-note">Cơm rang kim chi</span> là món ăn khá nổi tiếng của ẩm thực Hàn Quốc. Ngày nay, món ăn không chỉ được người dân xứ Hàn yêu thích mà nó còn lan tỏa ra các quốc gia lân cận. Và dưới đây là cách thức làm món ăn này vừa ngon, vừa giàu dinh dưỡng cho bạn tham khảo.</p>
+                    </div>
+                    <div class="news-img">
+                        <div class="background-image"></div>
+                        <div class="box-img-3">
+                            <img src="img/cơm rang.jpg" alt="sản phẩm" class="product-img">
+                            <img style="margin-top: 70px;" src="img/cơm rang-1.jpg" alt="sản phẩm" class="product-img">
+                            <img src="img/cơm rang-2.jpg" alt="sản phẩm" class="product-img">
+                        </div>
+                    </div>
+                    <div class="news-content">
+                        <div class="block-formula">
+                        <h2 class="subtitle-1">Chuẩn bị nguyên liệu:</h2>
+                            <ul class="formula" style="list-style: square;">
+                                <li>Cơm nguội <span>(2 bát con)</span></li>
+                                <li>Kim chi cải thảo <span>(1/2 bát con)</span></li>
+                                <li>Trứng gà <span>1-2 quả</span></li>
+                                <li>Thịt bò tươi <span>(100 gram)</span></li>
+                                <li>Vừng vàng rang chín <span>(1 thìa)</span></li>
+                                <li>Nguyên liệu gia vị: hành khô, tỏi, ớt<span>(Tùy sở thích)</span></li>
+                                <li>Gia vị: dầu ăn, nước mắm, bột canh,...</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <aside>
+                <div class="box-line">
+                    <h2 class="category">Tin mới</h2>          
+                </div>
+                <div class="box-news">
+                    <div class="row-new">
+                        <img src=""  alt=""><!---Ảnh đại diện:(auto chọn ảnh 1)-->
+                    </div>
+                </div>
+            </aside>
+        </div>
+    </main>
+</body>
+</html>
