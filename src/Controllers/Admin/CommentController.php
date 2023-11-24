@@ -12,6 +12,6 @@ class CommentController extends Controller
     public function index() {        
         $Comment = (new Comment)->all();
         $news = (new User)->all();
-        $this->renderAdmin('Comment/index', ['comment'=> $Comment, 'news'=> $news]);
+        $this->renderAdmin('comments/index', ['comment'=> $Comment, 'news'=> $news]);
     }
 }
