@@ -10,15 +10,13 @@ use Ductong\BaseMvc\Models\User;
     class NewsController extends Controller
     {
         public function index() {
-            $news = (new News)->all();
+            $news = (new News)->all();  
             $users = (new User)->all();
             $categorys = (new Category)->all();
             $status = (new Status)->all();
             $this->renderAdmin('news/index', ['news' => $news, 'users'=>$users, 'categorys' => $categorys, 'status' => $status]);
             }
-        // public function create(){
-
-        // }
+       
 
         public function delete() {
             $conditions = [
@@ -57,5 +55,11 @@ use Ductong\BaseMvc\Models\User;
     
             $this->renderAdmin('users/update', ['user' => $user]);
             }
+        public function more(){
+            if (isset($_GET['id'])) {
+                $news = (new News)->findOne($_GET['id']);
+                $this->renderAdmin('news/more', ['news'=> $news]);
+            }
+        }
     }
 ?>

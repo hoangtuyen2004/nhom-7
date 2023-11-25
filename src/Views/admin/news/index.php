@@ -87,11 +87,11 @@
                                                             </label>
                                                         </td>
                                                         <td>
-                                                            <a href="#!" class="btn btn-warning btn-sm">Chi Tiết</a>
+                                                            <a href="/admin/news/more?id=<?= $new['id']?> && id_display=<?= $new['id_display']?>" class="btn btn-warning btn-sm">Chi Tiết</a>
                                                             <form action="/admin/news/delete?id=<?= $new['id'] ?>" method="post">
                                                                 <button type="submit" onclick="return confirm('Bạn có chắc chắn xóa bài viết này?');" class="btn btn-danger btn-sm mt-2">Xóa</button>
                                                             </form>
-                                                            <a href="/admin/news/update?id=<?= $new['id'] ?>" class="btn btn-primary btn-sm mt-2">Cập Nhật</a>
+                                                            <a href="/admin/news/update?id=<?= $new['id']?>" class="btn btn-primary btn-sm mt-2">Cập Nhật</a>
                                                         </td>
                                                     </tr>
                                                     <?php endforeach ?>
