@@ -14,6 +14,7 @@ $router->addRoute('/', HomeController::class, 'index');
 
 $router->addRoute('/admin/dashboard', DashboardController::class, 'index');
 
+
 $router->addRoute('/admin/users', UserController::class, 'index');
 $router->addRoute('/admin/users/create', UserController::class, 'create');
 $router->addRoute('/admin/users/update', UserController::class, 'update');
@@ -35,4 +36,7 @@ $router->addRoute('/admin/comments', CommentController::class, 'index');
 $router->addRoute('/admin/comments/create', CommentController::class, 'create');
 $router->addRoute('/admin/comments/update', CommentController::class, 'update');
 $router->addRoute('/admin/comments/delete', CommentController::class, 'delete');
+
+$router->addRoute('/admin/logins', UserController::class, 'index');
+$router->addRoute('/admin/logins/login', UserController::class, 'login');
 
