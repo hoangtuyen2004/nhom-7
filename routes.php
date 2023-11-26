@@ -1,5 +1,6 @@
 <?php
 
+use Ductong\BaseMvc\Controllers\Admin\AdminController;
 use Ductong\BaseMvc\Controllers\Admin\UserController;
 use Ductong\BaseMvc\Controllers\Admin\CategoryController;
 use Ductong\BaseMvc\Controllers\Admin\CommentController;
@@ -13,6 +14,8 @@ $router = new Router();
 $router->addRoute('/', HomeController::class, 'index');
 
 $router->addRoute('/admin/dashboard', DashboardController::class, 'index');
+
+
 
 $router->addRoute('/admin/users', UserController::class, 'index');
 $router->addRoute('/admin/users/create', UserController::class, 'create');
@@ -36,4 +39,10 @@ $router->addRoute('/admin/comments', CommentController::class, 'index');
 $router->addRoute('/admin/comments/create', CommentController::class, 'create');
 $router->addRoute('/admin/comments/update', CommentController::class, 'update');
 $router->addRoute('/admin/comments/delete', CommentController::class, 'delete');
+
+$router->addRoute('/admin/logins', AdminController::class, 'index');
+$router->addRoute('/admin/logins/index', AdminController::class, 'login');
+
+
+
 
