@@ -25,7 +25,6 @@ class Model
             die($e->getMessage());
         }
     }
-
     public function findOne($id)
     {
         $sql = "SELECT * FROM {$this->table} WHERE id = :id LIMIT 1";
@@ -40,6 +39,19 @@ class Model
 
         return $stmt->fetch();
     }
+
+    //Thêm modell check ACCOUNT ADMIN
+    public function checkUser($where = 1)
+    {
+        $sql = "SELECT * FROM {$this->table} WHERE $where";
+        $stmt = $this->conn->prepare($sql);
+        
+        $stmt->execute();
+
+        return $stmt->fetch(\PDO::FETCH_ASSOC);
+        
+    }
+
 
     public function all($column = 'id')
         {
