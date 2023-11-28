@@ -50,7 +50,21 @@
                 <div class="card-block p-b-0">
                     <div class="table-responsive" style="padding: 20px;">
 
-                    <?php include_once '/laragon/www/nhom_7/src/Views/admin/news/display/display1.php';?>
+                    <?php 
+                        $display = $_GET['id_display'];
+                        if ($display == 1) {
+                            include_once '/laragon/www/nhom_7/src/Views/admin/news/display/display1.php';
+                        }
+                        elseif ($display == 2) {
+                            include_once '/laragon/www/nhom_7/src/Views/admin/news/display/display2.php';
+                        }
+                        elseif ($display == 3) {
+                            include_once '/laragon/www/nhom_7/src/Views/admin/news/display/display3.php';
+                        }
+                        else{
+                                echo "Dữ liệu lỗi ERR 404";
+                        }
+                    ?>
 
                     </div>
                 </div>

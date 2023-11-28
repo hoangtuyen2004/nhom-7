@@ -1,116 +1,137 @@
-
-
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <style>
-    body {
-      font-family: Arial, Helvetica, sans-serif;
-    }
-
-    form {
-      border: 3px solid #f1f1f1;
-    }
-
-    input[type=text],
-    input[type=password] {
-      width: 100%;
-      padding: 12px 20px;
-      margin: 8px 0;
-      display: inline-block;
-      border: 1px solid #ccc;
-      box-sizing: border-box;
-    }
-
-    button {
-      background-color: #04AA6D;
-      color: white;
-      padding: 14px 20px;
-      margin: 8px 0;
-      border: none;
-      cursor: pointer;
-      width: 100%;
-    }
-
-
-
-    button:hover {
-      opacity: 0.8;
-    }
-
-    .cancelbtn {
-      width: auto;
-      padding: 10px 18px;
-      background-color: #f44336;
-    }
-
-    .imgcontainer {
-      text-align: center;
-      margin: 24px 0 12px 0;
-    }
-
-    img.avatar {
-      width: 40%;
-      border-radius: 50%;
-    }
-
-    .container {
-      padding: 16px;
-    }
-
-    span.psw {
-      float: right;
-      padding-top: 16px;
-    }
-
-    .boxcenter {
-      width: 500px;
-      margin: 0 auto;
-    }
-
-    /* Change styles for span and cancel button on extra small screens */
-    @media screen and (max-width: 300px) {
-      span.psw {
-        display: block;
-        float: none;
-      }
-
-      .cancelbtn {
-        width: 100%;
-      }
-    }
-  </style>
+    <title>Admindek | Admin Template</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="description"
+        content="Admindek Bootstrap admin template made using Bootstrap 4 and it has huge amount of ready made feature, UI components, pages which completely fulfills any dashboard needs." />
+    <meta name="keywords"
+        content="bootstrap, bootstrap admin template, admin theme, admin dashboard, dashboard template, admin template, responsive" />
+    <meta name="author" content="colorlib" />
+    <link rel="icon" href="/assets/files/assets/images/favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand:500,700" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="/assets/files/bower_components/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/assets/files/assets/pages/waves/css/waves.min.css" type="text/css" media="all">
+    <link rel="stylesheet" type="text/css" href="/assets/files/assets/icon/feather/css/feather.css">
+    <link rel="stylesheet" type="text/css" href="/assets/files/assets/icon/themify-icons/themify-icons.css">
+    <link rel="stylesheet" type="text/css" href="/assets/files/assets/icon/icofont/css/icofont.css">
+    <link rel="stylesheet" type="text/css" href="/assets/files/assets/icon/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="/assets/files/assets/css/style.css">
+    <link rel="stylesheet" type="text/css" href="/assets/files/assets/css/pages.css">
 </head>
 
-<body>
-  <div class="boxcenter">
-    <h2>Login Form</h2>
+<body themebg-pattern="theme1">
 
-    <form action="/admin/logins/index" method="post">
-      <div class="imgcontainer">
-        <img src="/img_file/3e2d76b52865e5010e39948ef06166d8.jpg" width="40%" height="50%" alt="Avatar" class="avatar">
-      </div>
+    <div class="theme-loader">
+        <div class="loader-track">
+            <div class="preloader-wrapper">
+                <div class="spinner-layer spinner-blue">
+                    <div class="circle-clipper left">
+                        <div class="circle"></div>
+                    </div>
+                    <div class="gap-patch">
+                        <div class="circle"></div>
+                    </div>
+                    <div class="circle-clipper right">
+                        <div class="circle"></div>
+                    </div>
+                </div>
+                <div class="spinner-layer spinner-red">
+                    <div class="circle-clipper left">
+                        <div class="circle"></div>
+                    </div>
+                    <div class="gap-patch">
+                        <div class="circle"></div>
+                    </div>
+                    <div class="circle-clipper right">
+                        <div class="circle"></div>
+                    </div>
+                </div>
+                <div class="spinner-layer spinner-yellow">
+                    <div class="circle-clipper left">
+                        <div class="circle"></div>
+                    </div>
+                    <div class="gap-patch">
+                        <div class="circle"></div>
+                    </div>
+                    <div class="circle-clipper right">
+                        <div class="circle"></div>
+                    </div>
+                </div>
+                <div class="spinner-layer spinner-green">
+                    <div class="circle-clipper left">
+                        <div class="circle"></div>
+                    </div>
+                    <div class="gap-patch">
+                        <div class="circle"></div>
+                    </div>
+                    <div class="circle-clipper right">
+                        <div class="circle"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <section class="login-block">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-sm-12">
 
-      <div class="container">
-        <label for="uname"><b>Username</b></label>
-        <input type="text" placeholder="Enter Username" name="name-account" required>
+                    <form class="md-float-material form-material" action="/admin/logins/index" method="post">            <!----FORM DỮ LIỆU---->
+                        <div class="text-center">
+                            <img src="/assets/files/assets/images/logo.png" alt="logo.png">
+                        </div>
+                        <div class="auth-box card">
+                            <div class="card-block">
+                                <div class="row m-b-20">
+                                    <div class="col-md-12">
+                                        <h3 class="text-center txt-primary">Sign In ADMIN</h3>
+                                    </div>
+                                </div>
+                                <p class="text-muted text-center p-b-5">Sign in with account ADMIN</p>
+                                <div class="form-group form-primary">
+                                    <input type="text" name="user-name" class="form-control" required>
+                                    <!---- //Name account--->
+                                    <span class="form-bar"></span>
+                                    <label class="float-label">Username</label>
+                                </div>
+                                <div class="form-group form-primary">
+                                    <input type="password" name="password" class="form-control" required>
+                                    <!----  //Password-->
+                                    <span class="form-bar"></span>
+                                    <label class="float-label">Password</label>
+                                </div>
+                                <div class="row m-t-30">
+                                    <div class="col-md-12">
+                                        <button type="submit" name="btn-submit"
+                                            class="btn btn-primary btn-md btn-block waves-effect text-center m-b-20">LOGIN</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+    <script type="text/javascript" src="/assets/files/bower_components/jquery/js/jquery.min.js"></script>
+    <script type="text/javascript" src="/assets/files/bower_components/jquery-ui/js/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="/assets/files/bower_components/popper.js/js/popper.min.js"></script>
+    <script type="text/javascript" src="/assets/files/bower_components/bootstrap/js/bootstrap.min.js"></script>
 
-        <label for="psw"><b>Password</b></label>
-        <input type="password" placeholder="Enter Password" name="password" required>
-        <?php
-        if (isset($tb)&& ($tb!="")){
-              echo "<h5 style='color:red'>".$tb."</h5>";
-        }
+    <script src="/assets/files/assets/pages/waves/js/waves.min.js"></script>
 
-        ?>
-        <button type="submit" name="btn_submit">Login</button>
+    <script type="text/javascript" src="/assets/files/bower_components/jquery-slimscroll/js/jquery.slimscroll.js">
+    </script>
 
-      </div>
-
-    </form>
-  </div>
+    <script type="text/javascript" src="/assets/files/bower_components/modernizr/js/modernizr.js"></script>
+    <script type="text/javascript" src="/assets/files/bower_components/modernizr/js/css-scrollbars.js"></script>
+    <script type="text/javascript" src="/assets/files/assets/js/common-pages.js"></script>
 </body>
 
 </html>

@@ -49,87 +49,148 @@ class NewsController extends Controller
                 // print_r($data );die;
 
                 (new News)->insert($data);
-
                 header('Location: /admin/news/createContent');
             }
             $categorys = (new Category)->all();
-
             $this->renderAdmin('news/create',['categorys'=>$categorys]);
         }
-
+    //HOÀN THIỆN
     public function createContent(){
         $writing = (new Writing)->all();
         $news = (new News)->all();
         
         $id_news = 0;
+        //Thuật toán last insert
         foreach ($news as $new) {
-            $id_news = $new['id'];
-            foreach ($writing as $write) {
-                if ($new['id'] != $write['id_news']) {
-                    if ($new['id'] > $id_news) {
-                        $id_news = $new['id'];
+            if (!isset($writing)) {
+                echo "có dữ liệu";
+                die;
+                foreach ($writing as $write) {
+                    if ($new['id'] != $write['id_news']) {
+                        if ($new['id'] > $id_news) {
+                            $id_news = $new['id'];
+                        }
                     }
+                }
+            }
+            else{
+                if ($new['id']>$id_news) {
+                    $id_news = $new['id'];
                 }
             }
         }
         $new = (new News)->findOne($id_news);
         if (isset($_POST['btn-submit'])) {
-                $new = (new News)->findOne($id_news);
-                $data = [
-                    'title_1'=>$_POST['title_1'],
-                    'id_news'=>$new['id'],
-                ];
-                
-                (new Title_1)->insert($data);
-                //Thuật toán last insert
-                $id = 0;
-                $title_1s = (new Title_1)->all();
-                foreach ($title_1s as $title) {
-                    if ($title['id_news']==$new['id']) {
-                        if($title['id']>$id){
-                            $id = $title['id'];
-                        }
+            // echo "btn-submit";
+            // die;
+            $new = (new News)->findOne($id_news);
+            $data = [
+                'title_1'=>$_POST['title_1'],
+                'id_news'=>$new['id'],
+            ];
+            
+            (new Title_1)->insert($data);
+            //Thuật toán last insert
+            $id = 0;
+            $title_1s = (new Title_1)->all();
+            foreach ($title_1s as $title) {
+                if ($title['id_news']==$new['id']) {
+                    if($title['id']>$id){
+                        $id = $title['id'];
                     }
                 }
-                $title_1 = (new Title_1)->findOne($id);         /*Mã mới nhập*/
-                $data = [
-                    'title_2'=>$_POST['title_1_1'],
-                    'id_title_1'=>$title_1['id'],
-                ];
-                (new Title_2)->insert($data);
-                if($new['id_display']!=1){
-                    $title_1 = (new Title_1)->findOne($id);
-                        $img_1 = $_FILES['img_1_1'];
-                        $img_2 = $_FILES['img_1_2'];
-                        $img_3 = $_FILES['img_1_3'];
-                        $data = [
-                            'content'=>$_POST['content_1'],
-                            'img_1'=>$img_1['name'],
-                            'img_2'=>$img_2['name'],
-                            'img_3'=>$img_3['name'],
-                            'id_title_1'=>$title_1['id'],
-                        ];
-                        (new Content)->insert($data);
-                    }
-                else if($new['id_display']==1){
-                    $title_1 = (new Title_1)->findOne($id);
-                    $img_1 = $_FILES['img_1'];
+            }
+            $title_1 = (new Title_1)->findOne($id);         /*Mã mới nhập*/
+            $data = [
+                'title_2'=>$_POST['title_1_1'],
+                'id_title_1'=>$title_1['id'],
+            ];
+            (new Title_2)->insert($data);
+            if($new['id_display']!=1){
+                $title_1 = (new Title_1)->findOne($id);
+                    $img_1 = $_FILES['img_1_1'];
+                    $img_2 = $_FILES['img_1_2'];
+                    $img_3 = $_FILES['img_1_3'];
                     $data = [
                         'content'=>$_POST['content_1'],
                         'img_1'=>$img_1['name'],
-                        'img_2'=>"đ",
-                        'img_3'=>"đ",
+                        'img_2'=>$img_2['name'],
+                        'img_3'=>$img_3['name'],
                         'id_title_1'=>$title_1['id'],
                     ];
                     (new Content)->insert($data);
                 }
-                header('Location: /admin/news');
+            else if($new['id_display']==1){
+                $title_1 = (new Title_1)->findOne($id);
+                $img_1 = $_FILES['img_1'];
+                $data = [
+                    'content'=>$_POST['content_1'],
+                    'img_1'=>$img_1['name'],
+                    'img_2'=>"đ",
+                    'img_3'=>"đ",
+                    'id_title_1'=>$title_1['id'],
+                ];
+                (new Content)->insert($data);
+            }
+                header('Location: /admin/news/createContent');
         }
-
+        if (isset($_POST['btn-save'])) {
+            // echo "btn-save";
+            // die;
+            $new = (new News)->findOne($id_news);
+            $data = [
+                'title_1'=>$_POST['title_1'],
+                'id_news'=>$new['id'],
+            ];
+            
+            (new Title_1)->insert($data);
+            //Thuật toán last insert
+            $id = 0;
+            $title_1s = (new Title_1)->all();
+            foreach ($title_1s as $title) {
+                if ($title['id_news']==$new['id']) {
+                    if($title['id']>$id){
+                        $id = $title['id'];
+                    }
+                }
+            }
+            $title_1 = (new Title_1)->findOne($id);         /*Mã mới nhập*/
+            $data = [
+                'title_2'=>$_POST['title_1_1'],
+                'id_title_1'=>$title_1['id'],
+            ];
+            (new Title_2)->insert($data);
+            if($new['id_display']!=1){
+                $title_1 = (new Title_1)->findOne($id);
+                    $img_1 = $_FILES['img_1_1'];
+                    $img_2 = $_FILES['img_1_2'];
+                    $img_3 = $_FILES['img_1_3'];
+                    $data = [
+                        'content'=>$_POST['content_1'],
+                        'img_1'=>$img_1['name'],
+                        'img_2'=>$img_2['name'],
+                        'img_3'=>$img_3['name'],
+                        'id_title_1'=>$title_1['id'],
+                    ];
+                    (new Content)->insert($data);
+                }
+            else if($new['id_display']==1){
+                $title_1 = (new Title_1)->findOne($id);
+                $img_1 = $_FILES['img_1'];
+                $data = [
+                    'content'=>$_POST['content_1'],
+                    'img_1'=>$img_1['name'],
+                    'img_2'=>"đ",
+                    'img_3'=>"đ",
+                    'id_title_1'=>$title_1['id'],
+                ];
+                (new Content)->insert($data);
+            }
+            header('Location: /admin/news');
+        }
         $this->renderAdmin('news/createContent',['new'=>$new]);
     }
-
-    //Hoàn thiện
+    //HOÀN THÀNH
     public function delete()
         {
             $id_new = $_GET['id'];

@@ -93,56 +93,9 @@
                                         ?>
                                     </div>
                                     <br>
-                                    <div class="col-sm-12 form-group row">
-                                        <label for="" class="col-sm-2 col-form-label">TITLE-2</label>
-                                        <div class="col-sm-12">
-                                            <input name="title_2" type="text" class="form-control" placeholder=".form-control">
-                                        </div>
-                                    </div>
-                                    <div class="col-sm-12 form-group row">
-                                        <label for="" class="col-sm-2 col-form-label">TITLE-2.1</label>
-                                        <div class="col-sm-12">
-                                            <input name="title_2_1" type="text" class="form-control form-control-sm" placeholder=".form-control">
-                                        </div>
-                                    </div>
-                                    <div class="col-sm-12 form-group row">
-                                        <label for="" class="col-sm-2 col-form-label">CONTENT</label>
-                                        <div class="col-sm-12">
-                                            <textarea name="content_2" rows="5" cols="5" class="form-control" placeholder="Default textarea"></textarea>
-                                        </div>
-                                    </div>
-                                    <div class="col-sm-12 form-group row">
-                                    <label class="col-sm-2 col-form-label" for="avatar">IMAGE</label>
-                                        <div class="col-sm-12">
-                                            <input name="img_2" type="file" name="img" class="form-control p-1">
-                                        </div>
-                                    </div><br>
-                                    <div class="col-sm-12 form-group row">
-                                        <label for="" class="col-sm-2 col-form-label">TITLE-3</label>
-                                        <div class="col-sm-12">
-                                            <input name="title_3" type="text" class="form-control" placeholder=".form-control">
-                                        </div>
-                                    </div>
-                                    <div class="col-sm-12 form-group row">
-                                        <label for="" class="col-sm-2 col-form-label">TITLE-3.1</label>
-                                        <div class="col-sm-12">
-                                            <input name="title_3_1" type="text" class="form-control form-control-sm" placeholder=".form-control">
-                                        </div>
-                                    </div>
-                                    <div class="col-sm-12 form-group row">
-                                        <label for="" class="col-sm-2 col-form-label">CONTENT</label>
-                                        <div class="col-sm-12">
-                                            <textarea name="content_3" rows="5" cols="5" class="form-control" placeholder="Default textarea"></textarea>
-                                        </div>
-                                    </div>
-                                    <div class="col-sm-12 form-group row">
-                                    <label class="col-sm-2 col-form-label" for="avatar">IMAGE</label>
-                                        <div class="col-sm-12">
-                                            <input name="img_3" type="file" name="img" class="form-control p-1">
-                                        </div>
-                                    </div><br>
                                     <div class="col-sm-12 form-group row button-page">
-                                        <button name="btn-submit" type="submit" class="btn waves-effect waves-light btn-grd-primary ">CREATE</button>
+                                        <button name="btn-submit" type="submit" class="btn waves-effect waves-light btn-grd-primary">Thêm dữ liệu</button>
+                                        <input type="submit" name="btn-save" class="btn waves-effect waves-light btn-grd-success" value="LƯU">
                                         <input type="reset" class="btn waves-effect waves-light btn-grd-warning" value="RESET">
                                         <a href="/admin/news/delete?id=<?=$new['id']?>" class="btn waves-effect waves-light btn-grd-danger">CANCAL</a>
                                     </div>

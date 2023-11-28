@@ -9,30 +9,36 @@ class AdminController extends Controller
 {
 
     public function index(){
-        $this->renderAdmin("logins/index");
+        $this->render("admin/logins/index");
     }
 
     public function login()
     {
-        $tb = ''; // Khởi động thông báo lỗi trống
-
-        if (isset($_POST['btn_submit'])) {
-            $nameAccount = trim($_POST['name-account']);
-            $password = trim($_POST['password']);
-            
-            $adminModel = new Admin;
-            $admin = $adminModel->checkUser("name_account = '$nameAccount' and password = '$password'");
-            
-            if(!empty($admin)){
-                $_SESSION['name_account'] = $admin['name'];
-                header('location: /admin/dashboard');
-                exit(); 
-            } else {
-                $tb = 'Tài khoản không tồn tại.Vui lòng kiểm tra lại';
+        echo "account: " .$_POST['user-name'];
+        echo "</br>";
+        echo "password: " .$_POST['password'];
+        echo "</br>";
+        $admins = (new Admin)->all();
+        var_dump($admins);
+        foreach ($admins as $admin) {
+            if ($_POST['user-name']==$admin['name_account'] && $_POST['password']==$admin['password']) {
+                $_SESSION['name_account'] = $_POST['user-name'];
+                $_SESSION['id_admin'] = $admin['id'];                           //Mã nguồn ADMIN
             }
         }
-
-        // Hiển thị đăng nhập cùng thông báo lỗi
-        $this->renderAdmin("logins/index", ['tb' => $tb]);
+        if (isset($_SESSION['name_account']) && isset($_SESSION['id_admin'])) {
+            header('location: /admin/dashboard');
+        }
+        else{
+            $err = [
+                'account_err'=> 'Tài khoản không chính xác',
+                'password'=>'Mật khẩu không đúng',
+            ];
+            $this->render("admin/logins/index", ['err'=>$err]);
+        }
+    }
+    public function logout(){
+        session_destroy();                      //Xóa Thông tin
+        header('location: /admin/dashboard');
     }
 }
