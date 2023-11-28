@@ -1,6 +1,6 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/png" href="../../Image/N.png">
+    <link rel="icon" type="image/png" href="/asset-client/Image/N.png">
     <style type="text/css">
     img.wp-smiley,
     img.emoji {
@@ -15,8 +15,8 @@
         padding: 0 !important;
     }
     </style>
-    <link rel='stylesheet' id='wp-block-library-css' href='../../css-display/style.min.css'/>
-    <link rel='stylesheet' id='classic-theme-styles-css' href='../../css-display/classic-themes.min.css' />
+    <link rel='stylesheet' id='wp-block-library-css' href='/asset-client/css-display/style.min.css'/>
+    <link rel='stylesheet' id='classic-theme-styles-css' href='/asset-client/css-display/classic-themes.min.css' />
     <style id='global-styles-inline-css' type='text/css'>
         body {
             --wp--preset--color--black: #000000;
@@ -443,16 +443,15 @@
 
         }
     </style>
-    <link rel='stylesheet' id='dashicons-css' href='../css-display/dashicons.min.css' />
-    <link rel='stylesheet' id='toc-screen-css' href='../css-display/screen.min.css' />
-    <link rel='stylesheet' id='td-plugin-newsletter-css' href='../css-display/td-newsletter/style.css'/>
-    <link rel='stylesheet' id='td-plugin-multi-purpose-css' href='../css-display/td-multi-purpose/style.css' />
-    <link rel='stylesheet' id='google-fonts-style-css' href='../css-display/google-fonts-style-css.css'/>
-    <link rel='stylesheet' id='td-theme-css' href='../css-display/Newspaper/style.css' />
-    <link rel='stylesheet' id='tdb_front_style-css' href='../css-display/tdb_less_front.css' />
-    <link rel="icon" href="../Image/N.png" sizes="32x32" />
-    <link rel="icon" href="../Image/N.png" sizes="192x192" />
-
+    <link rel='stylesheet' id='dashicons-css' href='/asset-client/css-display/dashicons.min.css' />
+    <link rel='stylesheet' id='toc-screen-css' href='/asset-client/css-display/screen.min.css' />
+    <link rel='stylesheet' id='td-plugin-newsletter-css' href='/asset-client/css-display/td-newsletter/style.css'/>
+    <link rel='stylesheet' id='td-plugin-multi-purpose-css' href='/asset-client/css-display/td-multi-purpose/style.css' />
+    <link rel='stylesheet' id='google-fonts-style-css' href='/asset-client/ss-display/google-fonts-style-css.css'/>
+    <link rel='stylesheet' id='td-theme-css' href='/asset-client/css-display/Newspaper/style.css' />
+    <link rel='stylesheet' id='tdb_front_style-css' href='/asset-client/css-display/tdb_less_front.css' />
+    <link rel="icon" href="/asset-client/Image/N.png" sizes="32x32" />
+    <link rel="icon" href="/asset-client/Image/N.png" sizes="192x192" />
     <style>
         .block-title>span,
         .block-title>span>a,

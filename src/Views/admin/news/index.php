@@ -52,18 +52,22 @@
                                             <tbody>
                                                     <?php foreach ($news as $new) :?>
                                                     <tr>
-                                                        <td><?= $new['img_1']?></td>
+                                                        <td style="width: 10%;"><img class="img-fluid width-100" src="/img_file/<?= $new['avatar']?>" alt=""></td>
                                                         <td><?= $new['title']?></td>
                                                         <td><a href="" class="__cf_email__"><!--Tạo liên kết đến người dùng-->
                                                             <?php 
+                                                                $name = "";
                                                                 foreach ($users as $user) {
-                                                                    if ($new['id_user']==$user['id']) {
-                                                                        echo $user['name'];
-                                                                    }
-                                                                    else{
-                                                                        echo "Admin";
+                                                                    foreach ($writing as $write) {
+                                                                        if ($new['id']==$write['id_news'] && $write['id_user']==$user['id']) {
+                                                                            $name = $user['name'];
+                                                                        }
                                                                     }
                                                                 }
+                                                                if ($name == "") {
+                                                                    $name = "Admin";
+                                                                }
+                                                                    echo $name;
                                                             ?>
                                                         </a></td>
                                                         <td>

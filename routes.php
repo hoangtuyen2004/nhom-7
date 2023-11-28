@@ -28,6 +28,7 @@ $router->addRoute('/admin/categories/delete', CategoryController::class, 'delete
 
 $router->addRoute('/admin/news', NewsController::class, 'index');
 $router->addRoute('/admin/news/create', NewsController::class, 'create');
+$router->addRoute('/admin/news/createContent', NewsController::class, 'createContent');
 $router->addRoute('/admin/news/update', NewsController::class, 'update');
 $router->addRoute('/admin/news/delete', NewsController::class, 'delete');
 $router->addRoute('/admin/news/more', NewsController::class, 'more');

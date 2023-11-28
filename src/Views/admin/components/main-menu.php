@@ -32,7 +32,7 @@
                 <li class>
                     <a href="/admin/news" class="waves-effect waves-dark">
                         <span class="pcoded-micon">
-                            <i class="feather icon-menu"></i>
+                        <i class="fa fa-cloud"></i>
                         </span>
                         <span class="pcoded-mtext">Quản lý bài đăng</span>
                     </a>
@@ -41,7 +41,7 @@
                 <li class>
                 <a href="/admin/comments" class="waves-effect waves-dark">
                                             <span class="pcoded-micon">
-                                                <i class="feather icon-mail"></i>
+                                            <i class="fa fa-comment"></i>
                                             </span>
                                             <span class="pcoded-mtext">Comment</span>
                                         </a>
