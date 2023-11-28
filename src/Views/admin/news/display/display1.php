@@ -1,6 +1,6 @@
-<style>
-    <?php ?>
-</style>
+    <?php 
+        echo "trạng thái 1";
+    ?>
     <div class="td-ss-main-content">
 
         <article id="post-12641"
