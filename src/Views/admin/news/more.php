@@ -1,3 +1,6 @@
+<style>
+    <?php include_once '/laragon/www/nhom_7/asset-client/display/componient/head.php';?>
+</style>
 <div class="pcoded-content">
 
     <div class="page-header card">
@@ -45,16 +48,10 @@
                     </div>
                 </div>
                 <div class="card-block p-b-0">
-                    <div class="table-responsive">
-                    <div class="td-pb-row">
+                    <div class="table-responsive" style="padding: 20px;">
 
-                        <!-- Section-article -->
-                            <?php include_once './conten/section.php';?>
+                    <?php include_once '/laragon/www/nhom_7/src/Views/admin/news/display/display1.php';?>
 
-                        <!-- Asile -->
-                            <?php include_once './conten/asile.php';?>
-
-                    </div>
                     </div>
                 </div>
             </div>
