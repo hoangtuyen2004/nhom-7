@@ -5,12 +5,11 @@ namespace Ductong\BaseMvc\Models;
 use Ductong\BaseMvc\Model;
 
 class Comment extends Model {
-    protected $table = 'comment';
+    protected $table = 'comments';
     protected $columns = [
-        'id',
-        'id_news',
         'id_user',
-        'content',
+        'id_news',
+        'comment',
         'note',
         'id_status',
     ];
