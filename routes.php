@@ -58,7 +58,3 @@ $router->addRoute('/admin/commit', NoteController::class, 'index');
 $router->addRoute('/admin/commit/list', NoteController::class, 'list');
 $router->addRoute('/admin/commit/unlist', NoteController::class, 'unlist');
 $router->addRoute('/admin/commit/update', NoteController::class, 'update');
-
-
-
-
