@@ -1,8 +1,6 @@
 
 <?php 
 
-    <?php 
-
         echo "trạng thái 1";
     ?>
     <div class="td-ss-main-content">
@@ -14,7 +12,7 @@
 
                 <ul class="td-category">
                     <li class="entry-category">
-                        <a href="#">Món Ăn Gia Đình</a><!-- CATEGORY -->
+                        <a href="#">Món Ăn Gia Đình</a>
                     </li>
                 </ul>
 
