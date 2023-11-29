@@ -9,7 +9,13 @@ class Controller {
 
         include "Views/$view.php";
     }
+    //Render user
+    protected function renderUser($view, $data = []){
+        $data['view'] = $view;
 
+        extract($data);
+        include "Views/client/user/index.php";
+    }
     // Render ra giao diện Admin
     protected function renderAdmin($view, $data = []) {
         $data['view'] = $view;

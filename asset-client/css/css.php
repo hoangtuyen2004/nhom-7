@@ -95,6 +95,32 @@
         width: 50px;
         border: 1px solid #ED9E9E;
         border-radius: 50%;
+        height: 50px;
+        object-fit: cover;
     }
 </style>
+<style>
+        .menu-bar{
+
+        }
+        .dropdown-menu{
+            margin-left: 40px;
+            margin-top: -20px;
+        }
+        .dropdown-menu li{
+            margin: 0;
+            padding: 0;
+        }
+        .dropdown-menu li:hover{
+            background-color: white;
+        }
+        .nav-bar{
+            display: block;
+            padding-left: 20px;
+        }
+        .nav-bar:hover{
+            background-color: white;
+            color: #4099ff;
+        }
+    </style>
 <script src="https://kit.fontawesome.com/2e8884d211.js" crossorigin="anonymous"></script>

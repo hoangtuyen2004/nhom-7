@@ -7,11 +7,19 @@ use Ductong\BaseMvc\Controllers\Admin\CommentController;
 use Ductong\BaseMvc\Controllers\Admin\DashboardController;
 use Ductong\BaseMvc\Controllers\Admin\NewsController;
 use Ductong\BaseMvc\Controllers\Client\HomeController;
+use Ductong\BaseMvc\Controllers\Client\LoginController;
 use Ductong\BaseMvc\Router;
 
 $router = new Router();
 
 $router->addRoute('/', HomeController::class, 'index');
+$router->addRoute('/client/user', HomeController::class, 'user');
+
+$router->addRoute('/client/login', LoginController::class, 'login');
+$router->addRoute('/client/logout', LoginController::class, 'logout');
+
+
+
 
 $router->addRoute('/admin/dashboard', DashboardController::class, 'index');
 
