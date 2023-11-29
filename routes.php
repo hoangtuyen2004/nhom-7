@@ -44,7 +44,3 @@ $router->addRoute('/admin/comments/delete', CommentController::class, 'delete');
 $router->addRoute('/admin/logins', AdminController::class, 'index');
 $router->addRoute('/admin/logins/index', AdminController::class, 'login');
 $router->addRoute('/admin/logins/logout', AdminController::class, 'logout');
-
-
-
-
