@@ -6,6 +6,7 @@ use Ductong\BaseMvc\Controllers\Admin\CategoryController;
 use Ductong\BaseMvc\Controllers\Admin\CommentController;
 use Ductong\BaseMvc\Controllers\Admin\DashboardController;
 use Ductong\BaseMvc\Controllers\Admin\NewsController;
+use Ductong\BaseMvc\Controllers\Admin\NoteController;
 use Ductong\BaseMvc\Controllers\Client\HomeController;
 use Ductong\BaseMvc\Controllers\Client\LoginController;
 use Ductong\BaseMvc\Router;
@@ -52,3 +53,8 @@ $router->addRoute('/admin/comments/delete', CommentController::class, 'delete');
 $router->addRoute('/admin/logins', AdminController::class, 'index');
 $router->addRoute('/admin/logins/index', AdminController::class, 'login');
 $router->addRoute('/admin/logins/logout', AdminController::class, 'logout');
+
+$router->addRoute('/admin/commit', NoteController::class, 'index');
+$router->addRoute('/admin/commit/list', NoteController::class, 'list');
+$router->addRoute('/admin/commit/unlist', NoteController::class, 'unlist');
+$router->addRoute('/admin/commit/update', NoteController::class, 'update');

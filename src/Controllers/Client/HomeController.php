@@ -14,8 +14,13 @@ class HomeController extends Controller
         $this->render('client/home');//Điều hướng tới home.php của clinet
     }
     public function user() {
-        $user = (new User)->findOne($_SESSION['id_user']);
-        $this->renderUser('acton/user',['user' => $user]);
+        if (isset($_SESSION['id_user'])) {
+            $user = (new User)->findOne($_SESSION['id_user']);
+            $this->renderUser('acton/user',['user' => $user]);
+        }
+        else {
+            header('location: /client/login');
+        }
     }
 
 }   
