@@ -4,18 +4,14 @@
     <?php include_once '/laragon/www/nhom_7/src/Views/client/components/head.php';?>
     <?php include_once '/laragon/www/nhom_7/asset-client/css/css.php';?>
     <?php include_once '/laragon/www/nhom_7/src/Views/client/components/style.php';?>
-    <title>Food news | Nhóm 7</title>
+    <title>Document</title>
 </head>
 <body>
-
-    <!-- Header -->
+<!-- NAV_MAIN -->
     <?php include_once '/laragon/www/nhom_7/src/Views/client/components/header.php';?>
-    <!-- Menu-main -->
-    <?php include_once '/laragon/www/nhom_7/src/Views/client/components/nav-main.php';?>
-    <!-- Content -->
-    <?php include_once '/laragon/www/nhom_7/src/Views/client/index.php';?>
-
-    <!-- Foodter -->
+<!-- CONTENT -->
+    <?php include_once '/laragon/www/nhom_7/src/Views/client/login/components/body.php';?>
+<!-- FOOTER -->
     <?php include_once '/laragon/www/nhom_7/src/Views/client/components/footer.php';?>
 </body>
 </html>

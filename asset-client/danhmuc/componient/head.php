@@ -4,10 +4,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' />
     <link rel="icon" type="image/png" href="../../">
-    <!-- This site is optimized with the Yoast SEO plugin v20.13 - https://yoast.com/wordpress/plugins/seo/ -->
     <link rel="canonical" href="../../Image/N.png" />
     <link rel='dns-prefetch' href='//fonts.googleapis.com' />
-
     <style type="text/css">
         img.wp-smiley,
         img.emoji {

@@ -126,8 +126,8 @@ class NewsController extends Controller
                 $data = [
                     'content'=>$_POST['content_1'],
                     'img_1'=>$img_1['name'],
-                    'img_2'=>"đ",
-                    'img_3'=>"đ",
+                    'img_2'=>"",
+                    'img_3'=>"",
                     'id_title_1'=>$title_1['id'],
                 ];
                 (new Content)->insert($data);
@@ -201,64 +201,42 @@ class NewsController extends Controller
             $comments =  (new Comment)->all();
             $notes = (new Note)->all();
             $favorites = (new Favorite)->all();
-            foreach ($title_1s as $title_1) {            //Xóa bảng title
-                foreach ($title_2s as $title_2) {                   //Title_2 delete
-                    if ($title_1['id']==$title_2['id_title_1']) {
+        //TITLE 1
+            foreach ($title_1s as $title_1) {
+                foreach ($title_2s as $title_2) {       //Vòng lặp dữ liệu Title_2
+                    if ($title_2['id_title_1']==$title_1['id']) {       //Điều kiện: Nếu id_title_1 của bảng title2 = id của bảng title_1
                         $conditions = [
                             ['id_title_1', '=', $title_1['id']]
                         ];
-                        (new Title_2)->delete($conditions);
+                        echo "Điều kiện: Nếu id_title_1 của bảng title2 = id của bảng title_1: " . var_dump($conditions);
+                        // (new Title_2)->delete($conditions);             //Xóa title_2 hợp lệ
                     }
                 }
-                foreach ($contens as $conten) {                     //Content delete
-                    if ($title_1['id']==$conten['id_title_1']) {
-                        $conditions = [
-                            ['id_title_1', '=', $title_1['id']]
-                        ];
-                        (new Content)->delete($conditions);
-                    }
+                foreach ($contens as $conten) {
+                    if ($conten['id_title_1']) {
+                        
+                    }                    
                 }
-                $conditions = [
-                    ['id_news', '=', $id_new]
-                ];
-                (new Title_1)->delete($conditions);
+
+
+
+                if ($title_1['id_news']==$id_new) {
+                    $conditions = [                     //Điều kiện: Nếu id_news của $title_1 = id của news
+                        ['id_news', '=', $id_new]
+                    ];
+                    echo "Điều kiện: Nếu id_news của title_1 = id của news: " .var_dump($conditions);
+                    // (new Title_1)->delete($conditions);              //Xóa title_1 hợp lệ
+                }
                 
             }
-            foreach ($writing as $write) {              //Xóa bảng viết
-                if ($write['id_news']==$id_new) {
-                    $conditions = [
-                        ['id_news', '=', $id_new]
-                    ];
-                    (new Writing)->delete($conditions);
-                }
-            }
-            foreach ($comments as $comment) {           //Xóa Bảng comment
-                if ($comment['id_news']=$id_new) {
-                    $conditions = [
-                        ['id_news', '=', $id_new]
-                    ];
-                    (new Comment)->delete($conditions);
-                }
-            }
-            foreach ($notes as $note) {                 //Xóa bảng note
-                if ($note['id_news']==$id_new) {
-                    $conditions = [
-                        ['id_news', '=', $id_new]
-                    ];
-                    (new Note)->delete($conditions);
-                }
-            }
-            foreach ($favorites as $favorite) {         //Xóa bảng favorite
-                if ($favorite['id_news']==$id_new) {
-                    $conditions = [
-                        ['id_news', '=', $id_new]
-                    ];
-                    (new Favorite)->delete($conditions);
-                }
-            }
+
+
+
             $conditions = [
                 ['id', '=', $_GET['id']]
             ];
+            echo "</br>";
+            var_dump($conditions);
             (new News)->delete($conditions);
             header('Location: /admin/news');
         }
