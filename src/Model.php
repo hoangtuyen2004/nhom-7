@@ -150,7 +150,7 @@ class Model
     public function updateColumn($column,$value, $conditions)
         {
             
-            $sql = "UPDATE {$this->table} SET $column = $value  WHERE $conditions";
+            $sql = "UPDATE {$this->table} SET $column = '$value'  WHERE $conditions";
             $stmt = $this->conn->prepare($sql);
             $stmt->execute();
         }
