@@ -25,7 +25,6 @@ class Model
             die($e->getMessage());
         }
     }
-
     public function findOne($id)
     {
         $sql = "SELECT * FROM {$this->table} WHERE id = :id LIMIT 1";
@@ -41,6 +40,19 @@ class Model
         return $stmt->fetch();
     }
 
+    //Thêm modell check ACCOUNT ADMIN
+    public function checkUser($where = 1)
+    {
+        $sql = "SELECT * FROM {$this->table} WHERE $where";
+        $stmt = $this->conn->prepare($sql);
+        
+        $stmt->execute();
+
+        return $stmt->fetch(\PDO::FETCH_ASSOC);
+        
+    }
+
+
     public function all($column = 'id')
         {
             $sql = "SELECT * FROM {$this->table} ORDER BY {$column} DESC";
@@ -53,7 +65,7 @@ class Model
 
             return $stmt->fetchAll();
         }
-
+    
     public function paginate($page = 1, $perPage = 10)
         {
             $sql = "SELECT * FROM {$this->table} LIMIT {$perPage} OFFSET (({$page} - 1) * {$perPage})";
@@ -163,6 +175,15 @@ class Model
 
             $stmt->execute();
         }
+    
+    public function countColumn($column){
+        $sql = "SELECT $column, COUNT(*) AS so_luong FROM {$this->table} GROUP BY $column;";
+        $stmt = $this->conn->prepare($sql);
+        $stmt->execute();
+        $stmt->setFetchMode(\PDO::FETCH_ASSOC);
+
+        return $stmt->fetchAll();
+    }
 
     public function __destruct()
         {

@@ -12,8 +12,8 @@ class UserController extends Controller
     */
     public function index() {
         $users = (new User)->all();
-        
-        $this->renderAdmin('users/index', ['users' => $users]);
+        $count = (new User)->countColumn("id_role");
+        $this->renderAdmin('users/index', ['users' => $users, 'count' => $count]);
         }
 
     public function create() {
@@ -91,4 +91,9 @@ class UserController extends Controller
         (new User)->updateColumn($column,$value, $conditions);
         header('Location: /admin/users');
     }
+
+    
+
+
+
 }

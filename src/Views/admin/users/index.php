@@ -27,16 +27,24 @@
         <div class="main-body">
             <div class="page-wrapper">
                 <div class="page-body">
-                    
                     <div class="row">
                         <div class="col-md-12 col-xl-4">
                             <div class="card comp-card">
                                 <div class="card-body">
                                     <div class="row align-items-center">
                                         <div class="col">
-                                            <h6 class="m-b-25">Impressions</h6>
-                                            <h3 class="f-w-700 text-c-blue">1,563</h3>
-                                            <p class="m-b-0">May 23 - June 01 (2017)</p>
+                                            <h6 class="m-b-25">User</h6>
+                                            <h3 class="f-w-700 text-c-blue">
+                                            <?php 
+                                                    $so_luong = 0;
+                                                    foreach ($count as $key => $value) {
+                                                        if ($value['id_role']==1) {
+                                                            $so_luong = $so_luong + 1;
+                                                        }
+                                                    }
+                                                    echo $so_luong;
+                                                ?>
+                                            </h3>
                                         </div>
                                         <div class="col-auto">
                                             <i class="fas fa-eye bg-c-blue"></i>
@@ -50,9 +58,18 @@
                                 <div class="card-body">
                                     <div class="row align-items-center">
                                         <div class="col">
-                                            <h6 class="m-b-25">Impressions</h6>
-                                            <h3 class="f-w-700 text-c-blue">1,563</h3>
-                                            <p class="m-b-0">May 23 - June 01 (2017)</p>
+                                            <h6 class="m-b-25">Writer</h6>
+                                            <h3 class="f-w-700 text-c-blue">
+                                            <?php 
+                                                    $so_luong = 0;
+                                                    foreach ($count as $key => $value) {
+                                                        if ($value['id_role']==2) {
+                                                            $so_luong = $so_luong + 1;
+                                                        }
+                                                    }
+                                                    echo $so_luong;
+                                                ?>
+                                            </h3>
                                         </div>
                                         <div class="col-auto">
                                         <i class="fa fa-edit bg-c-yellow"></i>
@@ -66,9 +83,18 @@
                                 <div class="card-body">
                                     <div class="row align-items-center">
                                         <div class="col">
-                                            <h6 class="m-b-25">Impressions</h6>
-                                            <h3 class="f-w-700 text-c-blue">1,563</h3>
-                                            <p class="m-b-0">May 23 - June 01 (2017)</p>
+                                            <h6 class="m-b-25">Blocked</h6>
+                                            <h3 class="f-w-700 text-c-blue">
+                                            <?php 
+                                                    $so_luong = 0;
+                                                    foreach ($count as $key => $value) {
+                                                        if ($value['id_role']==3) {
+                                                            $so_luong = $so_luong + 1;
+                                                        }
+                                                    }
+                                                    echo $so_luong;
+                                                ?>
+                                            </h3>
                                         </div>
                                         <div class="col-auto">
                                         <i class="fa fa-user-times bg-c-red"></i>
