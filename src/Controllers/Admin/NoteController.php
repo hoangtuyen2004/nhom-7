@@ -12,10 +12,13 @@ class NoteController extends Controller {
         $commits = (new Note)->all();
         $users = (new User)->all();
         $news = (new News)->all();
-
+        $conditions = [
+            ['id_status','=','1']
+        ];
+        $newU = (new News)->findColumns($conditions);
         //Thuật toán filter
 
-        $this->renderAdmin('commit/index', ['commits'=>$commits, 'users'=>$users, 'news'=>$news]);
+        $this->renderAdmin('commit/index', ['commits'=>$commits, 'users'=>$users, 'news'=>$news, 'newU'=>$newU]);
     }
     public function list() {
         $id_commit = $_GET['id'];

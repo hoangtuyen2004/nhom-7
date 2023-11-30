@@ -91,7 +91,7 @@
                                                             </label>
                                                         </td>
                                                         <td>
-                                                            <a href="/admin/news/more?id=<?= $new['id']?> && id_display=<?= $new['id_display']?>" class="btn btn-warning btn-sm">Chi Tiết</a>
+                                                            <a href="/admin/news/more?id=<?= $new['id']?>" class="btn btn-warning btn-sm">Chi Tiết</a>
                                                             <form action="/admin/news/delete?id=<?= $new['id'] ?>" method="post">
                                                                 <button type="submit" onclick="return confirm('Bạn có chắc chắn xóa bài viết này?');" class="btn btn-danger btn-sm mt-2">Xóa</button>
                                                             </form>
