@@ -14,7 +14,6 @@
     <?php include_once '/laragon/www/nhom_7/src/Views/client/components/nav-main.php';?>
     <!-- Content -->
     <?php include_once '/laragon/www/nhom_7/src/Views/client/index.php';?>
-
     <!-- Foodter -->
     <?php include_once '/laragon/www/nhom_7/src/Views/client/components/footer.php';?>
 </body>

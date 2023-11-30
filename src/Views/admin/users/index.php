@@ -37,8 +37,8 @@
                                             <h3 class="f-w-700 text-c-blue">
                                             <?php 
                                                     $so_luong = 0;
-                                                    foreach ($count as $key => $value) {
-                                                        if ($value['id_role']==1) {
+                                                    foreach ($count as $coun) {
+                                                        if ($coun['id_role']==1) {
                                                             $so_luong = $so_luong + 1;
                                                         }
                                                     }
@@ -62,8 +62,8 @@
                                             <h3 class="f-w-700 text-c-blue">
                                             <?php 
                                                     $so_luong = 0;
-                                                    foreach ($count as $key => $value) {
-                                                        if ($value['id_role']==2) {
+                                                    foreach ($count as $coun) {
+                                                        if ($coun['id_role']==2) {
                                                             $so_luong = $so_luong + 1;
                                                         }
                                                     }
@@ -87,8 +87,8 @@
                                             <h3 class="f-w-700 text-c-blue">
                                             <?php 
                                                     $so_luong = 0;
-                                                    foreach ($count as $key => $value) {
-                                                        if ($value['id_role']==3) {
+                                                    foreach ($count as $coun) {
+                                                        if ($coun['id_role']==3) {
                                                             $so_luong = $so_luong + 1;
                                                         }
                                                     }
