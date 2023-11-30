@@ -46,7 +46,7 @@ $router->addRoute('/admin/news/delete', NewsController::class, 'delete');
 $router->addRoute('/admin/news/more', NewsController::class, 'more');
 
 $router->addRoute('/admin/comments', CommentController::class, 'index');
-$router->addRoute('/admin/comments/create', CommentController::class, 'create');
+$router->addRoute('/admin/comments/ctComment', CommentController::class, 'ctComment');
 $router->addRoute('/admin/comments/update', CommentController::class, 'update');
 $router->addRoute('/admin/comments/delete', CommentController::class, 'delete');
 
