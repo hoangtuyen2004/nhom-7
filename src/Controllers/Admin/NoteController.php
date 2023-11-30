@@ -13,6 +13,7 @@ class NoteController extends Controller {
         $users = (new User)->all();
         $news = (new News)->all();
 
+        //Thuật toán filter
 
         $this->renderAdmin('commit/index', ['commits'=>$commits, 'users'=>$users, 'news'=>$news]);
     }
@@ -61,15 +62,39 @@ class NoteController extends Controller {
         $commits = (new Note)->all();   
         foreach ($commits as $commitc) {
             if ($commitc['id']!=$id_commit) {
-                //Chuyền thông báo tới người dùng
+                //Chuyền thông báo tới người dùng rằng giá trị này ngoài vùng commit
                 header('location: /admin/commit');
             }
             else{
                 $status = (new Status)->all();
-                $users = (new User)->all();
                 $commit = (new Note)->findOne($id_commit);
-                $this->renderAdmin('commit/update',['commit'=>$commit, 'status'=>$status, 'users'=>$users]);
+                $user = (new User)->findOne($commit['id_user']);
+                $new = (new News)->findOne($commit['id_news']);
             }
+        }
+        if (isset($_POST['btm-submit'])) {
+            $reply = $_POST['reply'];
+            $status;
+            if ($_POST['status']=="") {
+                $status = 3;
+            }
+            else {
+                $status = $_POST['status'];
+            }
+            //Reply for user
+            $conditions = "id = ".$id_commit;
+            $column = 'reply';
+            (new Note)->updateColumn($column,$reply,$conditions);
+
+            //UPDATE news status
+            $column = "id_status";
+            $conditions = "id=".$commit['id_news'];
+            (new News)->updateColumn($column,$status,$conditions);
+            header('location: /admin/commit');
+        }
+
+        if (isset($status) && isset($user) && isset($commit)) {
+            $this->renderAdmin('commit/update',['commit'=>$commit, 'status'=>$status, 'user'=>$user, 'new'=>$new]);
         }
     }
 }

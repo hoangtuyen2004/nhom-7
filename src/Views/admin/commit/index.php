@@ -104,7 +104,9 @@
                                                                 <button type="submit"
                                                                     onclick="return confirm('Bạn có chắc chắn không duyệt cho bài viết này');"
                                                                     class="btn btn-danger btn-sm mt-2">Không kiểm
-                                                                    duyệt</button>
+                                                                    duyệt</button><br>
+                                                            <a href="/admin/commit/update?id=<?=$commit['id']?>"
+                                                                class="btn btn-warning btn-sm mt-2">Chỉnh sửa</a>
                                                             </form>
                                                         </td>
                                                     </tr>

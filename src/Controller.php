@@ -21,7 +21,12 @@ class Controller {
         $data['view'] = $view;
 
         extract($data);
-
-        include "Views/admin/master.php";
+        //kiểm tra admin
+        if (isset($_SESSION['name_account']) && isset($_SESSION['id_admin'])) {
+            include "Views/admin/master.php";
+        }
+        else {
+            header('location: /admin/logins');
+        }
     }
 }
