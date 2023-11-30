@@ -16,6 +16,7 @@ class LoginController extends Controller {
                     if ($user['name_account']==$account_user && $user['password']==$password) {
                         $_SESSION['name_account'] = $account_user;
                         $_SESSION['id_user'] = $user['id'];
+                        $_SESSION['id_role'] = $user['id_role'];
             header('location: /');
                     }
                 }

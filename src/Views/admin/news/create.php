@@ -47,7 +47,12 @@
                                                 <option value="3">From 2</option>
                                             </select>
                                         </div>
-
+                                        <div class="col-sm-12 col-xl-3 m-b-30 mw-100">
+                                                <label class="col-sm-2 col-form-label" for="avatar">Ảnh đại diện cho bài viết</label>
+                                                <div class="col-sm-12">
+                                                    <input type="file" name="avatar" class="form-control p-1">
+                                                </div>
+                                        </div>
                                         <div class="col-sm-12 col-xl-3 m-b-30 mw-100">
                                             <label class="col-sm-2 col-form-label" for="title">TIÊU ĐỀ</label>
                                             <div class="col-sm-12">
@@ -60,29 +65,79 @@
                                             <textarea rows="5" cols="5" name="subtitle" class="form-control" placeholder="Nội dung phụ đề"></textarea>
                                             </div>
                                         </div>
+                                        <!-- IMG 1 -->
                                         <div class="col-sm-12 col-xl-3 m-b-30 mw-100">
-                                                <label class="col-sm-2 col-form-label" for="avatar">Upload File</label>
+                                                <label class="col-sm-2 col-form-label" for="avatar">Ảnh nội dung</label>
                                                 <div class="col-sm-12">
-                                                    <input type="file" name="avatar" class="form-control p-1">
+                                                    <input type="file" name="img_1" class="form-control p-1">
                                                 </div>
                                         </div>
+                                        <!-- IMG 2 -->
+                                        <div class="col-sm-12 col-xl-3 m-b-30 mw-100">
+                                                <label class="col-sm-2 col-form-label" for="avatar">Ảnh nội dung</label>
+                                                <div class="col-sm-12">
+                                                    <input type="file" name="img_2" class="form-control p-1">
+                                                </div>
+                                        </div>
+                                        <!-- IMG 3 -->
+                                        <div class="col-sm-12 col-xl-3 m-b-30 mw-100">
+                                                <label class="col-sm-2 col-form-label" for="avatar">Ảnh nội dung</label>
+                                                <div class="col-sm-12">
+                                                    <input type="file" name="img_3" class="form-control p-1">
+                                                </div>
+                                        </div>
+                                        <!-- IMG 4 -->
+                                        <div class="col-sm-12 col-xl-3 m-b-30 mw-100">
+                                                <label class="col-sm-2 col-form-label" for="avatar">Ảnh nội dung</label>
+                                                <div class="col-sm-12">
+                                                    <input type="file" name="img_4" class="form-control p-1">
+                                                </div>
+                                        </div>
+                                        <!-- TITLE 1 -->
+                                        <div class="col-sm-12 col-xl-3 m-b-30 mw-100">
+                                            <label class="col-sm-2 col-form-label" for="title">TIÊU ĐỀ 1</label>
+                                            <div class="col-sm-12">
+                    <!-- TITLE -->               <input type="text" name="title_1" class="form-control form-control-lg" placeholder="Nội dung tiêu đề">
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-12 col-xl-3 m-b-30 mw-100">
+                    <!-- CONTENT -->       <label class="col-sm-2 col-form-label" for="subtitle">Nội dung 1</label>
+                                            <div class="col-sm-12">
+                                            <textarea rows="5" cols="5" name="content_1" class="form-control" placeholder="Nội dung phụ đề"></textarea>
+                                            </div>
+                                        </div>
+                                        <!-- TITLE 2 -->
+                                        <div class="col-sm-12 col-xl-3 m-b-30 mw-100">
+                                            <label class="col-sm-2 col-form-label" for="title">TIÊU ĐỀ 2</label>
+                                            <div class="col-sm-12">
+                    <!-- TITLE -->               <input type="text" name="title_2" class="form-control form-control-lg" placeholder="Nội dung tiêu đề">
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-12 col-xl-3 m-b-30 mw-100">
+                    <!-- SUBTITLE -->       <label class="col-sm-2 col-form-label" for="subtitle">NỘI DUNG 2</label>
+                                            <div class="col-sm-12">
+                                            <textarea rows="5" cols="5" name="content_2" class="form-control" placeholder="Nội dung phụ đề"></textarea>
+                                            </div>
+                                        </div>
+                            
                                         <div class="col-sm-12 col-xl-3 m-b-30 mw-100">
                                             <div class="col-sm-12">
                                                 <label class="ol-sm-2 col-form-label" for="category">Category</label>
 
                                                 <select name="category" class="form-control" >
-                                                    <option selected value="">Trống</option>
-                                                    <?php foreach ($categorys as $category) :?>
-                                                        <option value="<?= $category['id']?>"><?= $category['name']?></option>
-                                                    <?php endforeach?>
-                                                </select>
-                                            </div>
+                                                        <option selected value="">Trống</option>
+                                                        <?php foreach ($categorys as $category) :?>
+                                                            <option value="<?= $category['id']?>"><?= $category['name']?></option>
+                                                        <?php endforeach?>
+                                                    </select>
+                                                </div>
                                         </div>
+
                                         <div class="col-sm-12 col-xl-3 m-b-30 mw-100">
                                             <div class="col-sm-12">
-                                                <button type="submit" name="btn-submit" class="btn ml-1 btn-success alert-success-msg m-b-10">Next</button>
+                                                <button type="submit" name="btn-submit" class="btn ml-1 btn-success alert-success-msg m-b-10">CREATE</button>
                                                 <button type="reset" class="btn ml-1 btn-danger alert-success-cancel m-b-10">Reset</button>
-                                                <a class="btn ml-1 btn-primary alert-prompt m-b-10">Cancel</a>
+                                                <a href="/admin/news" class="btn ml-1 btn-primary alert-prompt m-b-10">Cancel</a>
                                             </div>
                                         </div>
                                     </div>

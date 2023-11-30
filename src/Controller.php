@@ -2,6 +2,8 @@
 
 namespace Ductong\BaseMvc;
 
+use Ductong\BaseMvc\Models\News;
+
 class Controller {
     // Render ra giao diện client
     protected function render($view, $data = []) {
@@ -21,10 +23,16 @@ class Controller {
         $data['view'] = $view;
 
         extract($data);
+        $conditions = [
+            ['id_status','=','1']
+        ];
+        $notify = (new News)->findColumns($conditions);
+        $_SESSION['commit'] = count($notify);
         //kiểm tra admin
         if (isset($_SESSION['name_account']) && isset($_SESSION['id_admin'])) {
             include "Views/admin/master.php";
         }
+
         else {
             header('location: /admin/logins');
         }

@@ -40,6 +40,32 @@ class Model
         return $stmt->fetch();
     }
 
+    public function findColumns($conditions = [])
+    {
+        $sql = "SELECT * FROM {$this->table}";
+        $where = [];
+    
+        foreach ($conditions as $condition) {
+            $link = $condition[3] ?? '';
+            $paramName = ":w{$condition[0]}";
+            $where[] = "{$condition[0]} {$condition[1]} $paramName {$link}";
+            $parameters[$paramName] = $condition[2];
+        }
+    
+        $where = implode(" ", $where);
+        $sql .= " WHERE {$where}";
+    
+        $stmt = $this->conn->prepare($sql);
+        foreach ($parameters as $paramName => $paramValue) {
+            $stmt->bindParam($paramName, $paramValue);
+        }
+        $stmt->execute();
+    
+        $stmt->setFetchMode(\PDO::FETCH_ASSOC);
+        return $stmt->fetchAll();
+    }
+    
+
     //Thêm modell check ACCOUNT ADMIN
     public function checkUser($where = 1)
     {
