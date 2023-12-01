@@ -940,7 +940,7 @@
                         <ul id="menu-menu-chinh-1" class="sf-menu">
                             <li
                                 class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-480 current_page_item menu-item-first td-menu-item td-normal-menu menu-item-12786">
-                                <a href="https://amthucbonmua.vn/">TRANG CHỦ</a>
+                                <a href="http://nhom_7.test/">TRANG CHỦ</a>
                             </li>
                             <li
                                 class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children td-menu-item td-normal-menu menu-item-7397">
@@ -1061,21 +1061,21 @@
                                             <div
                                                 class="td_module_mx5 td-animation-stack td-big-grid-post-0 td-big-grid-post td-big-thumb">
                                                 <div class="td-module-thumb"><a
-                                                        href="https://amthucbonmua.vn/ghe-massage-tri-lieu.html"
+                                                        href="../display/display1.php"
                                                         rel="bookmark" class="td-image-wrap"
                                                         title="Ghế massage trị liệu &#8211; Thiết bị hỗ trợ sức khoẻ tuyệt vời cho mọi người"><img
                                                             width="534" height="462" class="entry-thumb"
-                                                            src="https://amthucbonmua.vn/wp-content/uploads/2023/08/ghe-massage-tri-lieu-534x462.jpg"
+                                                             src="../display/display1.php"
                                                             alt="ghế massage trị liệu"
                                                             title="Ghế massage trị liệu &#8211; Thiết bị hỗ trợ sức khoẻ tuyệt vời cho mọi người" /></a>
                                                 </div>
                                                 <div class="td-meta-info-container">
                                                     <div class="td-meta-align">
                                                         <div class="td-big-grid-meta">
-                                                            <a href="https://amthucbonmua.vn/may-tap-the-thao/ghe-massage"
-                                                                class="td-post-category">Ghế massage</a>
+                                                            <a href="../display/display1.php"
+                                                                class="td-post-category">Cách nấu chè ngon</a>
                                                             <h3 class="entry-title td-module-title"><a
-                                                                    href="https://amthucbonmua.vn/ghe-massage-tri-lieu.html"
+                                                                    href="../display/display1.php"
                                                                     rel="bookmark"
                                                                     title="Ghế massage trị liệu &#8211; Thiết bị hỗ trợ sức khoẻ tuyệt vời cho mọi người">Ghế
                                                                     massage trị liệu &#8211; Thiết bị hỗ trợ sức khoẻ
