@@ -30,7 +30,7 @@
                 <div class="td-crumb-container">
                     <div class="entry-crumbs">
                         <span>
-                            <a title="" class="entry-crumb" href="https://amthucbonmua.vn/">Trang chủ</a>
+                            <a title="" class="entry-crumb" href="http://nhom_7.test/">Trang chủ</a>
                         </span>
                         <i class="td-icon-right td-bread-sep"></i>
                         <span>
