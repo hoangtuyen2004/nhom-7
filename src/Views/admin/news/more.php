@@ -31,7 +31,8 @@
         <div class="col-md-12">
             <div class="card table-card">
                 <div class="card-header">
-                    <h5>Mã hiển thị: <?= $news['id_display']?></h5>
+                    <h5>Mã hiển thị: <?= $new['id_display']?>------BÀI VIẾT:<?=$new['id']?></h5>
+
                     <div class="card-header-right">
                         <ul class="list-unstyled card-option">
                             <li class="first-opt"><i class="feather icon-chevron-left open-card-option"></i>
@@ -51,7 +52,7 @@
                     <div class="table-responsive" style="padding: 20px;">
 
                     <?php 
-                        $display = $_GET['id_display'];
+                        $display = $new['id_display'];
                         if ($display == 1) {
                             include_once '/laragon/www/nhom_7/src/Views/admin/news/display/display1.php';
                         }
@@ -65,7 +66,9 @@
                                 echo "Dữ liệu lỗi ERR 404";
                         }
                     ?>
-
+                    </div>
+                    <div class="row">
+                        <a href="" class=""></a>
                     </div>
                 </div>
             </div>
