@@ -8,6 +8,7 @@ use Ductong\BaseMvc\Controllers\Admin\DashboardController;
 use Ductong\BaseMvc\Controllers\Admin\NewsController;
 use Ductong\BaseMvc\Controllers\Admin\NoteController;
 use Ductong\BaseMvc\Controllers\Client\HomeController;
+use Ductong\BaseMvc\Controllers\Client\ListController;
 use Ductong\BaseMvc\Controllers\Client\LoginController;
 use Ductong\BaseMvc\Router;
 
@@ -19,6 +20,7 @@ $router->addRoute('/client/user', HomeController::class, 'user');
 $router->addRoute('/client/login', LoginController::class, 'login');
 $router->addRoute('/client/logout', LoginController::class, 'logout');
 
+$router->addRoute('/client/list/news', ListController::class, 'listNews');
 
 
 
