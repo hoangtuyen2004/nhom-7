@@ -18,7 +18,8 @@
         <form action="" method="post">
             <label for="name">Comment</label>
             <input type="text" name="comment" class="form-control" value="<?= $comments['comment'] ?>" placeholder="Chỉnh sửa comment" required>
-
+            <input type="text" name="id_user" id="" value="<?=$comments['id_user']?>" hidden>
+            <input type="text" name="id_news" id="" value="<?=$comments['id_news']?>" hidden>
             <button type="submit" name="btn-submit" class="btn btn-info mt-3">Submit</button>
             <a href="/admin/comments" class="btn btn-primary mt-3">Quay lại d/s</a>
         </form>
