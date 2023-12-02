@@ -8,18 +8,16 @@
                         <div class="td_module_mx5 td-animation-stack td-big-grid-post-0 td-big-grid-post td-big-thumb">
                             <?php foreach ($newTop as $newTop) :?>
                             <div class="td-module-thumb"><a href="/client/list/news?id=<?=$newTop['id']?>"
-                                    rel="bookmark" class="td-image-wrap"
-                                    title="<?=$newTop['title']?>"><img
-                                        width="534" height="462" class="entry-thumb"
-                                        src="/img_file/<?=$newTop['avatar']?>"
-                                        alt="<?=$newTop['title']?>"
-                                        title="<?=$newTop['title']?>" /></a>
+                                    rel="bookmark" class="td-image-wrap" title="<?=$newTop['title']?>"><img width="534"
+                                        height="462" class="entry-thumb" src="/img_file/<?=$newTop['avatar']?>"
+                                        alt="<?=$newTop['title']?>" title="<?=$newTop['title']?>" /></a>
                             </div>
                             <div class="td-meta-info-container">
                                 <div class="td-meta-align">
                                     <div class="td-big-grid-meta">
-                                        <a href="/client/list/category?id=<?=$newTop['id_category']?>" class="td-post-category">
-                                        <?php foreach ($categorys as $category) {
+                                        <a href="/client/list/category?id=<?=$newTop['id_category']?>"
+                                            class="td-post-category">
+                                            <?php foreach ($categorys as $category) {
                                             if ($category['id']==$newTop['id_category']) {
                                                 echo $category['name'];
                                             }
@@ -41,36 +39,8 @@
                                 class="td_module_mx11 td-animation-stack td-big-grid-post-1 td-big-grid-post td-medium-thumb">
                                 <?php foreach ($newTop2 as $newTop) :?>
                                 <div class="td-module-thumb">
-                                    <a href="/client/list/news?id=<?=$newTop['id']?>" rel="bookmark" class="td-image-wrap" title="<?=$newTop['title']?>">
-                                        <img width="533" height="261" class="entry-thumb"
-                                            src="/img_file/<?=$newTop['avatar']?>"
-                                            sizes="(max-width: 533px) 100vw, 533px" alt="<?=$newTop['title']?>"
-                                            title="<?=$newTop['title']?>" /></a>
-                                </div>
-                                <div class="td-meta-info-container">
-                                    <div class="td-meta-align">
-                                        <div class="td-big-grid-meta">
-                                            <a href="/client/list/category?id=<?=$newTop['id_category']?>" class="td-post-category">                                        
-                                                <?php foreach ($categorys as $category) {
-                                                if ($category['id']==$newTop['id_category']) {
-                                                    echo $category['name'];
-                                                }
-                                            }?></a>
-                                            <h3 class="entry-title td-module-title"><a
-                                                    href="/client/list/news?id=<?=$newTop['id']?>"
-                                                    rel="bookmark"
-                                                    title="<?=$newTop['title']?>"><?=$newTop['title']?></a></h3>
-                                        </div>
-                                    </div>
-                                </div>
-                                <?php endforeach?>
-                            </div>
-
-                            <?php foreach ($newTop3 as $newTop) :?>
-                            <div
-                                class="td_module_mx6 td-animation-stack td-big-grid-post-2 td-big-grid-post td-small-thumb">
-                                <div class="td-module-thumb">
-                                <a href="/client/list/news?id=<?=$newTop['id']?>" rel="bookmark" class="td-image-wrap" title="<?=$newTop['title']?>">
+                                    <a href="/client/list/news?id=<?=$newTop['id']?>" rel="bookmark"
+                                        class="td-image-wrap" title="<?=$newTop['title']?>">
                                         <img width="533" height="261" class="entry-thumb"
                                             src="/img_file/<?=$newTop['avatar']?>"
                                             sizes="(max-width: 533px) 100vw, 533px" alt="<?=$newTop['title']?>"
@@ -80,21 +50,80 @@
                                     <div class="td-meta-align">
                                         <div class="td-big-grid-meta">
                                             <a href="/client/list/category?id=<?=$newTop['id_category']?>"
-                                                class="td-post-category">    
+                                                class="td-post-category">
                                                 <?php foreach ($categorys as $category) {
-                                                    if ($category['id']==$newTop['id_category']) {
-                                                        echo $category['name'];
-                                                    }
-                                                }?></a>
+                                                if ($category['id']==$newTop['id_category']) {
+                                                    echo $category['name'];
+                                                }
+                                            }?></a>
                                             <h3 class="entry-title td-module-title"><a
-                                                    href="/client/list/news?id=<?=$newTop['id']?>"
-                                                    rel="bookmark"
+                                                    href="/client/list/news?id=<?=$newTop['id']?>" rel="bookmark"
                                                     title="<?=$newTop['title']?>"><?=$newTop['title']?></a></h3>
                                         </div>
                                     </div>
                                 </div>
+                                <?php endforeach?>
                             </div>
-                            <?php endforeach?>
+                            <div>
+                                <?php foreach ($newTop3 as $newTop) :?>
+                                <div
+                                    class="td_module_mx6 td-animation-stack td-big-grid-post-2 td-big-grid-post td-small-thumb">
+                                    <div class="td-module-thumb">
+                                        <a href="/client/list/news?id=<?=$newTop['id']?>" rel="bookmark"
+                                            class="td-image-wrap" title="<?=$newTop['title']?>">
+                                            <img width="533" height="261" class="entry-thumb"
+                                                src="/img_file/<?=$newTop['avatar']?>"
+                                                sizes="(max-width: 533px) 100vw, 533px" alt="<?=$newTop['title']?>"
+                                                title="<?=$newTop['title']?>" /></a>
+                                    </div>
+                                    <div class="td-meta-info-container">
+                                        <div class="td-meta-align">
+                                            <div class="td-big-grid-meta">
+                                                <a href="/client/list/category?id=<?=$newTop['id_category']?>"
+                                                    class="td-post-category">
+                                                    <?php foreach ($categorys as $category) {
+                                                    if ($category['id']==$newTop['id_category']) {
+                                                        echo $category['name'];
+                                                    }
+                                                }?></a>
+                                                <h3 class="entry-title td-module-title"><a
+                                                        href="/client/list/news?id=<?=$newTop['id']?>" rel="bookmark"
+                                                        title="<?=$newTop['title']?>"><?=$newTop['title']?></a></h3>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <?php endforeach?>
+                                <?php foreach ($newTop4 as $newTop) :?>
+                                <div
+                                    class="td_module_mx6 td-animation-stack td-big-grid-post-2 td-big-grid-post td-small-thumb" style="margin-left: 3px;">
+                                    <div class="td-module-thumb">
+                                        <a href="/client/list/news?id=<?=$newTop['id']?>" rel="bookmark"
+                                            class="td-image-wrap" title="<?=$newTop['title']?>">
+                                            <img width="533" height="261" class="entry-thumb"
+                                                src="/img_file/<?=$newTop['avatar']?>"
+                                                sizes="(max-width: 533px) 100vw, 533px" alt="<?=$newTop['title']?>"
+                                                title="<?=$newTop['title']?>" /></a>
+                                    </div>
+                                    <div class="td-meta-info-container">
+                                        <div class="td-meta-align">
+                                            <div class="td-big-grid-meta">
+                                                <a href="/client/list/category?id=<?=$newTop['id_category']?>"
+                                                    class="td-post-category">
+                                                    <?php foreach ($categorys as $category) {
+                                                    if ($category['id']==$newTop['id_category']) {
+                                                        echo $category['name'];
+                                                    }
+                                                }?></a>
+                                                <h3 class="entry-title td-module-title"><a
+                                                        href="/client/list/news?id=<?=$newTop['id']?>" rel="bookmark"
+                                                        title="<?=$newTop['title']?>"><?=$newTop['title']?></a></h3>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <?php endforeach?>
+                            </div>
                         </div>
                     </div>
                     <div class="clearfix"></div>
