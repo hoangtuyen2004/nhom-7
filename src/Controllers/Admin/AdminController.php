@@ -14,12 +14,8 @@ class AdminController extends Controller
 
     public function login()
     {
-        echo "account: " .$_POST['user-name'];
-        echo "</br>";
-        echo "password: " .$_POST['password'];
-        echo "</br>";
+        
         $admins = (new Admin)->all();
-        var_dump($admins);
         foreach ($admins as $admin) {
             if ($_POST['user-name']==$admin['name_account'] && $_POST['password']==$admin['password']) {
                 $_SESSION['name_account'] = $_POST['user-name'];
