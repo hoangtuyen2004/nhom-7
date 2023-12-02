@@ -1,4 +1,3 @@
-    <!-- Main -->
 
     <div id="td-outer-wrap" class="td-theme-wrap">
         <div class="td-main-content-wrap td-main-page-wrap td-container-wrap">
@@ -23,18 +22,17 @@
                     </div>
                 </div>
 
-                <!-- conten-hot -->
 
                 <div id="td_uid_3_655dbc191f701" class="tdc-row stretch_row_content td-stretch-content">
                     <?php include_once '/laragon/www/nhom_7/src/Views/client/components/sile.php';?>
                 </div>
 
-                <!-- content -->
+            <!-- content -->
 
-                <div id="td_uid_5_655dbc192232b" class="tdc-row">
-                    <div class="vc_row td_uid_7_655dbc192232f_rand td-ss-row wpb_row td-pb-row">
+            <div id="td_uid_5_655dbc192232b" class="tdc-row">
+                <div class="vc_row td_uid_7_655dbc192232f_rand td-ss-row wpb_row td-pb-row">
 
-                        <!-- Section   -->
+                    <!-- Section   -->
 
                         <div class="vc_column td_uid_8_655dbc1922458_rand  wpb_column vc_column_container tdc-column td-pb-span8">
                             <?php include_once '/laragon/www/nhom_7/src/Views/client/components/section.php';?>

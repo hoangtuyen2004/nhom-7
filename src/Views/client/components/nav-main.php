@@ -3,6 +3,8 @@
     <div class="td-header-menu-wrap td-header-gradient ">
         <div class="td-container td-header-row td-header-main-menu" style="display: flex;justify-content: center;">
             <div id="td-header-menu" role="navigation">
+                <div id="td-top-mobile-toggle"><a href="#"><i class="td-icon-font td-icon-mobile"></i></a>
+                </div>
                 <div class="menu-menu-chinh-container">
                     <ul id="menu-menu-chinh-1" class="sf-menu">
                         <li
