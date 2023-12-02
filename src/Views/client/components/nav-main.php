@@ -5,13 +5,6 @@
             <div id="td-header-menu" role="navigation">
                 <div id="td-top-mobile-toggle"><a href="#"><i class="td-icon-font td-icon-mobile"></i></a>
                 </div>
-                <div class="td-main-menu-logo td-logo-in-header">
-                    <a class="td-mobile-logo td-sticky-header" href="http://nhom_7.test/asset-client/Image/N.png">
-                        <img src="http://nhom_7.test/asset-client/Image/N.png"
-                            alt="logo" />
-                    </a>
-                   
-                </div>
                 <div class="menu-menu-chinh-container">
                     <ul id="menu-menu-chinh-1" class="sf-menu">
                         <li
