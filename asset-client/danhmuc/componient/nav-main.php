@@ -19,7 +19,7 @@
                     <ul id="menu-menu-chinh-1" class="sf-menu">
                         <li
                             class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-first td-menu-item td-normal-menu menu-item-12786">
-                            <a href="https://amthucbonmua.vn/">TRANG CHỦ</a>
+                            <a href="http://nhom_7.test/">TRANG CHỦ</a>
                         </li>
                         <li
                             class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children td-menu-item td-normal-menu menu-item-7397">

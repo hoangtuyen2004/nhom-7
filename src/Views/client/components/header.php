@@ -25,7 +25,7 @@
 <div class="background-header">
     <header class="container">
         <div class="header">
-            <div class="left-header"><a href="/"><img class="logo" src="/asset-client/Image/N.png" alt="logo"></a></div>
+            <div class="left-header"><a href="/"><img class="logo" src="http://nhom_7.test/asset-client/Image/N.png" alt="logo"></a></div>
             <div class="right-header">
                 <div class="account">
                     <a href="/client/user"><img src="https://i.pinimg.com/564x/cd/b4/7c/cdb47c30099f448dd179e9ca475d98c5.jpg"

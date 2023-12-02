@@ -458,7 +458,7 @@ Header style 10
     <div class="td-banner-wrap-full td-logo-wrap-full td-logo-mobile-loaded td-container-wrap ">
         <div class="td-header-sp-logo">
             			<a class="td-main-logo" href="https://amthucbonmua.vn/">
-				<img src="https://amthucbonmua.vn/wp-content/uploads/2020/08/amthucbonmua-300x112.png" alt="logo">
+				<img src="http://nhom_7.test/asset-client/Image/N.png" alt="logo">
 				<span class="td-visual-hidden">Amthucbonmua.vn</span>
 			</a>
 		        </div>
@@ -472,10 +472,10 @@ Header style 10
     <div id="td-top-mobile-toggle"><a href="#"><i class="td-icon-font td-icon-mobile"></i></a></div>
     <div class="td-main-menu-logo td-logo-in-header td-logo-sticky">
         		<a class="td-mobile-logo td-sticky-header" href="https://amthucbonmua.vn/">
-			<img src="https://amthucbonmua.vn/wp-content/uploads/2020/08/amthucbonmua-300x112.png" alt="logo">
+			<img src="http://nhom_7.test/asset-client/Image/N.png" alt="logo">
 		</a>
 			<a class="td-header-logo td-sticky-header" href="https://amthucbonmua.vn/">
-			<img src="https://amthucbonmua.vn/wp-content/uploads/2020/08/amthucbonmua-300x112.png" alt="logo">
+			<img src="http://nhom_7.test/asset-client/Image/N.png" alt="logo">
 		</a>
 	    </div>
     <div class="menu-menu-chinh-container"><ul id="menu-menu-chinh-1" class="sf-menu sf-js-enabled"><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-first td-menu-item td-normal-menu menu-item-12786"><a href="http://nhom_7.test/">TRANG CHỦ</a></li>
@@ -616,7 +616,7 @@ Massage đùi và chân: Một số ghế cung cấp chức năng massage đùi 
             <div class="td-post-source-tags">
                                             </div>
 
-                        <div class="td-block-row td-post-next-prev"><div class="td-block-span6 td-post-prev-post"><div class="td-post-next-prev-content"><span>Bài trước</span><a href="https://amthucbonmua.vn/tac-dung-cua-ghe-massage.html">Bật mí tác dụng của ghế massage đối với sức khoẻ &amp; tinh thần</a></div></div><div class="td-next-prev-separator"></div></div>            <div class="author-box-wrap"><a href="https://amthucbonmua.vn/author/vothithanhthao0601gmail-com"><img alt="" src="https://secure.gravatar.com/avatar/19767771c8d4ab1022592a8de8e86098?s=96&amp;d=mm&amp;r=g" srcset="https://secure.gravatar.com/avatar/19767771c8d4ab1022592a8de8e86098?s=192&amp;d=mm&amp;r=g 2x" class="avatar avatar-96 photo" height="96" width="96" loading="lazy" decoding="async"></a><div class="desc"><div class="td-author-name vcard author"><span class="fn"><a href="https://amthucbonmua.vn/author/vothithanhthao0601gmail-com">Thảo Võ</a></span></div><div class="td-author-description"></div><div class="td-author-social"></div><div class="clearfix"></div></div></div>	        <span class="td-page-meta" itemprop="author" itemscope="" itemtype="https://schema.org/Person"><meta itemprop="name" content="Thảo Võ"></span><meta itemprop="datePublished" content="2023-09-23T10:45:18+00:00"><meta itemprop="dateModified" content="2023-09-23T10:45:18+07:00"><meta itemscope="" itemprop="mainEntityOfPage" itemtype="https://schema.org/WebPage" itemid="https://amthucbonmua.vn/ghe-massage-gia-15-trieu.html"><span class="td-page-meta" itemprop="publisher" itemscope="" itemtype="https://schema.org/Organization"><span class="td-page-meta" itemprop="logo" itemscope="" itemtype="https://schema.org/ImageObject"><meta itemprop="url" content="https://amthucbonmua.vn/wp-content/uploads/2020/08/amthucbonmua-300x112.png"></span><meta itemprop="name" content="Amthucbonmua.vn"></span><meta itemprop="headline " content="Kinh nghiệm cần biết khi chọn mua ghế massage giá 15 triệu"><span class="td-page-meta" itemprop="image" itemscope="" itemtype="https://schema.org/ImageObject"><meta itemprop="url" content="https://amthucbonmua.vn/wp-content/uploads/2023/09/ghe-massage-gia-15-trieu-thumb.jpg"><meta itemprop="width" content="1200"><meta itemprop="height" content="797"></span>        </footer>
+                        <div class="td-block-row td-post-next-prev"><div class="td-block-span6 td-post-prev-post"><div class="td-post-next-prev-content"><span>Bài trước</span><a href="https://amthucbonmua.vn/tac-dung-cua-ghe-massage.html">Bật mí tác dụng của ghế massage đối với sức khoẻ &amp; tinh thần</a></div></div><div class="td-next-prev-separator"></div></div>            <div class="author-box-wrap"><a href="https://amthucbonmua.vn/author/vothithanhthao0601gmail-com"><img alt="" src="https://secure.gravatar.com/avatar/19767771c8d4ab1022592a8de8e86098?s=96&amp;d=mm&amp;r=g" srcset="https://secure.gravatar.com/avatar/19767771c8d4ab1022592a8de8e86098?s=192&amp;d=mm&amp;r=g 2x" class="avatar avatar-96 photo" height="96" width="96" loading="lazy" decoding="async"></a><div class="desc"><div class="td-author-name vcard author"><span class="fn"><a href="https://amthucbonmua.vn/author/vothithanhthao0601gmail-com">Thảo Võ</a></span></div><div class="td-author-description"></div><div class="td-author-social"></div><div class="clearfix"></div></div></div>	        <span class="td-page-meta" itemprop="author" itemscope="" itemtype="https://schema.org/Person"><meta itemprop="name" content="Thảo Võ"></span><meta itemprop="datePublished" content="2023-09-23T10:45:18+00:00"><meta itemprop="dateModified" content="2023-09-23T10:45:18+07:00"><meta itemscope="" itemprop="mainEntityOfPage" itemtype="https://schema.org/WebPage" itemid="https://amthucbonmua.vn/ghe-massage-gia-15-trieu.html"><span class="td-page-meta" itemprop="publisher" itemscope="" itemtype="https://schema.org/Organization"><span class="td-page-meta" itemprop="logo" itemscope="" itemtype="https://schema.org/ImageObject"><meta itemprop="url" content="http://nhom_7.test/asset-client/Image/N.png"></span><meta itemprop="name" content="Amthucbonmua.vn"></span><meta itemprop="headline " content="Kinh nghiệm cần biết khi chọn mua ghế massage giá 15 triệu"><span class="td-page-meta" itemprop="image" itemscope="" itemtype="https://schema.org/ImageObject"><meta itemprop="url" content="https://amthucbonmua.vn/wp-content/uploads/2023/09/ghe-massage-gia-15-trieu-thumb.jpg"><meta itemprop="width" content="1200"><meta itemprop="height" content="797"></span>        </footer>
 
     </article> <!-- /.post -->
 
@@ -972,7 +972,7 @@ tdBlocksArray.push(block_td_uid_6_656952593ca1c);
         <div class="td-pb-row">
 
             <div class="td-pb-span4">
-                <aside class="td_block_template_1 widget widget_media_image"><a href="https://amthucbonmua.vn"><img class="image " src="https://amthucbonmua.vn/wp-content/uploads/2020/08/amthucbonmua-300x112.png" alt="" width="300" height="112"></a></aside><aside class="td_block_template_1 widget widget_text"><h4 class="block-title"><span>Amthucbonmua.vn</span></h4>			<div class="textwidget"><p>Blog chuyên chia sẻ kiến thức về dinh dưỡng sức khỏe, ẩm thực đặc trưng các vùng miền trong nước và quốc tế, cập nhật thực đơn, cách chế biến món ngon mỗi ngày.</p>
+                <aside class="td_block_template_1 widget widget_media_image"><a href="https://amthucbonmua.vn"><img class="image " src="http://nhom_7.test/asset-client/Image/N.png" alt="" width="300" height="112"></a></aside><aside class="td_block_template_1 widget widget_text"><h4 class="block-title"><span>Amthucbonmua.vn</span></h4>			<div class="textwidget"><p>Blog chuyên chia sẻ kiến thức về dinh dưỡng sức khỏe, ẩm thực đặc trưng các vùng miền trong nước và quốc tế, cập nhật thực đơn, cách chế biến món ngon mỗi ngày.</p>
 <p>Tập đoàn thể thao Elipsport chia sẻ kiến thức và thiết bị chăm sóc sức khỏe tại nhà như ghế massage, tham khảo tại <a href="https://elipsport.vn/ghe-massage/">https://elipsport.vn/ghe-massage/</a></p>
 </div>
 		</aside><aside class="widget_text td_block_template_1 widget widget_custom_html"><div class="textwidget custom-html-widget"><script>

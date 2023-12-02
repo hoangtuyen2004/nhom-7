@@ -136,7 +136,7 @@
                                             <div
                                                 class="td_module_mx6 td-animation-stack td-big-grid-post-3 td-big-grid-post td-small-thumb">
                                                 <div class="td-module-thumb"><a
-                                                        href="https://amthucbonmua.vn/ghe-mat-xa-pho-thong.html"
+                                                        href="http://nhom_7.test/asset-client/display/home.php"
                                                         rel="bookmark" class="td-image-wrap"
                                                         title="Kinh nghiệm chọn mua ghế mát xa phổ thông phù hợp"><img
                                                             width="265" height="198" class="entry-thumb"
@@ -149,10 +149,10 @@
                                                 <div class="td-meta-info-container">
                                                     <div class="td-meta-align">
                                                         <div class="td-big-grid-meta">
-                                                            <a href="https://amthucbonmua.vn/may-tap-the-thao/ghe-massage"
+                                                            <a href="http://nhom_7.test/asset-client/display/home.php"
                                                                 class="td-post-category">Món ngon mùa hè</a>
                                                             <h3 class="entry-title td-module-title"><a
-                                                                    href="https://amthucbonmua.vn/ghe-mat-xa-pho-thong.html"
+                                                                    href="http://nhom_7.test/asset-client/display/home.php"
                                                                     rel="bookmark"
                                                                     title="Kinh nghiệm chọn mua ghế mát xa phổ thông phù hợp">Đánh bay cơn nóng của mùa hè oi bức</a>
                                                             </h3>
@@ -230,7 +230,7 @@
                                                                 src="https://amthucbonmua.vn/wp-content/uploads/2020/09/ruou-nho-1-324x235.jpg"
                                                                 alt="rượu nho"
                                                                 title="Rượu Nho Có Lợi Gì Cho Sức Khỏe Và Hướng Dẫn Ngâm Rượu Nho" /></a>
-                                                    </div> <a href="https://amthucbonmua.vn/am-thuc"
+                                                    </div> <a href="http://nhom_7.test/asset-client/display/home.php"
                                                         class="td-post-category">Ẩm thực</a>
                                                 </div>
 
@@ -284,7 +284,7 @@
                                             <div class="td_module_6 td_module_wrap td-animation-stack">
 
                                                 <div class="td-module-thumb"><a
-                                                        href="https://amthucbonmua.vn/cach-lam-nuoc-cham-bun-cha-don-gian-ngon-nhu-ngoai-hang.html"
+                                                        href="http://nhom_7.test/asset-client/display/home.php"
                                                         rel="bookmark" class="td-image-wrap"
                                                         title="Cách làm nước chấm bún chả đơn giản ngon như ngoài hàng"><img
                                                             width="100" height="70" class="entry-thumb"
@@ -296,7 +296,7 @@
                                                 </div>
                                                 <div class="item-details">
                                                     <h3 class="entry-title td-module-title"><a
-                                                            href="https://amthucbonmua.vn/cach-lam-nuoc-cham-bun-cha-don-gian-ngon-nhu-ngoai-hang.html"
+                                                            href="http://nhom_7.test/asset-client/display/home.php"
                                                             rel="bookmark"
                                                             title="Cách làm nước chấm bún chả đơn giản ngon như ngoài hàng">Cách
                                                             làm nước chấm bún chả đơn giản ngon như ngoài...</a>
@@ -311,7 +311,7 @@
                                             <div class="td_module_6 td_module_wrap td-animation-stack">
 
                                                 <div class="td-module-thumb"><a
-                                                        href="https://amthucbonmua.vn/cach-nau-canh-bi-do-thit-bam-cho-mam-com-dinh-duong.html"
+                                                        href="http://nhom_7.test/asset-client/display/home.php"
                                                         rel="bookmark" class="td-image-wrap"
                                                         title="Cách Nấu Canh Bí Đỏ Thịt Bằm Cho Mâm Cơm Dinh Dưỡng"><img
                                                             width="100" height="70" class="entry-thumb"
@@ -322,7 +322,7 @@
                                                 </div>
                                                 <div class="item-details">
                                                     <h3 class="entry-title td-module-title"><a
-                                                            href="https://amthucbonmua.vn/cach-nau-canh-bi-do-thit-bam-cho-mam-com-dinh-duong.html"
+                                                            href="http://nhom_7.test/asset-client/display/home.php"
                                                             rel="bookmark"
                                                             title="Cách Nấu Canh Bí Đỏ Thịt Bằm Cho Mâm Cơm Dinh Dưỡng">Cách
                                                             Nấu Canh Bí Đỏ Thịt Bằm Cho Mâm Cơm Dinh...</a></h3>
@@ -336,7 +336,7 @@
                                             <div class="td_module_6 td_module_wrap td-animation-stack">
 
                                                 <div class="td-module-thumb"><a
-                                                        href="https://amthucbonmua.vn/chan-gio-ham-hat-sen-bo-duong-thom-nuc-mui-tai-nha.html"
+                                                        href="http://nhom_7.test/asset-client/display/home.phpl"
                                                         rel="bookmark" class="td-image-wrap"
                                                         title="Chân giò hầm hạt sen bổ dưỡng thơm nức mũi tại nhà"><img
                                                             width="100" height="70" class="entry-thumb"
@@ -348,7 +348,7 @@
                                                 </div>
                                                 <div class="item-details">
                                                     <h3 class="entry-title td-module-title"><a
-                                                            href="https://amthucbonmua.vn/chan-gio-ham-hat-sen-bo-duong-thom-nuc-mui-tai-nha.html"
+                                                            href="http://nhom_7.test/asset-client/display/home.php"
                                                             rel="bookmark"
                                                             title="Chân giò hầm hạt sen bổ dưỡng thơm nức mũi tại nhà">Chân
                                                             giò hầm hạt sen bổ dưỡng thơm nức mũi tại...</a></h3>
@@ -416,7 +416,7 @@
                                                         class="td-post-category">Sức khỏe</a>
                                                 </div>
                                                 <h3 class="entry-title td-module-title"><a
-                                                        href="https://amthucbonmua.vn/bam-huyet-chua-sot-xuat-huyet.html"
+                                                        href="http://nhom_7.test/asset-client/display/home.php"
                                                         rel="bookmark"
                                                         title="Cách bấm huyệt chữa sốt xuất huyết hiệu quả đáng ngạc nhiên">Cách
                                                         bấm huyệt chữa sốt xuất huyết hiệu quả đáng ngạc...</a></h3>
@@ -442,7 +442,7 @@
                                             <div class="td_module_2 td_module_wrap td-animation-stack">
                                                 <div class="td-module-image">
                                                     <div class="td-module-thumb"><a
-                                                            href="https://amthucbonmua.vn/huyet-ap-cao-nen-kieng-nhung-thuc-an-gi.html"
+                                                            href="http://nhom_7.test/asset-client/display/home.php"
                                                             rel="bookmark" class="td-image-wrap"
                                                             title="Người bị huyết áp cao nên kiêng những thức ăn gì?"><img
                                                                 width="324" height="160" class="entry-thumb"
@@ -451,11 +451,11 @@
                                                                 sizes="(max-width: 324px) 100vw, 324px"
                                                                 alt="huyết áp cao nên kiêng những thức ăn gì"
                                                                 title="Người bị huyết áp cao nên kiêng những thức ăn gì?" /></a>
-                                                    </div> <a href="https://amthucbonmua.vn/suc-khoe"
+                                                    </div> <a href="http://nhom_7.test/asset-client/display/home.php"
                                                         class="td-post-category">Sức khỏe</a>
                                                 </div>
                                                 <h3 class="entry-title td-module-title"><a
-                                                        href="https://amthucbonmua.vn/huyet-ap-cao-nen-kieng-nhung-thuc-an-gi.html"
+                                                        href="http://nhom_7.test/asset-client/display/home.php"
                                                         rel="bookmark"
                                                         title="Người bị huyết áp cao nên kiêng những thức ăn gì?">Người
                                                         bị huyết áp cao nên kiêng những thức ăn gì?</a></h3>
@@ -485,7 +485,7 @@
                                             <div class="td_module_6 td_module_wrap td-animation-stack">
 
                                                 <div class="td-module-thumb"><a
-                                                        href="https://amthucbonmua.vn/giay-di-bo-tot-nhat-cho-nguoi-gia.html"
+                                                        href="http://nhom_7.test/asset-client/display/home.php"
                                                         rel="bookmark" class="td-image-wrap"
                                                         title="Giày đi bộ tốt nhất cho người già. Giày dép mà người già cần tránh"><img
                                                             width="100" height="70" class="entry-thumb"
@@ -496,7 +496,7 @@
                                                 </div>
                                                 <div class="item-details">
                                                     <h3 class="entry-title td-module-title"><a
-                                                            href="https://amthucbonmua.vn/giay-di-bo-tot-nhat-cho-nguoi-gia.html"
+                                                            href="http://nhom_7.test/asset-client/display/home.php"
                                                             rel="bookmark"
                                                             title="Giày đi bộ tốt nhất cho người già. Giày dép mà người già cần tránh">Giày
                                                             đi bộ tốt nhất cho người già. Giày dép mà...</a></h3>
@@ -548,7 +548,7 @@
                                             <div class="td_module_6 td_module_wrap td-animation-stack">
 
                                                 <div class="td-module-thumb"><a
-                                                        href="https://amthucbonmua.vn/huyet-ap-160-co-nguy-hiem-khong.html"
+                                                        href="http://nhom_7.test/asset-client/display/home.php"
                                                         rel="bookmark" class="td-image-wrap"
                                                         title="Huyết áp 160 có nguy hiểm không?"><img width="100"
                                                             height="70" class="entry-thumb"
@@ -559,7 +559,7 @@
                                                             title="Huyết áp 160 có nguy hiểm không?" /></a></div>
                                                 <div class="item-details">
                                                     <h3 class="entry-title td-module-title"><a
-                                                            href="https://amthucbonmua.vn/huyet-ap-160-co-nguy-hiem-khong.html"
+                                                            href="http://nhom_7.test/asset-client/display/home.php"
                                                             rel="bookmark"
                                                             title="Huyết áp 160 có nguy hiểm không?">Huyết áp 160 có
                                                             nguy hiểm không?</a></h3>
@@ -577,7 +577,7 @@
                                             <div class="td_module_6 td_module_wrap td-animation-stack">
 
                                                 <div class="td-module-thumb"><a
-                                                        href="https://amthucbonmua.vn/cach-on-dinh-huyet-ap-khong-can-dung-thuoc.html"
+                                                        href="http://nhom_7.test/asset-client/display/home.php"
                                                         rel="bookmark" class="td-image-wrap"
                                                         title="Cách ổn định huyết áp không cần dùng thuốc"><img
                                                             width="100" height="70" class="entry-thumb"
@@ -589,7 +589,7 @@
                                                 </div>
                                                 <div class="item-details">
                                                     <h3 class="entry-title td-module-title"><a
-                                                            href="https://amthucbonmua.vn/cach-on-dinh-huyet-ap-khong-can-dung-thuoc.html"
+                                                            href="http://nhom_7.test/asset-client/display/home.php"
                                                             rel="bookmark"
                                                             title="Cách ổn định huyết áp không cần dùng thuốc">Cách
                                                             ổn định huyết áp không cần dùng thuốc</a></h3>
