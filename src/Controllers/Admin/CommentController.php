@@ -24,12 +24,12 @@ class CommentController extends Controller
 
     public function ctComment()
     {
-        $Comment = (new Comment)->all();
+        $comment = (new Comment)->all();
         $news = (new News)->all();
         $users = (new User)->all();
         $writing = (new Writing)->all();
         $status = (new Status)->all();
-        $this->renderAdmin('comments/ctComment', ['comment' => $Comment, 'news' => $news, 'users' => $users, 'writing' => $writing,'status'=> $status]);
+        $this->renderAdmin('comments/ctComment', ['comment' => $comment, 'news' => $news, 'users' => $users, 'writing' => $writing,'status'=> $status]);
     }
 
     public function delete()
@@ -48,6 +48,10 @@ class CommentController extends Controller
         if (isset($_POST["btn-submit"])) {
             $data = [
                 'comment' => $_POST['comment'],
+                'id_user'=>$_POST['id_user'],
+                'id_news'=>$_POST['id_news'],
+                'note'=>'',
+                'id_status'=>2,
             ];
 
             $conditions = [
