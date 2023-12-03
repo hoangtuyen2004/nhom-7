@@ -37,6 +37,22 @@
                             <i class="fa-sharp fa-solid fa-gears fa-2xl"></i>
                             <ul class="show-notification profile-notification dropdown-menu" data-dropdown-in="fadeIn"
                                 data-dropdown-out="fadeOut">
+                                    <?php 
+                                        if (isset($_SESSION['name_account']) && isset($_SESSION['id_user']) && isset($_SESSION['id_role'])) {
+                                            if ($_SESSION['id_role']==2) {
+                                                echo "                                    
+                                                <li>
+                                                    <a href='/client/writer' class='nav-bar'>
+                                                        <i class='fa-solid fa-feather'></i> Profile
+                                                    </a>
+                                                </li>
+                                                ";
+                                            }
+                                            else{}
+                                        }
+                                        else{}
+                                    ?>
+
                                 <li>
                                     <a href="#" class="nav-bar">
                                         <i class="feather icon-user"></i> Profile

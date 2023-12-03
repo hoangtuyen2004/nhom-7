@@ -18,6 +18,23 @@ class Controller {
         extract($data);
         include "Views/client/user/index.php";
     }
+    // Render ra giao diện Writer
+    protected function renderWriter($view, $data = []){
+        $data['view'] = $view;
+
+        extract($data);
+        if (isset($_SESSION['name_account']) && isset($_SESSION['id_user']) && isset($_SESSION['id_role'])) {
+            if ($_SESSION['id_role']==2) {
+                include "Views/client/writer/master.php";
+            }
+            else {
+                include "Views/client/user/index.php";
+            }
+        }
+        else {
+            header('location: /client/login');
+        }
+    }
     // Render ra giao diện Admin
     protected function renderAdmin($view, $data = []) {
         $data['view'] = $view;
