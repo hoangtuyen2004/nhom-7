@@ -10,6 +10,7 @@ class Note extends Model {
         'reply',
         'id_news',
         'id_user',
+        'id_list',
     ];
 }
 ?>

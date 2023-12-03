@@ -13,7 +13,7 @@
                 </li>
 
                 <li class>
-                    <a href="" class="waves-effect waves-dark">
+                    <a href="/client/writer/news" class="waves-effect waves-dark">
                         <span class="pcoded-micon">
                             <i class="fa-regular fa-newspaper"></i>
                         </span>

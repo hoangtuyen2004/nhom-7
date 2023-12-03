@@ -11,6 +11,7 @@ use Ductong\BaseMvc\Controllers\Client\HomeController;
 use Ductong\BaseMvc\Controllers\Client\ListController;
 use Ductong\BaseMvc\Controllers\Client\LoginController;
 use Ductong\BaseMvc\Controllers\Client\WriterController;
+use Ductong\BaseMvc\Controllers\Client\WritingController;
 use Ductong\BaseMvc\Router;
 
 $router = new Router();
@@ -26,6 +27,8 @@ $router->addRoute('/client/list/news', ListController::class, 'listNews');
 
 // Người viết
 $router->addRoute('/client/writer', WriterController::class, 'index');
+
+$router->addRoute('/client/writer/news', WritingController::class, 'index');
 
 // Quản trị viên
 $router->addRoute('/admin/dashboard', DashboardController::class, 'index');

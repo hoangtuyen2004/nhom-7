@@ -51,10 +51,10 @@
                                                     </tr>
                                                 </thead>
                                                 <tbody>
-                                                    <?php foreach ($newU as $new) : ?>
+                                                        <?php foreach ($commits as $commit) :?>
                                                     <tr>
                                                         <td>
-                                                            <?php foreach ($commits as $commit){
+                                                            <?php foreach ($news as $new) {
                                                             foreach ($users as $user) {
                                                                 if ($user['id']==$commit['id_user'] && $commit['id_news']==$new['id']) {
                                                                     echo $user['name_account'];
@@ -62,19 +62,19 @@
                                                             }}?>
                                                         </td>
                                                         <td>
-                                                            <?php foreach ($commits as $commit){
+                                                            <?php foreach ($news as $new) {
                                                                 if ($new['id']==$commit['id_news']) {
                                                                     echo "<a href='/admin/news/more?id=" .$new['id']. "&& id_display=".$new['id_display']."'>".$new['id']."</a>";
-                                                                }
-                                                            }?>
+                                                                }}
+                                                            ?>
                                                         </td>
-                                                        <td><?php foreach ($commits as $commit){
+                                                        <td><?php foreach ($news as $new) {
                                                             if ($commit['id_news']==$new['id']) {
                                                                 echo $commit['commit'];
-                                                            }
-                                                        }?></td>
+                                                            }}
+                                                        ?></td>
                                                         <td>
-                                                            <?php foreach ($commits as $commit){
+                                                            <?php foreach ($news as $new) {
                                                                 if ($new['id']==$commit['id_news']) {
                                                                     if ($new['id_status']==1) {
                                                                         echo "<label class='label label-primary'>Chưa được duyệt</label>";
@@ -85,11 +85,12 @@
                                                                     else{
                                                                         echo "<label class='label label-danger'>Không được hiển thị</label>";
                                                                     }
-                                                                }
-                                                            }?>
+                                                                }}
+                                                            ?>
                                                         </td>
+                                                        
                                                         <td>
-                                                            <?php foreach ($commits as $commit){
+                                                            <?php foreach ($news as $new) {
                                                                 if ($commit['id_news']==$new['id']) {
                                                                 if ($commit['reply']=="") {
                                                                     echo "Bài viết chưa được kiểm duyệt hãy";
@@ -98,8 +99,8 @@
                                                                 }
                                                                 else{
                                                                     echo $commit['reply'];
-                                                                }
-                                                            }}?>
+                                                                }}
+                                                            }?>
                                                         </td>
                                                         <td>
                                                             <a href="/admin/commit/list?id=<?=$commit['id']?>"
