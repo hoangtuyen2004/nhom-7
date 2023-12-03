@@ -3,6 +3,7 @@
 namespace Ductong\BaseMvc;
 
 use Ductong\BaseMvc\Models\News;
+use Ductong\BaseMvc\Models\Note;
 
 class Controller {
     // Render ra giao diện client
@@ -41,10 +42,10 @@ class Controller {
 
         extract($data);
         $conditions = [
-            ['id_status','=','1']
+            ['id_list', '=', 2],
         ];
-        $notify = (new News)->findColumns($conditions);
-        $_SESSION['commit'] = count($notify);
+        $commit = (new Note)->findColumns($conditions);
+        $_SESSION['commit'] = count($commit);
         //kiểm tra admin
         if (isset($_SESSION['name_account']) && isset($_SESSION['id_admin'])) {
             include "Views/admin/master.php";

@@ -9,7 +9,10 @@ use Ductong\BaseMvc\Models\User;
 
 class NoteController extends Controller {
     public function index() {
-        $commits = (new Note)->all();
+        $conditions = [
+            ['id_list', '=', 2],
+        ];
+        $commits = (new Note)->findColumns($conditions);
         $users = (new User)->all();
         $news = (new News)->all();
         $conditions = [
@@ -32,6 +35,12 @@ class NoteController extends Controller {
                 (new News)->updateColumn($column,$value,$conditions);
             }            
         }
+        if ($commit['id_list']==2) {
+            $conditions = "id = ".$id_commit;
+            $column = 'id_list';
+            $value = 1;
+            (new Note)->updateColumn($column,$value,$conditions);
+        }
         if (isset($commit['reply'])) {
             $conditions = "id = ".$id_commit;
             $column = 'reply';
@@ -51,6 +60,12 @@ class NoteController extends Controller {
                 $value = '3';
                 (new News)->updateColumn($column,$value,$conditions);
             }            
+        }
+        if ($commit['id_list']==2) {
+            $conditions = "id = ".$id_commit;
+            $column = 'id_list';
+            $value = 1;
+            (new Note)->updateColumn($column,$value,$conditions);
         }
         if (isset($commit['reply'])) {
             $conditions = "id = ".$id_commit;
@@ -83,6 +98,12 @@ class NoteController extends Controller {
             }
             else {
                 $status = $_POST['status'];
+            }
+            if ($commit['id_list']==2) {
+                $conditions = "id = ".$id_commit;
+                $column = 'id_list';
+                $value = 1;
+                (new Note)->updateColumn($column,$value,$conditions);
             }
             //Reply for user
             $conditions = "id = ".$id_commit;

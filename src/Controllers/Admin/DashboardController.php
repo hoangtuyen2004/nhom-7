@@ -13,7 +13,10 @@ class DashboardController extends Controller
     public function index() {
         // var_dump($_SESSION);
         // Kiểm tra xem biến session có tồn tại và có giá trị 'name_account' hay không
-        $commit = (new Note)->all();
+        $conditions = [
+            ['id_list', '=', 2],
+        ];
+        $commit = (new Note)->findColumns($conditions);
         $_SESSION['commit'] = count($commit);
         if (isset($_SESSION['name_account'])) {
             // Nếu tồn tại, render trang dashboard
