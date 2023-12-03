@@ -64,7 +64,17 @@ class Model
         $stmt->setFetchMode(\PDO::FETCH_ASSOC);
         return $stmt->fetchAll();
     }
-    
+
+    public function selectTop($column,$a,$b,$conditions){
+        $sql = "SELECT * FROM $this->table WHERE $conditions ORDER BY $column DESC LIMIT $a OFFSET $b";
+
+        $stmt = $this->conn->prepare($sql);
+        $stmt->execute();
+
+        $stmt->setFetchMode(\PDO::FETCH_ASSOC);
+
+        return $stmt->fetchAll();
+    }
 
     //Thêm modell check ACCOUNT ADMIN
     public function checkUser($where = 1)

@@ -1,25 +1,18 @@
 
-<div id="td-outer-wrap" class="td-theme-wrap">
-    <div class="td-main-content-wrap td-main-page-wrap td-container-wrap">
-        <div class="tdc-content-wrap">
-            <div id="td_uid_1_655dbc191d5cf" class="tdc-row">
-                <div class="vc_row td_uid_1_655dbc191d5d6_rand  wpb_row td-pb-row">
-                    <div
-                        class="vc_column td_uid_2_655dbc191d95d_rand  wpb_column vc_column_container tdc-column td-pb-span12">
-                        <div class="wpb_wrapper">
-                            <div class="td_block_wrap td_block_trending_now td_uid_3_655dbc191daff_rand td-pb-border-top td_block_template_1"
-                                data-td-block-uid="td_uid_3_655dbc191daff">
-                                <div id=td_uid_3_655dbc191daff class="td_block_inner">
-                                    <div class="td-block-row">
-                                        <div class="td-trending-now-wrapper" id="td_uid_3_655dbc191daff" data-start="">
-                                            <div class="td-trending-now-title">TIN HOT</div>
-                                            <div class="td-trending-now-display-area">
-                                                <div
-                                                    class="td_module_trending_now td-trending-now-post-0 td-trending-now-post">
-                                                    <h3 class="entry-title td-module-title">
-                                                        <a href="">Cách nấu chè ngon ngọt dễ làm</a>
-                                                    </h3>
-                                                </div>
+    <div id="td-outer-wrap" class="td-theme-wrap">
+        <div class="td-main-content-wrap td-main-page-wrap td-container-wrap">
+            <div class="tdc-content-wrap">
+                <div id="td_uid_1_655dbc191d5cf" class="tdc-row">
+                    <div class="vc_row td_uid_1_655dbc191d5d6_rand  wpb_row td-pb-row">
+                        <div
+                            class="vc_column td_uid_2_655dbc191d95d_rand  wpb_column vc_column_container tdc-column td-pb-span12">
+                            <div class="wpb_wrapper">
+                                <div class="td_block_wrap td_block_trending_now td_uid_3_655dbc191daff_rand td-pb-border-top td_block_template_1"
+                                    data-td-block-uid="td_uid_3_655dbc191daff">
+                                    <div id=td_uid_3_655dbc191daff class="td_block_inner">
+                                        <div class="td-block-row">
+                                            <div class="td-trending-now-wrapper" id="td_uid_3_655dbc191daff"
+                                                data-start="">
                                             </div>
                                         </div>
                                     </div>
@@ -28,150 +21,11 @@
                         </div>
                     </div>
                 </div>
-            </div>
 
 
-
-            <div id="td_uid_3_655dbc191f701" class="tdc-row stretch_row_content td-stretch-content">
-                <div class="vc_row td_uid_4_655dbc191f706_rand  wpb_row td-pb-row">
-                    <div
-                        class="vc_column td_uid_5_655dbc191f859_rand  wpb_column vc_column_container tdc-column td-pb-span12">
-                        <div class="wpb_wrapper">
-                            <div class="td_block_wrap td_block_big_grid_3 td_uid_6_655dbc191fa71_rand td-grid-style-1 td-hover-1 td-big-grids td-pb-border-top td_block_template_1"
-                                data-td-block-uid="td_uid_6_655dbc191fa71">
-                                <div id=td_uid_6_655dbc191fa71 class="td_block_inner">
-                                    <div class="td-big-grid-wrapper">
-                                        <div
-                                            class="td_module_mx5 td-animation-stack td-big-grid-post-0 td-big-grid-post td-big-thumb">
-                                            <div class="td-module-thumb"><a
-                                                    href="http://nhom_7.test/asset-client/display/display1.php"
-                                                    rel="bookmark" class="td-image-wrap"
-                                                    title="Cách nấu chè ngon &#8211; Thiết bị hỗ trợ sức khoẻ tuyệt vời cho mọi người">
-                                                    <img
-                                                        width="534" height="462" class="entry-thumb"
-                                                        src="http://nhom_7.test/img_file/cach-nau-che-hat-ke-1.jpg"
-                                                        alt="ghế massage trị liệu"
-                                                        title="Ghế massage trị liệu &#8211; Các bước nấu chè mà mọi người lên biết" /></a>
-                                            </div>
-                                            <div class="td-meta-info-container">
-                                                <div class="td-meta-align">
-                                                    <div class="td-big-grid-meta">
-                                                        <a href="../" class="td-post-category">Cách nấu chè </a>
-                                                        <h3 class="entry-title td-module-title"><a
-                                                                href="http://nhom_7.test/asset-client/display/display1.php/"
-                                                                rel="bookmark"
-                                                                title="Cách nấu ché ngon  &#8211; Các bước nấu chè mà mọi người lên biết ">Cách
-                                                                nấu ché ngon &#8211; Các bước nấu chè mà mọi người lên
-                                                                biết </a></h3>
-                                                    </div>
-                                                    <div class="td-module-meta-info">
-                                                        <span class="td-post-author-name"><a
-                                                                href="https://amthucbonmua.vn/author/vothithanhthao0601gmail-com">Thảo
-                                                                Võ</a></span>
-                                                    </div>
-                                                </div>
-                                            </div>
-
-                                        </div>
-
-                                        <div class="td-big-grid-scroll">
-                                            <div
-                                                class="td_module_mx11 td-animation-stack td-big-grid-post-1 td-big-grid-post td-medium-thumb">
-                                                <div class="td-module-thumb"><a
-                                                        href="http://nhom_7.test/asset-client/display/display2.php"
-                                                        rel="bookmark" class="td-image-wrap"
-                                                        title="Ghế massage cho người già: Lợi ích và cách chọn mua hiệu quả"><img
-                                                            width="533" height="261" class="entry-thumb"
-                                                            src="https://amthucbonmua.vn/wp-content/uploads/2023/08/ghe-massage-cho-nguoi-gia-thumb-533x261.jpg"
-                                                            srcset="http://nhom_7.test/img_file/1.jpg 533w, http://nhom_7.test/img_file/cach-nau-che-hat-ke-1.jpg 324w"
-                                                            sizes="(max-width: 533px) 100vw, 533px" alt=""
-                                                            title="Ghế massage cho người già: Lợi ích và cách chọn mua hiệu quả" /></a>
-                                                </div>
-                                                <div class="td-meta-info-container">
-                                                    <div class="td-meta-align">
-                                                        <div class="td-big-grid-meta">
-                                                            <a href="http://nhom_7.test/asset-client/display/display2.php/"
-                                                                class="td-post-category">Chè Ngon</a>
-                                                            <h3 class="entry-title td-module-title"><a
-                                                                    href="http://nhom_7.test/asset-client/display/display2.php/"
-                                                                    rel="bookmark"
-                                                                    title="Ghế massage cho người già: Lợi ích và cách chọn mua hiệu quả">Món Ngon Của mọi nhà</a></h3>
-                                                        </div>
-                                                    </div>
-                                                </div>
-
-                                            </div>
-
-
-                                            <div
-                                                class="td_module_mx6 td-animation-stack td-big-grid-post-2 td-big-grid-post td-small-thumb">
-                                                <div class="td-module-thumb"><a
-                                                        href="http://nhom_7.test/asset-client/display/display3.php/"
-                                                        rel="bookmark" class="td-image-wrap"
-                                                        title="Khám phá ưu đãi hấp dẫn với ghế massage khuyến mãi"><img
-                                                            width="265" height="198" class="entry-thumb"
-                                                            src="http://nhom_7php.test/asset-client/display/display3./"
-                                                            srcset="http://nhom_7.test/img_file/1-1200x676-16.jpg 265w, http://nhom_7.test/img_file/1-1200x676-16.jpg 80w, http://nhom_7.test/img_file/1-1200x676-16.jpgp/ 534w"
-                                                            sizes="(max-width: 265px) 100vw, 265px"
-                                                            alt="ghế massage khuyến mãi"
-                                                            title="Khám phá ưu đãi hấp dẫn với ghế massage khuyến mãi" /></a>
-                                                </div>
-                                                <div class="td-meta-info-container">
-                                                    <div class="td-meta-align">
-                                                        <div class="td-big-grid-meta">
-                                                            <a href="http://nhom_7.test/asset-client/display/display3.php/"
-                                                                class="td-post-category">Món ngon mỗi ngày</a>
-                                                            <h3 class="entry-title td-module-title"><a
-                                                                    href="http://nhom_7.test/asset-client/display/display3.php/"
-                                                                    rel="bookmark"
-                                                                    title="Khám phá ưu đãi hấp dẫn với ghế massage khuyến mãi">Món ngon giải nhiệt</a></h3>
-                                                        </div>
-                                                    </div>
-                                                </div>
-
-                                            </div>
-
-
-
-                                            <div
-                                                class="td_module_mx6 td-animation-stack td-big-grid-post-3 td-big-grid-post td-small-thumb">
-                                                <div class="td-module-thumb"><a
-                                                        href="http://nhom_7.test/asset-client/display/home.php"
-                                                        rel="bookmark" class="td-image-wrap"
-                                                        title="Kinh nghiệm chọn mua ghế mát xa phổ thông phù hợp"><img
-                                                            width="265" height="198" class="entry-thumb"
-                                                            src="http://nhom_7.test/img_file/Webp.net-resizeimage(18)-1200x676.jpg"
-                                                            srcset="http://nhom_7.test/img_file/Webp.net-resizeimage(18)-1200x676.jpg 265w,http://nhom_7.test/img_file/Webp.net-resizeimage(18)-1200x676.jpg 534w"
-                                                            sizes="(max-width: 265px) 100vw, 265px"
-                                                            alt="ghế mát xa phổ thông"
-                                                            title="Kinh nghiệm chọn mua ghế mát xa phổ thông phù hợp" /></a>
-                                                </div>
-                                                <div class="td-meta-info-container">
-                                                    <div class="td-meta-align">
-                                                        <div class="td-big-grid-meta">
-                                                            <a href="http://nhom_7.test/asset-client/display/home.php"
-                                                                class="td-post-category">Món ngon mùa hè</a>
-                                                            <h3 class="entry-title td-module-title"><a
-                                                                    href="http://nhom_7.test/asset-client/display/home.php"
-                                                                    rel="bookmark"
-                                                                    title="Kinh nghiệm chọn mua ghế mát xa phổ thông phù hợp">Đánh bay cơn nóng của mùa hè oi bức</a>
-                                                            </h3>
-                                                        </div>
-                                                    </div>
-                                                </div>
-
-                                            </div>
-
-
-                                        </div>
-                                    </div>
-                                    <div class="clearfix"></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                <div id="td_uid_3_655dbc191f701" class="tdc-row stretch_row_content td-stretch-content">
+                    <?php include_once '/laragon/www/nhom_7/src/Views/client/components/sile.php';?>
                 </div>
-            </div>
 
             <!-- content -->
 
@@ -179,6 +33,7 @@
                 <div class="vc_row td_uid_7_655dbc192232f_rand td-ss-row wpb_row td-pb-row">
 
                     <!-- Section   -->
+
 
                     <div
                         class="vc_column td_uid_8_655dbc1922458_rand  wpb_column vc_column_container tdc-column td-pb-span8">
@@ -1246,10 +1101,18 @@
                                     </div> <!-- ./td-block-span12 -->
                                 </div>
                             </div> <!-- ./block -->
-                        </div>
-                    </div>
 
+                        <div class="vc_column td_uid_8_655dbc1922458_rand  wpb_column vc_column_container tdc-column td-pb-span8">
+                            <?php include_once '/laragon/www/nhom_7/src/Views/client/components/section.php';?>
+                        </div>
+                        <!-- Asile    -->
+
+                        <div class="vc_column td_uid_29_655dbc193a095_rand  wpb_column vc_column_container tdc-column td-pb-span4">
+                            <?php include_once '/laragon/www/nhom_7/src/Views/client/components/asile.php';?>
+
+                        </div>
+
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
