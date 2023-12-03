@@ -13,45 +13,45 @@
                         </li>
                         <li
                             class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children td-menu-item td-normal-menu menu-item-7397">
-                            <a href="https://amthucbonmua.vn/may-tap-the-thao">Thiết bị sức khỏe tại nhà</a>
+                            <a href="http://nhom_7.test/">Thiết bị sức khỏe tại nhà</a>
                             <ul class="sub-menu">
                                 <li
                                     class="menu-item menu-item-type-taxonomy menu-item-object-category td-menu-item td-normal-menu menu-item-7398">
-                                    <a href="https://amthucbonmua.vn/may-tap-the-thao/ghe-massage">Ghế
+                                    <a href="http://nhom_7.test/">Ghế
                                         massage toàn thân Elip</a>
                                 </li>
                                 <li
                                     class="menu-item menu-item-type-taxonomy menu-item-object-category td-menu-item td-normal-menu menu-item-7399">
-                                    <a href="https://amthucbonmua.vn/may-tap-the-thao/may-chay-bo">Máy chạy
+                                    <a href="http://nhom_7.test/">Máy chạy
                                         bộ Elip</a>
                                 </li>
                                 <li
                                     class="menu-item menu-item-type-taxonomy menu-item-object-category td-menu-item td-normal-menu menu-item-7401">
-                                    <a href="https://amthucbonmua.vn/may-tap-the-thao/xe-dap-tap">Xe đạp tập
+                                    <a href="http://nhom_7.test/">Xe đạp tập
                                         thể dục Elip</a>
                                 </li>
                             </ul>
                         </li>
                         <li
                             class="menu-item menu-item-type-taxonomy menu-item-object-category td-menu-item td-normal-menu menu-item-12787">
-                            <a href="https://amthucbonmua.vn/am-thuc-the-gioi">Ẩm Thực Thế Giới</a>
+                            <a href="http://nhom_7.test/">Ẩm Thực Thế Giới</a>
                         </li>
                         <li
                             class="menu-item menu-item-type-taxonomy menu-item-object-category td-menu-item td-normal-menu menu-item-12176">
-                            <a href="https://amthucbonmua.vn/dinh-duong-khoe">Dinh dưỡng</a>
+                            <a href="http://nhom_7.test/">Dinh dưỡng</a>
                         </li>
                         <li
                             class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children td-menu-item td-normal-menu menu-item-1074">
-                            <a href="https://amthucbonmua.vn/am-thuc/mon-an-gia-dinh">Món ngon</a>
+                            <a href="http://nhom_7.test/">Món ngon</a>
                             <ul class="sub-menu">
                                 <li
                                     class="menu-item menu-item-type-taxonomy menu-item-object-category td-menu-item td-normal-menu menu-item-1075">
-                                    <a href="https://amthucbonmua.vn/am-thuc/mon-an-gia-dinh/diem-tam">Điểm
+                                    <a href="http://nhom_7.test/">Điểm
                                         Tâm</a>
                                 </li>
                                 <li
                                     class="menu-item menu-item-type-taxonomy menu-item-object-category td-menu-item td-normal-menu menu-item-1100">
-                                    <a href="https://amthucbonmua.vn/am-thuc/mon-an-gia-dinh/thuc-pham-dinh-duong">Thực
+                                    <a href="http://nhom_7.test/">Thực
                                         phẩm dinh dưỡng</a>
                                 </li>
                             </ul>
