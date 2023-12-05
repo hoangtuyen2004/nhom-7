@@ -29,7 +29,7 @@ class CommentController extends Controller
         $users = (new User)->all();
         $writing = (new Writing)->all();
         $status = (new Status)->all();
-        $this->renderAdmin('comments/ctComment', ['comment' => $comment, 'news' => $news, 'users' => $users, 'writing' => $writing,'status'=> $status]);
+        $this->renderAdmin('comments/ctComment', ['comment' => $comment, 'news' => $news, 'users' => $users, 'writing' => $writing, 'status' => $status]);
     }
 
     public function delete()
@@ -48,10 +48,10 @@ class CommentController extends Controller
         if (isset($_POST["btn-submit"])) {
             $data = [
                 'comment' => $_POST['comment'],
-                'id_user'=>$_POST['id_user'],
-                'id_news'=>$_POST['id_news'],
-                'note'=>'',
-                'id_status'=>2,
+                'id_user' => $_POST['id_user'],
+                'id_news' => $_POST['id_news'],
+                'note' => '',
+                'id_status' => 2,
             ];
 
             $conditions = [
@@ -74,7 +74,7 @@ class CommentController extends Controller
         (new Comment())->updateColumn($column, $value, $conditions);
         header('Location: /admin/comments');
     }
-    
+
     public function unlist()
     {
         $conditions = "id = " . $_GET['id'];
@@ -83,6 +83,4 @@ class CommentController extends Controller
         (new Comment())->updateColumn($column, $value, $conditions);
         header('Location: /admin/comments');
     }
-    
-    
 }

@@ -41,7 +41,6 @@
                                         <table id="simpletable" class="table table-striped table-bordered nowrap">
                                             <thead>
                                                 <tr>
-                                                    <th>Người Viết</th>
                                                     <th>Bài viết</th>
                                                     <th>Số lượng comment</th>
                                                     <th>Action</th>
@@ -68,6 +67,12 @@
 
                                                     <td>
                                                         <?php
+
+                                                    <tr>
+                                                        <td><?= $new['title'] ?></td>
+
+                                                        <td>
+                                                            <?php
                                                             // Kiểm tra xem $comment đã được đặt (nếu có thông tin về bình luận)
                                                             if (isset($comment)) {
                                                                 // Khởi tạo biến đếm số lượng bình luận
