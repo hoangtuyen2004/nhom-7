@@ -12,8 +12,10 @@
 
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Quicksand:500,700" rel="stylesheet">
-
+    <script src="https://kit.fontawesome.com/2e8884d211.js" crossorigin="anonymous"></script>
+    <?php include_once 'src/Views/client/components/head.php';?>
     <?php require_once 'components/head.php' ?>
+    
 </head>
 
 <body>

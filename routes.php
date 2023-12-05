@@ -25,9 +25,18 @@ $router->addRoute('/client/registers/index', LoginController::class, 'register')
 $router->addRoute('/client/list/news', ListController::class, 'listNews');
 $router->addRoute('/client/list/ccomment', ListController::class, 'ccomment');
 
+// Người viết
+$router->addRoute('/client/writer', WriterController::class, 'index');
+$router->addRoute('/client/writer/news', WriterController::class, 'writing');
+$router->addRoute('/client/writer/comment', WriterController::class, 'comment');
+
+
+$router->addRoute('/client/writer/writing', WritingController::class, 'writing');
+$router->addRoute('/client/writing/list', WritingController::class, 'list');//hiển thị bài viết
+$router->addRoute('/client/writing/update', WritingController::class, 'update');
+$router->addRoute('/client/writing/delete', WritingController::class, 'delete');
+
 $router->addRoute('/admin/dashboard', DashboardController::class, 'index');
-
-
 
 $router->addRoute('/admin/users', UserController::class, 'index');
 $router->addRoute('/admin/users/create', UserController::class, 'create');

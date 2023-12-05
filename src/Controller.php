@@ -4,6 +4,7 @@ namespace Ductong\BaseMvc;
 
 use Ductong\BaseMvc\Models\News;
 use Ductong\BaseMvc\Models\Note;
+use Ductong\BaseMvc\Models\User;
 
 class Controller {
     // Render ra giao diện client
@@ -17,6 +18,11 @@ class Controller {
         $data['view'] = $view;
 
         extract($data);
+        if (isset($_SESSION['name_account']) && isset($_SESSION['id_user'])) {
+            $user = (new User)->findOne($_SESSION['id_user']);
+            $_SESSION['id_role'] = $user['id_role'];
+            $_SESSION['name_account'] = $user['name_account'];
+        }
         include "Views/client/user/index.php";
     }
     // Render ra giao diện Writer
@@ -24,7 +30,13 @@ class Controller {
         $data['view'] = $view;
 
         extract($data);
+        $conditions = [
+            ['id_list', '=', 1],
+        ];
+        $commit = (new Note)->findColumns($conditions);
+        $_SESSION['notify'] = count($commit);
         if (isset($_SESSION['name_account']) && isset($_SESSION['id_user']) && isset($_SESSION['id_role'])) {
+            $writer = (new User)->findOne($_SESSION['id_user']);
             if ($_SESSION['id_role']==2) {
                 include "Views/client/writer/master.php";
             }
