@@ -48,26 +48,6 @@
                                             </thead>
                                             <tbody>
                                                 <?php foreach ($news as $new) : ?>
-                                                <tr>
-                                                    <td>
-                                                        <?php 
-                                                            foreach ($writing as $write) {
-                                                                if ($write['id_news']==$new['id']) {
-                                                                    foreach ($users as $user) {
-                                                                        if ($write['id_user']==$user['id']) {
-                                                                            echo $user['name_account'];
-                                                                        }
-                                                                    }
-                                                                }
-                                                               
-                                                            }
-                                                        ?>
-                                                    </td>
-                                                    <td><?= $new['title'] ?></td>
-
-                                                    <td>
-                                                        <?php
-
                                                     <tr>
                                                         <td><?= $new['title'] ?></td>
 

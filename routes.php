@@ -10,6 +10,8 @@ use Ductong\BaseMvc\Controllers\Admin\NoteController;
 use Ductong\BaseMvc\Controllers\Client\HomeController;
 use Ductong\BaseMvc\Controllers\Client\ListController;
 use Ductong\BaseMvc\Controllers\Client\LoginController;
+use Ductong\BaseMvc\Controllers\Client\WriterController;
+use Ductong\BaseMvc\Controllers\Client\WritingController;
 use Ductong\BaseMvc\Router;
 
 $router = new Router();

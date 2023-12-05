@@ -18,7 +18,7 @@
                         <li class="breadcrumb-item"><a href=""></a> ̸͟͞q̸͟͞u̸͟͞a̸͟͞n̸͟͞l̸͟͞i</li>
                     </ul>
                 </div>
-            </div>  
+            </div>
         </div>
     </div>
 
@@ -26,54 +26,82 @@
         <div class="main-body">
             <div class="page-wrapper">
                 <div class="page-body">
-
                     <div class="row">
-
-                        <div class="col-md-4 col-xl-4">
-                            <div class="card comp-card">
+                        <div class="col-xl-4 col-md-12">
+                            <div class="card proj-t-card">
                                 <div class="card-body">
-                                    <div class="row align-items-center">
-                                        <div class="col">
-                                            <h6 class="m-b-25">Impressions</h6>
-                                            <h3 class="f-w-700 text-c-blue">1,563</h3>
-                                            <p class="m-b-0">May 23 - June 01 (2017)</p>
-                                        </div>
+                                    <div class="row align-items-center m-b-30">
                                         <div class="col-auto">
-                                            <i class="fas fa-eye bg-c-blue"></i>
+                                            <i class="far fa-calendar-check text-c-red f-30"></i>
+                                        </div>
+                                        <div class="col p-l-0">
+                                            <h6 class="m-b-5">Ticket Answered</h6>
+                                            <h6 class="m-b-0 text-c-red">Live Update</h6>
                                         </div>
                                     </div>
+                                    <div class="row align-items-center text-center">
+                                        <div class="col">
+                                            <h6 class="m-b-0">327</h6>
+                                        </div>
+                                        <div class="col"><i class="fas fa-exchange-alt text-c-red f-18"></i>
+                                        </div>
+                                        <div class="col">
+                                            <h6 class="m-b-0">10 Days</h6>
+                                        </div>
+                                    </div>
+                                    <h6 class="pt-badge bg-c-red">53%</h6>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-4 col-xl-4">
-                            <div class="card comp-card">
+                        <div class="col-xl-4 col-md-6">
+                            <div class="card proj-t-card">
                                 <div class="card-body">
-                                    <div class="row align-items-center">
-                                        <div class="col">
-                                            <h6 class="m-b-25">Goal</h6>
-                                            <h3 class="f-w-700 text-c-green">30,564</h3>
-                                            <p class="m-b-0">May 23 - June 01 (2017)</p>
-                                        </div>
+                                    <div class="row align-items-center m-b-30">
                                         <div class="col-auto">
-                                            <i class="fas fa-bullseye bg-c-green"></i>
+                                            <i class="fas fa-paper-plane text-c-green f-30"></i>
+                                        </div>
+                                        <div class="col p-l-0">
+                                            <h6 class="m-b-5">Project Launched</h6>
+                                            <h6 class="m-b-0 text-c-green">Live Update</h6>
                                         </div>
                                     </div>
+                                    <div class="row align-items-center text-center">
+                                        <div class="col">
+                                            <h6 class="m-b-0">3 Year</h6>
+                                        </div>
+                                        <div class="col"><i class="fas fa-exchange-alt text-c-green f-18"></i>
+                                        </div>
+                                        <div class="col">
+                                            <h6 class="m-b-0">623</h6>
+                                        </div>
+                                    </div>
+                                    <h6 class="pt-badge bg-c-green">76%</h6>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-4 col-xl-4">
-                            <div class="card comp-card">
+                        <div class="col-xl-4 col-md-6">
+                            <div class="card proj-t-card">
                                 <div class="card-body">
-                                    <div class="row align-items-center">
-                                        <div class="col">
-                                            <h6 class="m-b-25">Impact</h6>
-                                            <h3 class="f-w-700 text-c-yellow">42.6%</h3>
-                                            <p class="m-b-0">May 23 - June 01 (2017)</p>
-                                        </div>
+                                    <div class="row align-items-center m-b-30">
                                         <div class="col-auto">
-                                            <i class="fas fa-hand-paper bg-c-yellow"></i>
+                                            <i class="fas fa-lightbulb text-c-yellow f-30"></i>
+                                        </div>
+                                        <div class="col p-l-0">
+                                            <h6 class="m-b-5">Unique Innovation</h6>
+                                            <h6 class="m-b-0 text-c-yellow">Live Update</h6>
                                         </div>
                                     </div>
+                                    <div class="row align-items-center text-center">
+                                        <div class="col">
+                                            <h6 class="m-b-0">1 Month</h6>
+                                        </div>
+                                        <div class="col"><i class="fas fa-exchange-alt text-c-yellow f-18"></i>
+                                        </div>
+                                        <div class="col">
+                                            <h6 class="m-b-0">248</h6>
+                                        </div>
+                                    </div>
+                                    <h6 class="pt-badge bg-c-yellow">73%</h6>
                                 </div>
                             </div>
                         </div>

@@ -32,5 +32,5 @@ use Ductong\BaseMvc\Models\Writing;
         public function comment(){
             $this->renderWriter('comment/index');
         }
-    }
+    }   
 ?>
