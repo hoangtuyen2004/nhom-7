@@ -27,8 +27,15 @@ $router->addRoute('/client/list/news', ListController::class, 'listNews');
 
 // Người viết
 $router->addRoute('/client/writer', WriterController::class, 'index');
+$router->addRoute('/client/writer/news', WriterController::class, 'writing');
+$router->addRoute('/client/writer/comment', WriterController::class, 'comment');
 
-$router->addRoute('/client/writer/news', WritingController::class, 'index');
+
+$router->addRoute('/client/writer/writing', WritingController::class, 'writing');
+$router->addRoute('/client/writing/list', WritingController::class, 'list');//hiển thị bài viết
+$router->addRoute('/client/writing/update', WritingController::class, 'update');
+$router->addRoute('/client/writing/delete', WritingController::class, 'delete');
+
 
 // Quản trị viên
 $router->addRoute('/admin/dashboard', DashboardController::class, 'index');

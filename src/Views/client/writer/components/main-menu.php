@@ -22,7 +22,7 @@
                 </li>
 
                 <li class>
-                    <a href="" class="waves-effect waves-dark">
+                    <a href="/client/writer/comment" class="waves-effect waves-dark">
                         <span class="pcoded-micon">
                         <i class="fa-solid fa-comment"></i>
                         </span>
@@ -34,8 +34,19 @@
                     <a href="#" class="waves-effect waves-dark">
                         <span class="pcoded-micon">
                             <i class="fa-solid fa-bell"></i>
+                            
                         </span>
                         <span class="pcoded-mtext" style="position: initial;">Thông báo</span>
+                        <span class="badge bg-c-red">
+                                                <?php 
+                                                    if (isset($_SESSION['notify'])) {
+                                                        echo $_SESSION['notify'];
+                                                    }
+                                                    else{
+                                                        echo 0;
+                                                    }
+                                                ?>
+                                            </span>
                     </a>
                 </li>
 

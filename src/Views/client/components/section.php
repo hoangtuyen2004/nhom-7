@@ -35,7 +35,7 @@
 
             <div class="td-block-row">
                     <?php foreach ($newCategory2 as $news) :?>
-                    <div class="td-block-span6">
+                    <div class="td-block-span6 mt-3">
 
                         <div class="td_module_6 td_module_wrap td-animation-stack">
 

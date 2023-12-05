@@ -49,37 +49,25 @@
                                             </thead>
                                             <tbody>
                                                 <?php foreach ($news as $new) : ?>
-                                                    <tr>
-                                                        <td>
-                                                            <?php
-                                                            // Kiểm tra xem $writing đã được đặt (nếu có thông tin về tác giả của tin tức)
-                                                            if (isset($writing)) {
-                                                                // Lặp qua mỗi $write (thông tin về tác giả tin tức)
-                                                                foreach ($writing as $write) {
-                                                                    // Lặp qua mỗi $user (thông tin về người dùng)
+                                                <tr>
+                                                    <td>
+                                                        <?php 
+                                                            foreach ($writing as $write) {
+                                                                if ($write['id_news']==$new['id']) {
                                                                     foreach ($users as $user) {
-                                                                        // Kiểm tra xem ID của mục tin tức hiện tại có khớp với ID trong $write và ID người dùng trong $user không
-                                                                        if ($new['id'] == $write['id_news'] && $write['id_user'] == $user['id']) {
-                                                                            // Nếu có khớp, in tên tài khoản của người dùng
+                                                                        if ($write['id_user']==$user['id']) {
                                                                             echo $user['name_account'];
                                                                         }
                                                                     }
-
-                                                                    // Kiểm tra xem ID của mục tin tức hiện tại có không bằng ID trong $write không
-                                                                    if ($new['id'] != $write['id_news']) {
-                                                                        // Nếu không khớp, in "admin"
-                                                                        echo "admin";
-                                                                    }
                                                                 }
-                                                                
+                                                               
                                                             }
+                                                        ?>
+                                                    </td>
+                                                    <td><?= $new['title'] ?></td>
 
-                                                            ?>
-                                                        </td>
-                                                        <td><?= $new['title'] ?></td>
-
-                                                        <td>
-                                                            <?php
+                                                    <td>
+                                                        <?php
                                                             // Kiểm tra xem $comment đã được đặt (nếu có thông tin về bình luận)
                                                             if (isset($comment)) {
                                                                 // Khởi tạo biến đếm số lượng bình luận
@@ -98,11 +86,11 @@
                                                                 echo $commentCount;
                                                             }
                                                             ?>
-                                                        </td>
-                                                        <td>
-                                                            <a href="/admin/comments/ctComment?id=<?= $new['id'] ?>" class="btn btn-warning btn-sm">Chi Tiết</a>
-                                                        </td>
-                                                    </tr>
+                                                    </td>
+                                                    <td>
+                                                        <a href="/admin/comments/ctComment?id=<?= $new['id'] ?>" class="btn btn-warning btn-sm">Chi Tiết</a>
+                                                    </td>
+                                                </tr>
                                                 <?php endforeach ?>
                                             </tbody>
                                         </table>
