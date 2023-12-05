@@ -22,7 +22,7 @@ class ListController extends Controller {
         $this->render('client/list/index',['news'=>$news,'user'=>$user,'newx3'=>$newx3,'categorys'=>$categorys,'newsDate'=>$newsDate, 'comment'=>$comment,'writing'=>$writing]);
     }
     
-    public function ccomment()
+    public function comment()
     {
         // Kiểm tra xem người dùng đã đăng nhập hay chưa
         if (!isset($_SESSION['id_user'])) {

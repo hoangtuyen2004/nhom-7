@@ -25,7 +25,7 @@ $router->addRoute('/client/registers/index', LoginController::class, 'register')
 
 
 $router->addRoute('/client/list/news', ListController::class, 'listNews');
-$router->addRoute('/client/list/ccomment', ListController::class, 'ccomment');
+$router->addRoute('/client/list/comment', ListController::class, 'comment');
 
 // Người viết
 $router->addRoute('/client/writer', WriterController::class, 'index');
