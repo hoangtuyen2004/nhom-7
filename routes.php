@@ -10,28 +10,24 @@ use Ductong\BaseMvc\Controllers\Admin\NoteController;
 use Ductong\BaseMvc\Controllers\Client\HomeController;
 use Ductong\BaseMvc\Controllers\Client\ListController;
 use Ductong\BaseMvc\Controllers\Client\LoginController;
-use Ductong\BaseMvc\Controllers\Client\WriterController;
-use Ductong\BaseMvc\Controllers\Client\WritingController;
 use Ductong\BaseMvc\Router;
 
 $router = new Router();
 
-// Người xem
 $router->addRoute('/', HomeController::class, 'index');
 $router->addRoute('/client/user', HomeController::class, 'user');
 
 $router->addRoute('/client/login', LoginController::class, 'login');
 $router->addRoute('/client/logout', LoginController::class, 'logout');
+$router->addRoute('/client/registers/index', LoginController::class, 'register');
+
 
 $router->addRoute('/client/list/news', ListController::class, 'listNews');
+$router->addRoute('/client/list/ccomment', ListController::class, 'ccomment');
 
-// Người viết
-$router->addRoute('/client/writer', WriterController::class, 'index');
-
-$router->addRoute('/client/writer/news', WritingController::class, 'index');
-
-// Quản trị viên
 $router->addRoute('/admin/dashboard', DashboardController::class, 'index');
+
+
 
 $router->addRoute('/admin/users', UserController::class, 'index');
 $router->addRoute('/admin/users/create', UserController::class, 'create');
