@@ -26,7 +26,7 @@ $router->addRoute('/client/registers/index', LoginController::class, 'register')
 
 $router->addRoute('/client/list/news', ListController::class, 'listNews');
 $router->addRoute('/client/list/comment', ListController::class, 'comment');
-
+$router->addRoute('/client/list/ccomment', ListController::class, 'ccomment');
 // Người viết
 $router->addRoute('/client/writer', WriterController::class, 'index');
 $router->addRoute('/client/writer/news', WriterController::class, 'writing');
@@ -73,3 +73,5 @@ $router->addRoute('/admin/commit', NoteController::class, 'index');
 $router->addRoute('/admin/commit/list', NoteController::class, 'list');
 $router->addRoute('/admin/commit/unlist', NoteController::class, 'unlist');
 $router->addRoute('/admin/commit/update', NoteController::class, 'update');
+
+// code mới lấy trên git về là cái này nó giống y cái bên mà k chạy được @@; nhìn nhá

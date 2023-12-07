@@ -16,13 +16,13 @@ class ListController extends Controller {
         $newsDate = (new News)->selectTop('date',5,0,$conditions);
         $newx3 = (new News)->selectTop('id',3,0,$conditions);
         $news = (new News)->findOne($id_news);
-        $user = (new User)->all();
+        $users = (new User)->all();
         $writing = (new Writing)->all();
         $comment = (new Comment)->all();
-        $this->render('client/list/index',['news'=>$news,'user'=>$user,'newx3'=>$newx3,'categorys'=>$categorys,'newsDate'=>$newsDate, 'comment'=>$comment,'writing'=>$writing]);
+        $this->render('client/list/index',['news'=>$news,'users'=>$users,'newx3'=>$newx3,'categorys'=>$categorys,'newsDate'=>$newsDate, 'comment'=>$comment,'writing'=>$writing]);
     }
     
-    public function comment()
+    public function ccomment()
     {
         // Kiểm tra xem người dùng đã đăng nhập hay chưa
         if (!isset($_SESSION['id_user'])) {
