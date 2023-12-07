@@ -86,16 +86,21 @@
                                                                     }
                                                                 }
                                                         ?>
+                                                        
                                                     <?php if ($writing['id_user']==$_SESSION['id_user'] && $writing['id_news']==$new['id']) {
-                                                    echo "<td style='width: 10%;'>";
+                                                        echo "<td style='width: 10%;'>";
                                                         echo "<a href='/client/writing/list?id=$new[id]' style='color:#ffffff;' class='btn waves-effect waves-light btn-success btn-square'><i class='fa-regular fa-eye' style='color: #ffffff;'></i> Xem ngay</a>";
                                                         echo "<a href='/client/writing/update?id=$new[id]' style='color:#ffffff;' class='btn waves-effect waves-light btn-warning btn-square'><i class='fa-solid fa-square-pen' style='color: #ffffff;'></i> Chỉnh sửa</a>";
-                                                        echo "<a href='/client/writing/delete?id=$new[id]' style='color:#ffffff;' class='btn waves-effect waves-light btn-danger btn-square'><i class='fa-solid fa-trash' style='color: #ffffff;'></i> Xóa</a>";
+                                                        echo "<a href='/client/writing/delete?id=$new[id]' onclick='return confirm('bạn chắc chắn')' style='color:#ffffff;' class='btn waves-effect waves-light btn-danger btn-square'><i class='fa-solid fa-trash' style='color: #ffffff;'></i> Xóa</a>";
                                                         echo "</td>";
                                                     }?>
+                                                    
                                                 </tr>
                                                         <?php endforeach?>
                                                     <?php endforeach?>
+                                                    <form action="/admin/categories/delete?id=<?= $category['id'] ?>" method="post">
+                                                                <a type="submit" onclick="return confirm('Bạn có chắc chắn xóa?');" class="btn btn-danger btn-sm mt-2">Xóa</a>
+                                                            </form>
                                             </tbody>
                                         </table>
                                     </div>

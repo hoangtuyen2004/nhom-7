@@ -38,7 +38,7 @@
 
                             <div class="card">
                                 <div class="card-header">
-                                    <h5>Basic Inputs Validation</h5>
+                                    <h5>Phê duyệt nội dung</h5>
                                     <span>Add class of <code>.form-control</code> with
                                         <code>&lt;input&gt;</code> tag</span>
                                 </div>
@@ -47,9 +47,7 @@
                                         <div class="form-group row">    
                                             <label class="col-sm-2 col-form-label">Gửi tới: </label>
                                             <div class="col-sm-10">
-                                                <?php if ($user['id']==$commit['id_user']) {
-                                                    echo "<input type='text' class='form-control' name='' value='".$user['name_account']."' readonly placeholder='Text Input Validation'>";
-                                                }?>
+                                        <input type="text" class="form-control" name="" value="<?=$user['name_account']?>" readonly placeholder="Text Input Validation">
                                                 <span class="messages"></span>
                                             </div>
                                         </div>
@@ -57,18 +55,14 @@
                                             <label class="col-sm-2 col-form-label">Reply: </label>
                                             <div class="col-sm-10">
                                                 <textarea rows="5" cols="5" name="reply" class="form-control" 
-                                                placeholder="Nội dung phải hồi cho người viết"><?php 
-                                                        if (isset($commit['reply'])) {
-                                                            echo $commit['reply'];
-                                                        }
-                                                    ?></textarea>
+                                                placeholder="Nội dung phải hồi cho người viết"><?=$commitDD['reply']?></textarea>
                                                 <span class="messages"></span>
                                             </div>
                                         </div>
                                         <div class="form-group row">
                                             <label class="col-sm-2 col-form-label">Đối với bài viết: </label>
                                             <div class="col-sm-10">
-                                                <input type="text" class="form-control" name="id_news" value="<?=$commit['id_news']?>" readonly placeholder="Text Input Validation">
+                                                <input type="text" class="form-control" name="id_news" value="<?=$commitDD['id_news']?>" readonly placeholder="Text Input Validation">
                                                 <span class="messages"></span>
                                             </div>
                                         </div>
