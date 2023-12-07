@@ -77,19 +77,10 @@ class NoteController extends Controller {
     }
     public function update(){
         $id_commit = $_GET['id'];
-        $commits = (new Note)->all();   
-        foreach ($commits as $commitc) {
-            if ($commitc['id']!=$id_commit) {
-                //Chuyền thông báo tới người dùng rằng giá trị này ngoài vùng commit
-                header('location: /admin/commit');
-            }
-            else{
-                $status = (new Status)->all();
-                $commit = (new Note)->findOne($id_commit);
-                $user = (new User)->findOne($commit['id_user']);
-                $new = (new News)->findOne($commit['id_news']);
-            }
-        }
+        $status = (new Status)->all();
+        $commit = (new Note)->findOne($id_commit);
+        $user = (new User)->findOne($commit['id_user']);
+        $new = (new News)->findOne($commit['id_news']);
         if (isset($_POST['btm-submit'])) {
             $reply = $_POST['reply'];
             $status;
@@ -118,7 +109,7 @@ class NoteController extends Controller {
         }
 
         if (isset($status) && isset($user) && isset($commit)) {
-            $this->renderAdmin('commit/update',['commit'=>$commit, 'status'=>$status, 'user'=>$user, 'new'=>$new]);
+            $this->renderAdmin('commit/update',['commitDD'=>$commit, 'status'=>$status, 'user'=>$user, 'new'=>$new]);
         }
     }
 }

@@ -19,7 +19,7 @@ class ListController extends Controller {
         $users = (new User)->all();
         $writing = (new Writing)->all();
         $comment = (new Comment)->all();
-        $this->render('client/list/index',['news'=>$news,'users'=>$users,'newx3'=>$newx3,'categorys'=>$categorys,'newsDate'=>$newsDate, 'comment'=>$comment,'writing'=>$writing]);
+        $this->render('client/list/index',['news'=>$news,'users'=>$users,'newAAA'=>$newx3,'categorys'=>$categorys,'newsDate'=>$newsDate, 'comment'=>$comment,'writing'=>$writing]);
     }
     
     public function ccomment()
