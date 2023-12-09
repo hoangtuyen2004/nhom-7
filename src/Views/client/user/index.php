@@ -41,7 +41,7 @@
                                     <a href="#">Thông tin tài khoản</a>
                                     <a href="#">Thông báo</a>
                                     <a href="#">Yêu thích</a>
-                                    <a href="#">Bài viết</a>
+                                    <a href="../categories/index.php">Bài viết</a>
                                     <a href="#">Đăng xuất</a>
                                 </div>
                             </div>
