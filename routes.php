@@ -7,7 +7,12 @@ use Ductong\BaseMvc\Controllers\Admin\CategoryController;
 use Ductong\BaseMvc\Controllers\Admin\CommentController;
 use Ductong\BaseMvc\Controllers\Admin\DashboardController;
 use Ductong\BaseMvc\Controllers\Admin\NewsController;
+
+use Ductong\BaseMvc\Controllers\Admin\NoteController;
+use Ductong\BaseMvc\Controllers\Client\binhLuanController;
+=======
 use Ductong\BaseMvc\Controllers\Admin\NoteController; 
+
 use Ductong\BaseMvc\Controllers\Client\HomeController;
 
 use Ductong\BaseMvc\Controllers\Client\CategorController;
@@ -43,6 +48,8 @@ $router->addRoute('/client/list/ccomment', ListController::class, 'ccomment');
 $router->addRoute('/client/writer', WriterController::class, 'index');
 $router->addRoute('/client/writer/news', WriterController::class, 'writing');
 $router->addRoute('/client/writer/comment', WriterController::class, 'comment');
+
+$router->addRoute('/client/writer/comment/list', binhLuanController::class, 'index');
 
 
 $router->addRoute('/client/writer/writing', WritingController::class, 'writing');

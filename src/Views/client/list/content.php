@@ -70,7 +70,10 @@
                             </div>
                         </div>
                         <div id="comment-form">
-                            <h4>Bình luận</h4>
+                        <div class="td-block-title-wrap">
+                                <h4 class="block-title td-block-title"><span class="td-pulldown-size">Bình luận</span>
+                                </h4>
+                            </div>
                             <?php include_once '/laragon/www/nhom_7/src/Views/client/list/comment.php'; ?>
                         </div>
 
