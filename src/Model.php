@@ -140,6 +140,32 @@ class Model
             $stmt->execute();
         }
 
+        //Thêm hàm mới hàm cũ k khó làm quá hiuhiu
+        public function insertTk($data)
+        {
+
+            $values = array_values($data);
+            $value = implode("','",$values);
+            $keys = array_keys($data);
+            $key = implode('`,`',$keys);
+            $sql = "INSERT INTO `{$this->table}` (`$key`) VALUES ('$value')";
+
+            $stmt = $this->conn->prepare($sql);
+
+            $stmt->execute();
+        }
+
+        public function insertbl($data) {
+            // ...
+            $columns = implode(', ', array_keys($data));
+            $values = ':' . implode(', :', array_keys($data));
+            $sql = "INSERT INTO $this->table ($columns) VALUES ($values)";
+            $stmt = $this->conn->prepare($sql);
+            $stmt->execute($data);
+            // ...
+        }
+        
+
     /* 
         $data = [
             'collumn_name' => 'giá trị người dùng truyền vào',
@@ -162,7 +188,7 @@ class Model
             $sql .= "{$sets}";
 
             $where = [];
-            foreach ($conditions as $condition) {
+foreach ($conditions as $condition) {
                 $link = $condition[3] ?? '';
                 $where[] = "{$condition[0]} {$condition[1]} :w{$condition[0]} {$link}";
             }
@@ -177,7 +203,7 @@ class Model
                 }
             }
 
-            foreach ($conditions as &$condition) {
+            foreach (            $conditions as &$condition) {
                 $stmt->bindParam(":w{$condition[0]}", $condition[2]);
             }
 

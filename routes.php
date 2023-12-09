@@ -20,7 +20,6 @@ use Ductong\BaseMvc\Router;
 
 $router = new Router();
 
-// Người xem
 $router->addRoute('/', HomeController::class, 'index');
 $router->addRoute('/client/user', HomeController::class, 'user');
 
@@ -34,15 +33,23 @@ $router->addRoute('/client/categories/delete', CategorController::class, 'delete
 
 $router->addRoute('/client/login', LoginController::class, 'login');
 $router->addRoute('/client/logout', LoginController::class, 'logout');
+$router->addRoute('/client/registers/index', LoginController::class, 'register');
+
 
 $router->addRoute('/client/list/news', ListController::class, 'listNews');
-
+$router->addRoute('/client/list/comment', ListController::class, 'comment');
+$router->addRoute('/client/list/ccomment', ListController::class, 'ccomment');
 // Người viết
 $router->addRoute('/client/writer', WriterController::class, 'index');
+$router->addRoute('/client/writer/news', WriterController::class, 'writing');
+$router->addRoute('/client/writer/comment', WriterController::class, 'comment');
 
-$router->addRoute('/client/writer/news', WritingController::class, 'index');
 
-// Quản trị viên
+$router->addRoute('/client/writer/writing', WritingController::class, 'writing');
+$router->addRoute('/client/writing/list', WritingController::class, 'list');//hiển thị bài viết
+$router->addRoute('/client/writing/update', WritingController::class, 'update');
+$router->addRoute('/client/writing/delete', WritingController::class, 'delete');
+
 $router->addRoute('/admin/dashboard', DashboardController::class, 'index');
 
 $router->addRoute('/admin/users', UserController::class, 'index');
@@ -78,3 +85,5 @@ $router->addRoute('/admin/commit', NoteController::class, 'index');
 $router->addRoute('/admin/commit/list', NoteController::class, 'list');
 $router->addRoute('/admin/commit/unlist', NoteController::class, 'unlist');
 $router->addRoute('/admin/commit/update', NoteController::class, 'update');
+
+// code mới lấy trên git về là cái này nó giống y cái bên mà k chạy được @@; nhìn nhá

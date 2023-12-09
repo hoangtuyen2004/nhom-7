@@ -37,8 +37,15 @@
                             <i class="fa-sharp fa-solid fa-gears fa-2xl"></i>
                             <ul class="show-notification profile-notification dropdown-menu" data-dropdown-in="fadeIn"
                                 data-dropdown-out="fadeOut">
-                                    <?php 
+                                    <?php
+                                        use Ductong\BaseMvc\Models\User;
+
                                         if (isset($_SESSION['name_account']) && isset($_SESSION['id_user']) && isset($_SESSION['id_role'])) {
+                                            if (isset($_SESSION['name_account']) && isset($_SESSION['id_user'])) {
+                                                $user = (new User)->findOne($_SESSION['id_user']);
+                                                $_SESSION['id_role'] = $user['id_role'];
+                                                $_SESSION['name_account'] = $user['name_account'];
+                                            }
                                             if ($_SESSION['id_role']==2) {
                                                 echo "                                    
                                                 <li>

@@ -41,7 +41,6 @@
                                         <table id="simpletable" class="table table-striped table-bordered nowrap">
                                             <thead>
                                                 <tr>
-                                                    <th>Người Viết</th>
                                                     <th>Bài viết</th>
                                                     <th>Số lượng comment</th>
                                                     <th>Action</th>
@@ -50,32 +49,6 @@
                                             <tbody>
                                                 <?php foreach ($news as $new) : ?>
                                                     <tr>
-                                                        <td>
-                                                            <?php
-                                                            // Kiểm tra xem $writing đã được đặt (nếu có thông tin về tác giả của tin tức)
-                                                            if (isset($writing)) {
-                                                                // Lặp qua mỗi $write (thông tin về tác giả tin tức)
-                                                                foreach ($writing as $write) {
-                                                                    // Lặp qua mỗi $user (thông tin về người dùng)
-                                                                    foreach ($users as $user) {
-                                                                        // Kiểm tra xem ID của mục tin tức hiện tại có khớp với ID trong $write và ID người dùng trong $user không
-                                                                        if ($new['id'] == $write['id_news'] && $write['id_user'] == $user['id']) {
-                                                                            // Nếu có khớp, in tên tài khoản của người dùng
-                                                                            echo $user['name_account'];
-                                                                        }
-                                                                    }
-
-                                                                    // Kiểm tra xem ID của mục tin tức hiện tại có không bằng ID trong $write không
-                                                                    if ($new['id'] != $write['id_news']) {
-                                                                        // Nếu không khớp, in "admin"
-                                                                        echo "admin";
-                                                                    }
-                                                                }
-                                                                
-                                                            }
-
-                                                            ?>
-                                                        </td>
                                                         <td><?= $new['title'] ?></td>
 
                                                         <td>
@@ -98,11 +71,11 @@
                                                                 echo $commentCount;
                                                             }
                                                             ?>
-                                                        </td>
-                                                        <td>
-                                                            <a href="/admin/comments/ctComment?id=<?= $new['id'] ?>" class="btn btn-warning btn-sm">Chi Tiết</a>
-                                                        </td>
-                                                    </tr>
+                                                    </td>
+                                                    <td>
+                                                        <a href="/admin/comments/ctComment?id=<?= $new['id'] ?>" class="btn btn-warning btn-sm">Chi Tiết</a>
+                                                    </td>
+                                                </tr>
                                                 <?php endforeach ?>
                                             </tbody>
                                         </table>
