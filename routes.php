@@ -46,9 +46,13 @@ $router->addRoute('/client/list/ccomment', ListController::class, 'ccomment');
 $router->addRoute('/client/writer', WriterController::class, 'index');
 $router->addRoute('/client/writer/news', WriterController::class, 'writing');
 $router->addRoute('/client/writer/comment', WriterController::class, 'comment');
+$router->addRoute('/client/writer/notify', WriterController::class, 'notify');
 
 $router->addRoute('/client/writer/comment/list', binhLuanController::class, 'index');
+$router->addRoute('/client/writer/comment/Unlist', binhLuanController::class, 'unlist');
+$router->addRoute('/client/writer/comment/see', binhLuanController::class, 'list');
 
+$router->addRoute('/client/writer/notify/index', NotifyController::class, 'index');
 
 $router->addRoute('/client/writer/writing', WritingController::class, 'writing');
 $router->addRoute('/client/writing/list', WritingController::class, 'list');//hiển thị bài viết
