@@ -31,7 +31,7 @@
                 </li>
 
                 <li class>
-                    <a href="#" class="waves-effect waves-dark">
+                    <a href="/client/writer/notify" class="waves-effect waves-dark">
                         <span class="pcoded-micon">
                             <i class="fa-solid fa-bell"></i>
                             

@@ -4,6 +4,7 @@
 use Ductong\BaseMvc\Controller;
 use Ductong\BaseMvc\Models\Category;
 use Ductong\BaseMvc\Models\News;
+use Ductong\BaseMvc\Models\Note;
 use Ductong\BaseMvc\Models\Status;
 use Ductong\BaseMvc\Models\User;
 use Ductong\BaseMvc\Models\Writing;
@@ -39,6 +40,13 @@ use Ductong\BaseMvc\Models\Writing;
             $writing = (new Writing)->findColumns($conditions);
             $categorys = (new Category)->all();
             $this->renderWriter('comment/index',['news'=>$news,'categorys'=>$categorys,'writing'=>$writing]);
+        }
+        public function notify(){
+                $conditions = [
+                    ['id_user', '=', $_SESSION['id_user']],
+                ];
+            $notifys = (new Note)->findColumns($conditions);
+            $this->renderWriter('notify/index',['notifys'=>$notifys]);
         }
     }   
 ?>

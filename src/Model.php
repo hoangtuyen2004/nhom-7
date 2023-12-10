@@ -188,7 +188,7 @@ class Model
             $sql .= "{$sets}";
 
             $where = [];
-foreach ($conditions as $condition) {
+        foreach ($conditions as $condition) {
                 $link = $condition[3] ?? '';
                 $where[] = "{$condition[0]} {$condition[1]} :w{$condition[0]} {$link}";
             }

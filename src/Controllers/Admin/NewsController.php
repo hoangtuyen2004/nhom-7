@@ -69,7 +69,6 @@ class NewsController extends Controller
 
                 // echo "<pre>";    
                 // print_r($data );die;
-
                 (new News)->insert($data);
                 header('Location: /admin/news');
             }
