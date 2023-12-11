@@ -13,11 +13,26 @@ class ListController extends Controller {
         $id_news = $_GET['id'];
         $conditions = "id_status = 2";
         $categorys = (new Category)->all();
-        $newsDate = (new News)->selectTop('date',5,0,$conditions);
-        $newx3 = (new News)->selectTop('id',3,0,$conditions);
+        $newsDate = (new News)->selectTop('date', 5, 0, $conditions);
+        $newx3 = (new News)->selectTop('id', 3, 0, $conditions);
         $news = (new News)->findOne($id_news);
         $users = (new User)->all();
+        
+        // Retrieve comments associated with the current article
+        $comment = (new Comment)->findColumns([
+            ['id_news', '=', $id_news],
+        ]);
+        
         $writing = (new Writing)->all();
+        $this->render('client/list/index', [
+            'news' => $news,
+            'users' => $users,
+            'newAAA' => $newx3,
+            'categorys' => $categorys,
+            'newsDate' => $newsDate,
+            'comment' => $comment,
+            'writing' => $writing
+        ]);
         $comment = (new Comment)->all();
         $this->render('client/list/index',['news'=>$news,'users'=>$users,'newAAA'=>$newx3,'categorys'=>$categorys,'newsDate'=>$newsDate, 'comment'=>$comment,'writing'=>$writing]);
     }
@@ -49,9 +64,5 @@ class ListController extends Controller {
         header("Location: /client/list/news?id={$data['id_news']}");
         exit();
     }
-    
-
-    
-
 }
 ?>
