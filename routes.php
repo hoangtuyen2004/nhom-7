@@ -1,13 +1,20 @@
 <?php
 
 use Ductong\BaseMvc\Controllers\Admin\AdminController;
+
 use Ductong\BaseMvc\Controllers\Admin\UserController;
 use Ductong\BaseMvc\Controllers\Admin\CategoryController;
 use Ductong\BaseMvc\Controllers\Admin\CommentController;
 use Ductong\BaseMvc\Controllers\Admin\DashboardController;
 use Ductong\BaseMvc\Controllers\Admin\NewsController;
-use Ductong\BaseMvc\Controllers\Admin\NoteController;
+
+use Ductong\BaseMvc\Controllers\Client\binhLuanController;
+use Ductong\BaseMvc\Controllers\Admin\NoteController; 
+
 use Ductong\BaseMvc\Controllers\Client\HomeController;
+
+use Ductong\BaseMvc\Controllers\Client\CategorController;
+
 use Ductong\BaseMvc\Controllers\Client\ListController;
 use Ductong\BaseMvc\Controllers\Client\LoginController;
 use Ductong\BaseMvc\Controllers\Client\WriterController;
@@ -18,6 +25,14 @@ $router = new Router();
 
 $router->addRoute('/', HomeController::class, 'index');
 $router->addRoute('/client/user', HomeController::class, 'user');
+
+
+
+$router->addRoute('/client/categories/', CategorController::class, 'index');
+$router->addRoute('/client/categories/update', CategorController::class, 'update');
+$router->addRoute('/client/categories/delete', CategorController::class, 'delete');
+
+
 
 $router->addRoute('/client/login', LoginController::class, 'login');
 $router->addRoute('/client/logout', LoginController::class, 'logout');
@@ -31,7 +46,13 @@ $router->addRoute('/client/list/ccomment', ListController::class, 'ccomment');
 $router->addRoute('/client/writer', WriterController::class, 'index');
 $router->addRoute('/client/writer/news', WriterController::class, 'writing');
 $router->addRoute('/client/writer/comment', WriterController::class, 'comment');
+$router->addRoute('/client/writer/notify', WriterController::class, 'notify');
 
+$router->addRoute('/client/writer/comment/list', binhLuanController::class, 'index');
+$router->addRoute('/client/writer/comment/Unlist', binhLuanController::class, 'unlist');
+$router->addRoute('/client/writer/comment/see', binhLuanController::class, 'list');
+
+$router->addRoute('/client/writer/notify/index', NotifyController::class, 'index');
 
 $router->addRoute('/client/writer/writing', WritingController::class, 'writing');
 $router->addRoute('/client/writing/list', WritingController::class, 'list');//hiển thị bài viết

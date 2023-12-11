@@ -67,4 +67,22 @@ class Controller {
             header('location: /admin/logins');
         }
     }
+    protected function renderClient($view, $data = []) {
+        $data['view'] = $view;
+
+        extract($data);
+        $conditions = [
+            ['id_list', '=', 2],
+        ];
+        $commit = (new Note)->findColumns($conditions);
+        $_SESSION['commit'] = count($commit);
+        //kiểm tra admin
+        if (isset($_SESSION['name_account']) && isset($_SESSION['id_user'])) {
+            include "Views/client/master.php";
+        }
+
+        else {
+            header('location: /client/login');
+        }
+    }
 }

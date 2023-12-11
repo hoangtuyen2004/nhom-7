@@ -33,6 +33,8 @@ class ListController extends Controller {
             'comment' => $comment,
             'writing' => $writing
         ]);
+        $comment = (new Comment)->all();
+        $this->render('client/list/index',['news'=>$news,'users'=>$users,'newAAA'=>$newx3,'categorys'=>$categorys,'newsDate'=>$newsDate, 'comment'=>$comment,'writing'=>$writing]);
     }
     
     public function ccomment()

@@ -37,7 +37,7 @@
                                         <a href="/client/writing/update?id=<?=$news['id']?>" class="btn waves-effect waves-light btn-warning btn-square">
                                             <i class='fa fa-calendar-minus-o' style='color: #ffffff;'></i> Sửa bài
                                         </a>
-                                        <a href="/client/writing/delete?id=<?=$news['id']?>" class="btn waves-effect waves-light btn-danger btn-square">
+                                        <a href="/client/writing/delete?id=<?=$news['id']?>" onclick="return confirm('Bạn có chắc muốn xóa!')" class="btn waves-effect waves-light btn-danger btn-square">
                                             <i class='fa fa-calendar-times-o' style='color: #ffffff;'></i> Xóa bài
                                         </a>
                                     </div>
@@ -125,7 +125,7 @@
                                                             ?>
                                                         </td>
                                                         <td style="width: 10px;">
-                                                            <a href="" class="btn waves-effect waves-light btn-warning btn-square mr-3"><i class="fa fa-bookmark icon-trash-2 f-w-600 f-16 text-c-red"></i> Ẩn comment</a>
+                                                            <a href="/client/writer/comment/Unlist?id=<?=$comment['id']?>" class="btn waves-effect waves-light btn-warning btn-square mr-3"><i class="fa fa-bookmark icon-trash-2 f-w-600 f-16 text-c-red"></i> Ẩn comment</a>
                                                             <a href="#!" class="btn waves-effect waves-light btn-danger btn-square"><i class="fa fa-bullseye icon-trash-2 f-w-600 f-16 text-c-blue"></i> Báo cáo</a>
                                                         </td>
                                                     </tr>

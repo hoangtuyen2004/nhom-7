@@ -90,7 +90,7 @@
                                                     </div>
                                                 </div>
                                                 <div class="row m-t-10">
-                                                    <a class="btn btn-success btn-md btn-block waves-effect text-center m-b-20" style="width: 80%;margin: auto;" href="">CREATE NEW ACCOUNT</a>
+                                                    <a href="/client/registers/index" class="btn btn-success btn-md btn-block waves-effect text-center m-b-20" style="width: 80%;margin: auto;">CREATE NEW ACCOUNT</a>
                                                 </div>
                                                 <hr />
                                                 <div class="row">
