@@ -42,11 +42,40 @@ use Ductong\BaseMvc\Models\Writing;
             $this->renderWriter('comment/index',['news'=>$news,'categorys'=>$categorys,'writing'=>$writing]);
         }
         public function notify(){
-                $conditions = [
-                    ['id_user', '=', $_SESSION['id_user']],
-                ];
+            $conditions = [
+                ['id_user', '=', $_SESSION['id_user']],
+            ];
             $notifys = (new Note)->findColumns($conditions);
+
+            if (isset($_POST['xem'])) {
+                $conditions = "id = ".$_POST['id'];
+                (new Note)->updateColumn('id_list','3',$conditions);
+            }
+            if (isset($_POST['rep'])) {
+               
+                $this->renderWriter('notify/reply');
+                die;
+            }
             $this->renderWriter('notify/index',['notifys'=>$notifys]);
+        }
+        public function reply(){
+            $note = (new Note)->findOne($_POST['id']);
+            if (isset($_POST['save'])) {
+                $commit = $_POST['commit'];
+                $data = [
+                    'commit'=>$commit,
+                    'reply'=>"",
+                    'id_news'=>$note['id_news'],
+                    'id_user'=>$note['id_user'],
+                    'id_list'=>2
+                ];
+                $conditions = [
+                    ['id', '=', $_POST['id']],
+                ];
+                (new Note)->update($data,$conditions);
+            }
+            $writer = (new User)->findOne($_SESSION['id_user']);
+            $this->renderWriter('dashboard',['writer'=>$writer]);
         }
     }   
 ?>

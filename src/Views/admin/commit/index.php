@@ -34,7 +34,7 @@
                                 <div class="card-header">
                                     <h5>Danh sách yêu cầu duyệt</h5>
 
-                                    <a href="/admin/categories/create" class="btn btn-info btn-sm">Đã duyệt</a>
+                                    <a href="#" class="btn btn-info btn-sm">Đã duyệt</a>
                                 </div>
                                 <div class="card-block">
                                     <div class="dt-responsive table-responsive">
