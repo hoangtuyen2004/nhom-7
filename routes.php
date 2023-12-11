@@ -17,6 +17,7 @@ use Ductong\BaseMvc\Controllers\Client\CategorController;
 
 use Ductong\BaseMvc\Controllers\Client\ListController;
 use Ductong\BaseMvc\Controllers\Client\LoginController;
+use Ductong\BaseMvc\Controllers\Client\NotifyController;
 use Ductong\BaseMvc\Controllers\Client\WriterController;
 use Ductong\BaseMvc\Controllers\Client\WritingController;
 use Ductong\BaseMvc\Router;
@@ -47,12 +48,11 @@ $router->addRoute('/client/writer', WriterController::class, 'index');
 $router->addRoute('/client/writer/news', WriterController::class, 'writing');
 $router->addRoute('/client/writer/comment', WriterController::class, 'comment');
 $router->addRoute('/client/writer/notify', WriterController::class, 'notify');
+$router->addRoute('/client/writer/reply', WriterController::class, 'reply');
 
 $router->addRoute('/client/writer/comment/list', binhLuanController::class, 'index');
 $router->addRoute('/client/writer/comment/Unlist', binhLuanController::class, 'unlist');
 $router->addRoute('/client/writer/comment/see', binhLuanController::class, 'list');
-
-$router->addRoute('/client/writer/notify/index', NotifyController::class, 'index');
 
 $router->addRoute('/client/writer/writing', WritingController::class, 'writing');
 $router->addRoute('/client/writing/list', WritingController::class, 'list');//hiển thị bài viết

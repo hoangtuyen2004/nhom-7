@@ -44,7 +44,6 @@ class Model
     {
         $sql = "SELECT * FROM {$this->table}";
         $where = [];
-    
         foreach ($conditions as $condition) {
             $link = $condition[3] ?? '';
             $paramName = ":w{$condition[0]}";
@@ -54,7 +53,7 @@ class Model
     
         $where = implode(" ", $where);
         $sql .= " WHERE {$where}";
-    
+
         $stmt = $this->conn->prepare($sql);
         foreach ($parameters as $paramName => $paramValue) {
             $stmt->bindParam($paramName, $paramValue);

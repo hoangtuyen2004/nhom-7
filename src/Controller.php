@@ -31,10 +31,16 @@ class Controller {
 
         extract($data);
         $conditions = [
-            ['id_list', '=', 1],
+            ['id_user', '=', $_SESSION['id_user']],
         ];
         $commit = (new Note)->findColumns($conditions);
-        $_SESSION['notify'] = count($commit);
+        $count = 0;
+        foreach ($commit as $keke) {
+            if ($keke['id_list']==1) {
+                $count = $count +1;
+            }
+        }
+        $_SESSION['notify'] = $count;
         if (isset($_SESSION['name_account']) && isset($_SESSION['id_user']) && isset($_SESSION['id_role'])) {
             $writer = (new User)->findOne($_SESSION['id_user']);
             if ($_SESSION['id_role']==2) {

@@ -43,6 +43,7 @@
                                                     <thead>
                                                         <tr>
                                                             <th>Người Gửi</th>
+                                                            <th>Viết</th>
                                                             <th>Nội dung</th>
                                                             <th>Bài Viết</th>
                                                             <th>Lựa Trọn</th>
@@ -52,11 +53,21 @@
                                                        <?php foreach ($notifys as $notify) :?>
                                                         <tr>
                                                             <td style="width: 10px;">Admin</td>
+                                                            <td><?=$notify['commit']?></td>
                                                             <td><?=$notify['reply']?></td>
                                                             <td style="width: 10px;"><p class="badge badge-lg bg-info"><?=$notify['id_news']?></p></td>
                                                             <td style="width: 10px;">
-                                                                <a href="#" type="submit" class="btn waves-effect waves-dark btn-inverse btn-outline-inverse">Phản Hồi</a>
-                                                                <a href="#" class="btn waves-effect waves-dark btn-danger btn-outline-danger"><i class="icofont fa-regular fa-eye"></i> Xem</a>
+                                                                <form action="" method="post">
+                                                                    <input type="text" name="id" value="<?=$notify['id']?>" hidden readonly>
+                                                                    <button type="submit" name="rep" class="btn waves-effect waves-dark btn-inverse btn-outline-inverse"><i class="icofont  fa-solid fa-reply"></i> Phản hồi</button>
+                                                                    <?php if ($notify['id_list']==1) {
+                                                                        echo "<button type='submit' name='xem' class='btn waves-effect waves-dark btn-danger btn-outline-danger'><i class='icofont fa-regular fa-eye'></i>  Xem</button>";
+                                                                    }elseif ($notify['id_list']==2) {
+                                                                        echo "<p style='margin: 0;' class='btn btn-info waves-effect waves-light'><i class='icofont fa-solid fa-timeline'></i> Chờ</p>";
+                                                                    }else{
+                                                                        echo "<p style='margin: 0;' class='btn waves-effect waves-light btn-danger'>Đã Xem</p>";
+                                                                    }?>
+                                                                </form>
                                                             </td>
                                                         </tr>
                                                         <?php endforeach?>
